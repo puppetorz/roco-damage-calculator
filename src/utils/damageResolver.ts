@@ -57,23 +57,19 @@ function clampNonNegative(value: number): number {
 }
 
 function isRuleActive(rule: EffectRule, state: BattleModifierState): boolean {
-  if ("condition" in rule) {
-    if (rule.condition === "always") {
-      return true;
-    }
-
-    if (rule.condition === "typeAdvantage" && rule.kind === "statModifier") {
-      return (state.ruleStacks[rule.id] ?? 0) > 0;
-    }
-
-    return Boolean(state.ruleEnabled[rule.id]);
+  if (!("condition" in rule)) {
+    return true;
   }
 
-  return true;
-}
+  if (rule.condition === "always") {
+    return true;
+  }
 
-function conditionIsManual(rule: EffectRule): boolean {
-  return "condition" in rule && rule.condition !== "always";
+  if (rule.kind === "statModifier" && rule.stackable) {
+    return (state.ruleStacks[rule.id] ?? 0) > 0;
+  }
+
+  return Boolean(state.ruleEnabled[rule.id]);
 }
 
 function addSummary(summaries: string[], text: string): void {
@@ -97,6 +93,19 @@ function statLabel(key: StatKey): string {
   };
 
   return labels[key];
+}
+
+function conditionLabel(condition: EffectCondition): string {
+  const labels: Record<EffectCondition, string> = {
+    always: "默认",
+    manual: "手动确认",
+    responseAttack: "应对攻击",
+    responseStatus: "应对状态",
+    responseDefense: "应对防御",
+    typeAdvantage: "克制触发",
+  };
+
+  return labels[condition];
 }
 
 function getAttackStage(
@@ -153,19 +162,6 @@ function applyStatRule(
       .map(statLabel)
       .join("/")} ${formatPercent(value)}`
   );
-}
-
-function conditionLabel(condition: EffectCondition): string {
-  const labels: Record<EffectCondition, string> = {
-    always: "默认",
-    manual: "手动",
-    responseAttack: "应对攻击",
-    responseStatus: "应对状态",
-    responseDefense: "应对防御",
-    typeAdvantage: "克制触发",
-  };
-
-  return labels[condition];
 }
 
 export function createDefaultBattleModifierState(): BattleModifierState {
@@ -258,14 +254,10 @@ export function resolveDamageInput({
       default:
         break;
     }
-
-    if ("condition" in rule && conditionIsManual(rule)) {
-      addSummary(summaries, `${rule.sourceName}：已启用${conditionLabel(rule.condition)}条件`);
-    }
   }
 
-  mergeManualModifiers(attackerModifiers, state.manualAttacker, summaries, "手动：自己");
-  mergeManualModifiers(defenderModifiers, state.manualDefender, summaries, "手动：敌方");
+  mergeManualModifiers(attackerModifiers, state.manualAttacker, summaries, "手动：进攻方");
+  mergeManualModifiers(defenderModifiers, state.manualDefender, summaries, "手动：防守方");
 
   const attackStage = getAttackStage(skill.category, attackerModifiers);
   const defenseStage = getDefenseStage(skill.category, defenderModifiers);

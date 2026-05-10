@@ -379,6 +379,10 @@ select:focus {
   font-weight: 800;
 }
 
+.stack-control input {
+  max-width: 120px;
+}
+
 .rule-toggle {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
@@ -425,20 +429,73 @@ select:focus {
   line-height: 1.55;
 }
 
-.manual-modifier-grid {
+.manual-groups {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  margin-top: 4px;
-  padding-top: 12px;
-  border-top: 1px solid #e2e8ee;
+  gap: 12px;
 }
 
-.manual-modifier-grid h4 {
-  grid-column: 1 / -1;
+.manual-group {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #d9e5e2;
+  border-radius: 8px;
+}
+
+.manual-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.manual-group-header h4 {
   margin: 0;
   color: #162330;
   font-size: 15px;
+}
+
+.manual-group-header span {
+  color: #6c7c8c;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.manual-input-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.percent-input {
+  gap: 6px;
+  color: #405469;
+  font-size: 12px;
+}
+
+.percent-input > span {
+  position: relative;
+  display: block;
+}
+
+.percent-input input {
+  min-height: 36px;
+  padding-right: 24px;
+  text-align: right;
+  font-weight: 800;
+}
+
+.percent-input em {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  color: #6c7c8c;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  pointer-events: none;
 }
 
 .result-panel {
@@ -604,7 +661,7 @@ select:focus {
   .field-row,
   .advanced-grid,
   .dynamic-grid,
-  .manual-modifier-grid,
+  .manual-input-grid,
   .result-grid {
     grid-template-columns: 1fr;
   }

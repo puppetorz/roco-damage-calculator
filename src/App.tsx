@@ -60,7 +60,6 @@ const riskClassName: Record<DamageResult["risk"], string> = {
 };
 
 const manualStatKeys: StatKey[] = ["atk", "spa", "def", "spd", "spe"];
-
 const skillMap = new Map(skills.map((skill) => [skill.id, skill]));
 
 function getRecommendedIvs(spiritId: string): IndividualValues {
@@ -164,13 +163,6 @@ function getStabMultiplier(attacker: Spirit, skill?: Skill): number {
 
 function getTraitRules(spirit: Spirit): EffectRule[] {
   return (spirit.traits ?? []).flatMap(parseTraitRules);
-}
-
-function getSupportRules(spirit: Spirit, selectedSkillId: string): EffectRule[] {
-  return getAllSkillsForSpirit(spirit)
-    .filter((skill) => skill.id !== selectedSkillId)
-    .flatMap(parseSkillRules)
-    .filter((rule) => rule.kind === "statModifier");
 }
 
 function hasConfigurableSkillRule(rule: EffectRule): boolean {
@@ -357,9 +349,11 @@ function RuleControl({
 
   if (rule.kind === "statModifier" && rule.stackable) {
     return (
-      <label className="rule-control">
+      <label className="rule-control stack-control">
         {rule.label}
-        <span>{getConditionLabel(rule.condition)}</span>
+        <span>
+          触发层数/次数 · {getConditionLabel(rule.condition)}
+        </span>
         <input
           min="0"
           step="1"
@@ -396,6 +390,47 @@ function RuleControl({
     <div className="rule-readonly">
       <strong>{rule.label}</strong>
       <span>{rule.description}</span>
+    </div>
+  );
+}
+
+type ManualModifierGroupProps = {
+  title: string;
+  values: BattleModifierState["manualAttacker"];
+  side: "attacker" | "defender";
+  onChange: (side: "attacker" | "defender", key: StatKey, value: number) => void;
+};
+
+function ManualModifierGroup({
+  title,
+  values,
+  side,
+  onChange,
+}: ManualModifierGroupProps) {
+  return (
+    <div className="manual-group">
+      <div className="manual-group-header">
+        <h4>{title}</h4>
+        <span>百分比</span>
+      </div>
+      <div className="manual-input-grid">
+        {manualStatKeys.map((key) => (
+          <label className="percent-input" key={`${side}-${key}`}>
+            {statLabels[key]}
+            <span>
+              <input
+                step="10"
+                type="number"
+                value={Math.round(values[key] * 100)}
+                onChange={(event) =>
+                  onChange(side, key, Number(event.target.value) || 0)
+                }
+              />
+              <em>%</em>
+            </span>
+          </label>
+        ))}
+      </div>
     </div>
   );
 }
@@ -456,8 +491,7 @@ export default function App() {
     availableSkills[0];
   const selectedSkillRules = selectedSkill ? parseSkillRules(selectedSkill) : [];
   const traitRules = getTraitRules(attacker);
-  const supportRules = getSupportRules(attacker, selectedSkill?.id ?? "");
-  const allAppliedRules = [...selectedSkillRules, ...traitRules, ...supportRules];
+  const allAppliedRules = [...selectedSkillRules, ...traitRules];
   const configurableSkillRules = selectedSkillRules.filter(hasConfigurableSkillRule);
   const typeResult = calculateTypeMultiplier(
     selectedSkill?.element ?? "普通",
@@ -498,8 +532,20 @@ export default function App() {
       });
     };
 
-  function resetDynamicState(): void {
-    setModifierState(createDefaultBattleModifierState());
+  function resetDynamicState(preserveManual = false): void {
+    setModifierState((current) => {
+      const next = createDefaultBattleModifierState();
+
+      if (!preserveManual) {
+        return next;
+      }
+
+      return {
+        ...next,
+        manualAttacker: current.manualAttacker,
+        manualDefender: current.manualDefender,
+      };
+    });
   }
 
   function handleAttackerChange(nextId: string): void {
@@ -517,7 +563,7 @@ export default function App() {
 
   function handleSkillChange(nextSkillId: string): void {
     setSelectedSkillId(nextSkillId);
-    resetDynamicState();
+    resetDynamicState(true);
   }
 
   function updateRuleEnabled(ruleId: string, enabled: boolean): void {
@@ -583,7 +629,7 @@ export default function App() {
           <p>PVP 等级固定 {PVP_LEVEL}</p>
           <h1>洛克王国：世界 PVP 伤害计算器</h1>
         </div>
-        <span>特性与技能条件动态参数</span>
+        <span>特性层数 · 技能机制 · 手动修正</span>
       </header>
 
       <div className="battle-grid">
@@ -668,7 +714,7 @@ export default function App() {
           </div>
         ) : (
           <div className="empty-state">
-            当前精灵还没有匹配到可计算伤害技能。可以先换一个精灵，或后续补齐技能对应关系。
+            当前精灵还没有匹配到可计算伤害技能。可以先换一只精灵，或后续补齐技能对应关系。
           </div>
         )}
 
@@ -743,52 +789,27 @@ export default function App() {
             )}
           </section>
 
-          <section className="dynamic-card">
+          <section className="dynamic-card manual-card">
             <div className="dynamic-card-heading">
-              <h3>场上强化</h3>
-              <span>技能强化 + 手动修正</span>
+              <h3>手动修正</h3>
+              <span>最终状态</span>
             </div>
-            {supportRules.length > 0 ? (
-              supportRules.map((rule) => (
-                <RuleControl
-                  key={rule.id}
-                  rule={rule}
-                  state={modifierState}
-                  onRuleStacksChange={updateRuleStacks}
-                  onToggleRule={updateRuleEnabled}
-                />
-              ))
-            ) : (
-              <p className="muted-text">没有识别到可用强化技能。</p>
-            )}
-            <div className="manual-modifier-grid">
-              <h4>手动修正（百分比）</h4>
-              {manualStatKeys.map((key) => (
-                <label key={`attacker-${key}`}>
-                  自己{statLabels[key]}
-                  <input
-                    step="10"
-                    type="number"
-                    value={Math.round(modifierState.manualAttacker[key] * 100)}
-                    onChange={(event) =>
-                      updateManualModifier("attacker", key, Number(event.target.value) || 0)
-                    }
-                  />
-                </label>
-              ))}
-              {manualStatKeys.map((key) => (
-                <label key={`defender-${key}`}>
-                  敌方{statLabels[key]}
-                  <input
-                    step="10"
-                    type="number"
-                    value={Math.round(modifierState.manualDefender[key] * 100)}
-                    onChange={(event) =>
-                      updateManualModifier("defender", key, Number(event.target.value) || 0)
-                    }
-                  />
-                </label>
-              ))}
+            <p className="muted-text">
+              用于手动填入已经发生的强化或削弱。攻击、防御会进入伤害公式；速度只进入摘要，暂不改变伤害。
+            </p>
+            <div className="manual-groups">
+              <ManualModifierGroup
+                side="attacker"
+                title="进攻方修正"
+                values={modifierState.manualAttacker}
+                onChange={updateManualModifier}
+              />
+              <ManualModifierGroup
+                side="defender"
+                title="防守方修正"
+                values={modifierState.manualDefender}
+                onChange={updateManualModifier}
+              />
             </div>
           </section>
         </div>
@@ -867,7 +888,7 @@ export default function App() {
                   ))}
                 </ul>
               ) : (
-                <p>当前没有额外计入的技能或特性效果。</p>
+                <p>当前没有额外计入的技能、特性或手动修正效果。</p>
               )}
               <h3>未计入提示</h3>
               {resolvedDamageInput.notes.length > 0 ? (
@@ -881,12 +902,12 @@ export default function App() {
               )}
               <div className="modifier-summary">
                 <span>
-                  自己：物攻 {formatRate(resolvedDamageInput.attackerModifiers.atk)}，
+                  进攻方：物攻 {formatRate(resolvedDamageInput.attackerModifiers.atk)}，
                   魔攻 {formatRate(resolvedDamageInput.attackerModifiers.spa)}，速度{" "}
                   {formatRate(resolvedDamageInput.attackerModifiers.spe)}
                 </span>
                 <span>
-                  敌方：物防 {formatRate(resolvedDamageInput.defenderModifiers.def)}，
+                  防守方：物防 {formatRate(resolvedDamageInput.defenderModifiers.def)}，
                   魔防 {formatRate(resolvedDamageInput.defenderModifiers.spd)}，速度{" "}
                   {formatRate(resolvedDamageInput.defenderModifiers.spe)}
                 </span>

@@ -21,9 +21,9 @@ const statNameMap: Record<string, StatKey[]> = {
   攻防速: ["atk", "spa", "def", "spd", "spe"],
 };
 
-const statPhrases = Object.keys(statNameMap).sort((left, right) => {
-  return right.length - left.length;
-});
+const statPhrases = Object.keys(statNameMap).sort(
+  (left, right) => right.length - left.length
+);
 
 function createRuleId(
   sourceType: EffectSourceType,
@@ -34,7 +34,7 @@ function createRuleId(
   return [sourceType, sourceName, kind, suffix]
     .join(":")
     .replace(/\s+/g, "")
-    .replace(/[^\w\u4e00-\u9fa5:+-]+/g, "_");
+    .replace(/[^\w\u4e00-\u9fa5:+.-]+/g, "_");
 }
 
 function getCondition(text: string): EffectCondition {
@@ -78,8 +78,8 @@ function addUniqueRule(rules: EffectRule[], rule: EffectRule): void {
 
 function splitSentences(text: string): string[] {
   return text
-    .replace(/^✦\s*/, "")
-    .split(/[。；;，,]/)
+    .replace(/^✓\s*/, "")
+    .split(/[。；;，,\n]/)
     .map((item) => item.trim())
     .filter(Boolean);
 }
@@ -99,38 +99,46 @@ function parseStatKeys(text: string): StatKey[] {
 }
 
 function parseSignedPercent(text: string): number | undefined {
-  const signed = text.match(/([+-]\d+)%/);
+  const signed = text.match(/([+-]\d+(?:\.\d+)?)%/);
   if (signed) {
     return Number(signed[1]) / 100;
   }
 
-  const plain = text.match(/(\d+)%/);
+  const plain = text.match(/(\d+(?:\.\d+)?)%/);
   if (!plain) {
     return undefined;
   }
 
   const rate = Number(plain[1]) / 100;
-  return text.includes("降低") ? -rate : rate;
+  return /降低|下降|减少/.test(text) ? -rate : rate;
 }
 
 function parseTarget(
   text: string,
   sourceType: EffectSourceType
 ): EffectTarget | undefined {
-  if (text.includes("敌方")) {
+  if (/敌方|对方|目标/.test(text)) {
     return "defender";
   }
 
-  if (
-    text.includes("自己") ||
-    text.includes("自身") ||
-    text.includes("入场") ||
-    sourceType === "trait"
-  ) {
+  if (/自己|自身|我方|获得|入场/.test(text) || sourceType === "trait") {
     return "attacker";
   }
 
   return undefined;
+}
+
+function statKeyToLabel(key: StatKey): string {
+  const labels: Record<StatKey, string> = {
+    hp: "生命",
+    atk: "物攻",
+    spa: "魔攻",
+    def: "物防",
+    spd: "魔防",
+    spe: "速度",
+  };
+
+  return labels[key];
 }
 
 function parseStatModifierRules(
@@ -149,7 +157,10 @@ function parseStatModifierRules(
     }
 
     const condition = getCondition(sentence);
-    const stackable = condition === "typeAdvantage" || /每有|每次|每1/.test(sentence);
+    const stackable =
+      sourceType === "trait" ||
+      condition === "typeAdvantage" ||
+      /每有|每次|每1/.test(sentence);
     const suffix = `${sentence}:${target}:${statKeys.join("_")}:${rate}`;
 
     addUniqueRule(rules, {
@@ -158,7 +169,7 @@ function parseStatModifierRules(
       sourceName,
       kind: "statModifier",
       label: `${sourceName}：${target === "attacker" ? "自己" : "敌方"}${statKeys
-        .map((key) => statKeyToLabel(key))
+        .map(statKeyToLabel)
         .join(" / ")} ${rate >= 0 ? "+" : ""}${Math.round(rate * 100)}%`,
       description: sentence,
       condition,
@@ -170,26 +181,22 @@ function parseStatModifierRules(
   }
 }
 
-function statKeyToLabel(key: StatKey): string {
-  const labels: Record<StatKey, string> = {
-    hp: "生命",
-    atk: "物攻",
-    spa: "魔攻",
-    def: "物防",
-    spd: "魔防",
-    spe: "速度",
-  };
-
-  return labels[key];
-}
-
 function parseUncountedNotes(
   rules: EffectRule[],
   sourceType: EffectSourceType,
   sourceName: string,
   description: string
 ): void {
-  const noteKeywords = ["回复", "能量", "印记", "天气", "驱散", "萌化", "中毒", "灼烧"];
+  const noteKeywords = [
+    "回复",
+    "能量",
+    "印记",
+    "天气",
+    "驱散",
+    "萌化",
+    "中毒",
+    "灼烧",
+  ];
   const matched = noteKeywords.filter((keyword) => description.includes(keyword));
 
   if (matched.length === 0) {
@@ -242,7 +249,9 @@ export function parseSkillRules(skill: Skill): EffectRule[] {
     });
   }
 
-  const responseHitOverride = description.match(/应对状态[^。；;，,]*变为(\d+)连击/);
+  const responseHitOverride = description.match(
+    /应对状态[^。；;，,]*变为(\d+)连击/
+  );
   if (responseHitOverride) {
     const hitCount = Number(responseHitOverride[1]);
     addUniqueRule(rules, {
@@ -270,7 +279,9 @@ export function parseSkillRules(skill: Skill): EffectRule[] {
     });
   }
 
-  const enemyCostPower = description.match(/威力等于敌方精灵技能总能耗的(\d+)倍/);
+  const enemyCostPower = description.match(
+    /威力等于敌方精灵技能总能耗的(\d+)倍/
+  );
   if (enemyCostPower) {
     const multiplier = Number(enemyCostPower[1]);
     addUniqueRule(rules, {
