@@ -1,4 +1,10 @@
-import type { CommonBuild } from "../types/battle";
+import {
+  generatedBuilds,
+  generatedRecommendedIndividualKeys,
+} from "./generated/builds.generated";
+import type { CommonBuild, StatKey } from "../types/battle";
 
-// 预留常见配置入口：后续可按精灵维护常见个体、性格和配招。
-export const builds: CommonBuild[] = [];
+export const builds: CommonBuild[] = generatedBuilds;
+
+export const recommendedIndividualKeys: Record<string, StatKey[]> =
+  generatedRecommendedIndividualKeys;

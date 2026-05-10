@@ -1,11 +1,14 @@
 import type {
   BattleStats,
+  GrowthValues,
   IndividualValues,
   Nature,
   StatKey,
 } from "../types/battle";
 
 export const PVP_LEVEL = 60;
+export const PERFECT_IV_VALUE = 60;
+export const PERFECT_IV_LINE_COUNT = 3;
 
 const MAX_INDIVIDUAL_VALUE = 60;
 const MIN_INDIVIDUAL_VALUE = 0;
@@ -20,16 +23,37 @@ const HP_IV_MULTIPLIER = 0.85;
 const HP_FLAT_BONUS = 70;
 const HP_FINAL_BONUS = 100;
 
-export const DEFAULT_INDIVIDUAL_VALUES: IndividualValues = {
-  hp: 60,
-  atk: 60,
-  spa: 60,
-  def: 60,
-  spd: 60,
-  spe: 60,
-};
+const MAX_HP_GROWTH = 100;
+const MAX_NON_HP_GROWTH = 50;
 
 export const STAT_KEYS: StatKey[] = ["hp", "atk", "spa", "def", "spd", "spe"];
+
+export const DEFAULT_INDIVIDUAL_VALUES: IndividualValues = {
+  hp: 0,
+  atk: 0,
+  spa: 0,
+  def: 0,
+  spd: 0,
+  spe: 0,
+};
+
+export const EMPTY_GROWTH_VALUES: GrowthValues = {
+  hp: 0,
+  atk: 0,
+  spa: 0,
+  def: 0,
+  spd: 0,
+  spe: 0,
+};
+
+export const DEFAULT_PVP_GROWTH_VALUES: GrowthValues = {
+  hp: 100,
+  atk: 50,
+  spa: 50,
+  def: 50,
+  spd: 50,
+  spe: 50,
+};
 
 export function gameRound(value: number): number {
   // 游戏内 0.5 的进退位规则暂未完全确定，当前统一用 Math.round，后续只需替换这里。
@@ -45,6 +69,24 @@ export function clampIndividualValue(value: number): number {
     MAX_INDIVIDUAL_VALUE,
     Math.max(MIN_INDIVIDUAL_VALUE, gameRound(value))
   );
+}
+
+export function clampGrowthValue(key: StatKey, value: number): number {
+  if (!Number.isFinite(value)) {
+    return 0;
+  }
+
+  const max = key === "hp" ? MAX_HP_GROWTH : MAX_NON_HP_GROWTH;
+  return Math.min(max, Math.max(0, gameRound(value)));
+}
+
+export function createIndividualValuesFromKeys(keys: StatKey[]): IndividualValues {
+  const selectedKeys = new Set(keys.slice(0, PERFECT_IV_LINE_COUNT));
+
+  return STAT_KEYS.reduce((values, key) => {
+    values[key] = selectedKeys.has(key) ? PERFECT_IV_VALUE : 0;
+    return values;
+  }, { ...DEFAULT_INDIVIDUAL_VALUES });
 }
 
 function getNatureRate(statKey: StatKey, nature: Nature): number {
@@ -78,7 +120,7 @@ export function calculateSingleStat(
   return gameRound(first * (1 + natureRate)) + NON_HP_FINAL_BONUS;
 }
 
-export function calculatePvpStats(
+export function calculatePvpBaseStats(
   baseStats: BattleStats,
   ivs: IndividualValues,
   nature: Nature
@@ -90,6 +132,21 @@ export function calculatePvpStats(
       ivs[key],
       getNatureRate(key, nature)
     );
+    return result;
+  }, {} as BattleStats);
+}
+
+export function calculatePvpStats(
+  baseStats: BattleStats,
+  ivs: IndividualValues,
+  nature: Nature,
+  growthValues: GrowthValues = DEFAULT_PVP_GROWTH_VALUES
+): BattleStats {
+  const baseResult = calculatePvpBaseStats(baseStats, ivs, nature);
+
+  return STAT_KEYS.reduce((result, key) => {
+    // 五星满成长直接加在最终属性上，不受性格影响：生命 +100，其余属性 +50。
+    result[key] = baseResult[key] + clampGrowthValue(key, growthValues[key]);
     return result;
   }, {} as BattleStats);
 }

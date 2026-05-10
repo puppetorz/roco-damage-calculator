@@ -80,6 +80,28 @@ select {
   margin-bottom: 18px;
 }
 
+.rule-note {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  color: #243445;
+  background: #fff7df;
+  border: 1px solid #ead495;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.rule-note strong {
+  color: #5a4205;
+}
+
+.data-footer {
+  margin-top: 16px;
+  color: #586a78;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
 .panel,
 .result-panel {
   background: #ffffff;
@@ -148,9 +170,92 @@ select:focus {
   box-shadow: 0 0 0 3px rgba(40, 124, 123, 0.16);
 }
 
+.skill-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.4fr);
+  gap: 14px;
+  margin-bottom: 18px;
+  padding: 14px;
+  background: #f4f7f9;
+  border: 1px solid #e1e7ed;
+  border-radius: 8px;
+}
+
+.compact-skill-card {
+  margin-bottom: 12px;
+}
+
+.skill-meta {
+  display: grid;
+  gap: 6px;
+  color: #405469;
+  font-size: 13px;
+}
+
+.skill-meta strong {
+  color: #162330;
+  font-size: 18px;
+}
+
+.skill-meta span {
+  width: fit-content;
+  padding: 2px 8px;
+  color: #0d5f59;
+  background: #edf8f5;
+  border: 1px solid #c7e7df;
+  border-radius: 6px;
+  font-weight: 900;
+}
+
+.skill-meta p,
+.skill-meta em {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.skill-meta em {
+  color: #8a5b05;
+  font-style: normal;
+}
+
+.auto-param-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.auto-param-grid p {
+  min-height: 68px;
+  display: grid;
+  align-content: center;
+  gap: 6px;
+  margin: 0;
+  padding: 12px;
+  color: #586a78;
+  background: #ffffff;
+  border: 1px solid #d9e5e2;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.auto-param-grid strong {
+  color: #162330;
+  font-size: 20px;
+}
+
+.manual-adjustments {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8ee;
+}
+
 .stat-table {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1.1fr 1fr;
+  grid-template-columns: 0.9fr 0.75fr 0.95fr 0.9fr 0.9fr 0.95fr;
   gap: 8px;
   margin-top: 18px;
 }
@@ -165,8 +270,8 @@ select:focus {
   display: contents;
 }
 
-.stat-row span,
-.stat-row strong {
+.stat-row > span,
+.stat-row > strong {
   min-height: 40px;
   display: flex;
   align-items: center;
@@ -176,31 +281,55 @@ select:focus {
   border-radius: 6px;
 }
 
-.stat-row strong {
+.stat-row > strong {
   justify-content: flex-end;
   color: #18202a;
 }
 
-.stat-row input {
+.iv-summary {
+  margin-top: 14px;
+  padding: 10px 12px;
+  color: #405469;
+  background: #f4f7f9;
+  border: 1px solid #e1e7ed;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.iv-checkbox {
   min-height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 10px;
+  color: #243445;
+  background: #fbfcfd;
+  border: 1px solid #d2dae3;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.iv-checkbox input {
+  width: 16px;
+  min-height: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  accent-color: #0d5f59;
+}
+
+.iv-checkbox input:disabled + span {
+  color: #a3afba;
 }
 
 .actual-stat {
   color: #0b6f60 !important;
   background: #edf8f5 !important;
   border-color: #c7e7df !important;
-}
-
-.ability-block {
-  margin-top: 18px;
-  padding-top: 18px;
-  border-top: 1px solid #e2e8ee;
-}
-
-.ability-block h3 {
-  margin: 0 0 12px;
-  color: #18202a;
-  font-size: 18px;
 }
 
 .result-panel {
@@ -294,7 +423,10 @@ select:focus {
   }
 
   .form-grid.compact,
-  .result-grid {
+  .result-grid,
+  .skill-card,
+  .auto-param-grid,
+  .manual-adjustments {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -316,12 +448,16 @@ select:focus {
   .field-row,
   .form-grid,
   .form-grid.compact,
-  .result-grid {
+  .result-grid,
+  .skill-card,
+  .auto-param-grid,
+  .manual-adjustments {
     grid-template-columns: 1fr;
   }
 
   .stat-table {
-    grid-template-columns: 1fr 0.8fr 0.9fr 0.8fr;
+    overflow-x: auto;
+    grid-template-columns: 78px 64px 76px 82px 82px 86px;
     gap: 6px;
   }
 

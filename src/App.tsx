@@ -1,23 +1,29 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 
+import { recommendedIndividualKeys } from "./data/builds";
 import { natures } from "./data/natures";
+import { skills } from "./data/skills";
 import { spirits } from "./data/spirits";
 import type {
   BattleStats,
+  GrowthValues,
   IndividualValues,
   Nature,
-  SkillCategory,
+  Skill,
   Spirit,
   StatKey,
 } from "./types/battle";
 import { calculateDamage } from "./utils/damageCalculator";
 import {
-  DEFAULT_INDIVIDUAL_VALUES,
+  DEFAULT_PVP_GROWTH_VALUES,
+  PERFECT_IV_LINE_COUNT,
+  PERFECT_IV_VALUE,
   PVP_LEVEL,
   STAT_KEYS,
+  calculatePvpBaseStats,
   calculatePvpStats,
-  clampIndividualValue,
+  createIndividualValuesFromKeys,
 } from "./utils/statCalculator";
 
 const statLabels: Record<StatKey, string> = {
@@ -36,8 +42,10 @@ const riskClassName = {
   低危: "risk-low",
 } as const;
 
-function copyDefaultIvs(): IndividualValues {
-  return { ...DEFAULT_INDIVIDUAL_VALUES };
+function getRecommendedIvs(spiritId: string): IndividualValues {
+  return createIndividualValuesFromKeys(
+    recommendedIndividualKeys[spiritId] ?? ["hp", "atk", "spe"]
+  );
 }
 
 function safeNumber(value: string, fallback = 0): number {
@@ -53,6 +61,10 @@ function clampReduction(value: number): number {
   return Math.min(0.99, Math.max(0, Number.isFinite(value) ? value : 0));
 }
 
+function countPerfectIvLines(ivs: IndividualValues): number {
+  return STAT_KEYS.filter((key) => ivs[key] === PERFECT_IV_VALUE).length;
+}
+
 function formatPercent(value: number): string {
   return `${value.toFixed(1)}%`;
 }
@@ -61,29 +73,71 @@ function formatNumber(value: number, digits = 2): string {
   return Number.isInteger(value) ? String(value) : value.toFixed(digits);
 }
 
+function filterSpirits(query: string, selectedSpirit: Spirit): Spirit[] {
+  const normalizedQuery = query.trim().toLowerCase();
+
+  if (!normalizedQuery) {
+    return spirits;
+  }
+
+  const filtered = spirits.filter((spirit) => {
+    return [spirit.name, spirit.dexNo, spirit.form, spirit.stage]
+      .filter(Boolean)
+      .some((value) => value!.toLowerCase().includes(normalizedQuery));
+  });
+
+  return filtered.some((spirit) => spirit.id === selectedSpirit.id)
+    ? filtered
+    : [selectedSpirit, ...filtered];
+}
+
+function getSkillsForSpirit(spirit: Spirit): Skill[] {
+  const commonSkillIds = spirit.commonSkillIds ?? [];
+  const commonSkills = commonSkillIds
+    .map((skillId) => skills.find((skill) => skill.id === skillId))
+    .filter((skill): skill is Skill => Boolean(skill));
+
+  return commonSkills.length > 0 ? commonSkills : skills;
+}
+
+function getDefaultSkillForSpirit(spirit: Spirit): Skill {
+  return getSkillsForSpirit(spirit)[0] ?? skills[0];
+}
+
 type SpiritPanelProps = {
   title: string;
+  search: string;
   spirit: Spirit;
   spiritId: string;
   natureId: string;
   ivs: IndividualValues;
+  growthValues: GrowthValues;
+  baseFormulaStats: BattleStats;
   actualStats: BattleStats;
+  onSearchChange: (query: string) => void;
   onSpiritChange: (spiritId: string) => void;
   onNatureChange: (natureId: string) => void;
-  onIvChange: (key: StatKey, value: number) => void;
+  onIvToggle: (key: StatKey) => void;
 };
 
 function SpiritPanel({
   title,
+  search,
   spirit,
   spiritId,
   natureId,
   ivs,
+  growthValues,
+  baseFormulaStats,
   actualStats,
+  onSearchChange,
   onSpiritChange,
   onNatureChange,
-  onIvChange,
+  onIvToggle,
 }: SpiritPanelProps) {
+  const selectedIvLineCount = countPerfectIvLines(ivs);
+  const spiritOptions = filterSpirits(search, spirit);
+
   return (
     <section className="panel spirit-panel">
       <div className="panel-heading">
@@ -93,14 +147,26 @@ function SpiritPanel({
 
       <div className="field-row">
         <label>
+          搜索精灵
+          <input
+            placeholder="输入名称、编号、形态"
+            type="search"
+            value={search}
+            onChange={(event) => onSearchChange(event.target.value)}
+          />
+        </label>
+
+        <label>
           精灵
           <select
             value={spiritId}
             onChange={(event) => onSpiritChange(event.target.value)}
           >
-            {spirits.map((item) => (
+            {spiritOptions.map((item) => (
               <option key={item.id} value={item.id}>
+                {item.dexNo ? `${item.dexNo} · ` : ""}
                 {item.name}
+                {item.form ? `（${item.form}）` : ""}
               </option>
             ))}
           </select>
@@ -121,58 +187,70 @@ function SpiritPanel({
         </label>
       </div>
 
+      <div className="iv-summary">
+        已选择 {selectedIvLineCount} / {PERFECT_IV_LINE_COUNT} 条 +60 个体
+      </div>
+
       <div className="stat-table">
         <div className="stat-table-head">属性</div>
-        <div className="stat-table-head">种族值</div>
-        <div className="stat-table-head">个体值</div>
-        <div className="stat-table-head">实际</div>
+        <div className="stat-table-head">种族</div>
+        <div className="stat-table-head">个体</div>
+        <div className="stat-table-head">公式基础</div>
+        <div className="stat-table-head">五星成长</div>
+        <div className="stat-table-head">PVP 实际</div>
 
-        {STAT_KEYS.map((key) => (
-          <div className="stat-row" key={key}>
-            <span>{statLabels[key]}</span>
-            <strong>{spirit.baseStats[key]}</strong>
-            <input
-              aria-label={`${title}${statLabels[key]}个体值`}
-              min={0}
-              max={60}
-              type="number"
-              value={ivs[key]}
-              onChange={(event) =>
-                onIvChange(key, safeNumber(event.target.value))
-              }
-            />
-            <strong className="actual-stat">{actualStats[key]}</strong>
-          </div>
-        ))}
+        {STAT_KEYS.map((key) => {
+          const checked = ivs[key] === PERFECT_IV_VALUE;
+          const disableUnchecked =
+            !checked && selectedIvLineCount >= PERFECT_IV_LINE_COUNT;
+
+          return (
+            <div className="stat-row" key={key}>
+              <span>{statLabels[key]}</span>
+              <strong>{spirit.baseStats[key]}</strong>
+              <label className="iv-checkbox">
+                <input
+                  aria-label={`${title}${statLabels[key]}个体 +60`}
+                  checked={checked}
+                  disabled={disableUnchecked}
+                  type="checkbox"
+                  onChange={() => onIvToggle(key)}
+                />
+                <span>{checked ? "+60" : "0"}</span>
+              </label>
+              <strong>{baseFormulaStats[key]}</strong>
+              <strong>+{growthValues[key]}</strong>
+              <strong className="actual-stat">{actualStats[key]}</strong>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
 }
 
 export default function App() {
-  const [attackerId, setAttackerId] = useState(spirits[0].id);
-  const [defenderId, setDefenderId] = useState(spirits[2].id);
+  const initialAttacker = spirits[0];
+  const initialDefender = spirits[2] ?? spirits[0];
+  const initialSkill = getDefaultSkillForSpirit(initialAttacker);
+
+  const [attackerId, setAttackerId] = useState(initialAttacker.id);
+  const [defenderId, setDefenderId] = useState(initialDefender.id);
+  const [attackerSearch, setAttackerSearch] = useState("");
+  const [defenderSearch, setDefenderSearch] = useState("");
   const [attackerNatureId, setAttackerNatureId] = useState(natures[0].id);
   const [defenderNatureId, setDefenderNatureId] = useState(natures[0].id);
-  const [attackerIvs, setAttackerIvs] =
-    useState<IndividualValues>(copyDefaultIvs);
-  const [defenderIvs, setDefenderIvs] =
-    useState<IndividualValues>(copyDefaultIvs);
+  const [attackerIvs, setAttackerIvs] = useState<IndividualValues>(() =>
+    getRecommendedIvs(initialAttacker.id)
+  );
+  const [defenderIvs, setDefenderIvs] = useState<IndividualValues>(() =>
+    getRecommendedIvs(initialDefender.id)
+  );
 
-  const [category, setCategory] = useState<SkillCategory>("physical");
-  const [skillPower, setSkillPower] = useState(312);
-  const [responseMultiplier, setResponseMultiplier] = useState(1);
-  const [powerBonus, setPowerBonus] = useState(0);
-  const [powerBuffMultiplier, setPowerBuffMultiplier] = useState(1);
-  const [stabMultiplier, setStabMultiplier] = useState(1);
+  const [selectedSkillId, setSelectedSkillId] = useState(initialSkill.id);
   const [typeMultiplier, setTypeMultiplier] = useState(1);
   const [weatherMultiplier, setWeatherMultiplier] = useState(1);
-  const [hitCount, setHitCount] = useState(1);
   const [damageReduction, setDamageReduction] = useState(0);
-  const [attackerAttackUp, setAttackerAttackUp] = useState(0);
-  const [attackerAttackDown, setAttackerAttackDown] = useState(0);
-  const [defenderDefenseUp, setDefenderDefenseUp] = useState(0);
-  const [defenderDefenseDown, setDefenderDefenseDown] = useState(0);
 
   const attacker = spirits.find((item) => item.id === attackerId) ?? spirits[0];
   const defender = spirits.find((item) => item.id === defenderId) ?? spirits[0];
@@ -180,76 +258,111 @@ export default function App() {
     natures.find((item) => item.id === attackerNatureId) ?? natures[0];
   const defenderNature: Nature =
     natures.find((item) => item.id === defenderNatureId) ?? natures[0];
+  const availableSkills = getSkillsForSpirit(attacker);
+  const selectedSkill =
+    skills.find((skill) => skill.id === selectedSkillId) ??
+    availableSkills[0] ??
+    skills[0];
 
-  const attackerStats = useMemo(
-    () => calculatePvpStats(attacker.baseStats, attackerIvs, attackerNature),
-    [attacker.baseStats, attackerIvs, attackerNature]
+  const stabMultiplier = attacker.elements.includes(selectedSkill.element)
+    ? 1.25
+    : 1;
+  const hitCount = selectedSkill.defaultHitCount ?? 1;
+  const powerBonus = selectedSkill.defaultPowerBonus ?? 0;
+  const powerBuffMultiplier = selectedSkill.defaultPowerBuffMultiplier ?? 1;
+
+  const attackerBaseFormulaStats = calculatePvpBaseStats(
+    attacker.baseStats,
+    attackerIvs,
+    attackerNature
   );
 
-  const defenderStats = useMemo(
-    () => calculatePvpStats(defender.baseStats, defenderIvs, defenderNature),
-    [defender.baseStats, defenderIvs, defenderNature]
+  const defenderBaseFormulaStats = calculatePvpBaseStats(
+    defender.baseStats,
+    defenderIvs,
+    defenderNature
   );
 
-  const damageResult = useMemo(
-    () =>
-      calculateDamage({
-        category,
-        attackerStats,
-        defenderStats,
-        skillPower,
-        responseMultiplier,
-        powerBonus,
-        powerBuffMultiplier,
-        stabMultiplier,
-        typeMultiplier,
-        weatherMultiplier,
-        hitCount,
-        damageReductions: [damageReduction],
-        attackerAttackUp,
-        attackerAttackDown,
-        defenderDefenseUp,
-        defenderDefenseDown,
-      }),
-    [
-      attackerAttackDown,
-      attackerAttackUp,
-      attackerStats,
-      category,
-      damageReduction,
-      defenderDefenseDown,
-      defenderDefenseUp,
-      defenderStats,
-      hitCount,
-      powerBonus,
-      powerBuffMultiplier,
-      responseMultiplier,
-      skillPower,
-      stabMultiplier,
-      typeMultiplier,
-      weatherMultiplier,
-    ]
+  const attackerStats = calculatePvpStats(
+    attacker.baseStats,
+    attackerIvs,
+    attackerNature,
+    DEFAULT_PVP_GROWTH_VALUES
   );
 
-  function updateIv(
-    side: "attacker" | "defender",
-    key: StatKey,
-    value: number
-  ) {
-    const safeValue = clampIndividualValue(value);
+  const defenderStats = calculatePvpStats(
+    defender.baseStats,
+    defenderIvs,
+    defenderNature,
+    DEFAULT_PVP_GROWTH_VALUES
+  );
+
+  const damageResult = calculateDamage({
+    category: selectedSkill.category,
+    attackerStats,
+    defenderStats,
+    skillPower: selectedSkill.power,
+    responseMultiplier: 1,
+    powerBonus,
+    powerBuffMultiplier,
+    stabMultiplier,
+    typeMultiplier,
+    weatherMultiplier,
+    hitCount,
+    damageReductions: [damageReduction],
+    attackerAttackUp: 0,
+    attackerAttackDown: 0,
+    defenderDefenseUp: 0,
+    defenderDefenseDown: 0,
+  });
+
+  function applySkill(skill: Skill) {
+    setSelectedSkillId(skill.id);
+  }
+
+  function changeSpirit(side: "attacker" | "defender", spiritId: string) {
+    const nextSpirit = spirits.find((spirit) => spirit.id === spiritId);
+
+    if (!nextSpirit) {
+      return;
+    }
+
+    if (side === "attacker") {
+      setAttackerId(spiritId);
+      setAttackerIvs(getRecommendedIvs(spiritId));
+      applySkill(getDefaultSkillForSpirit(nextSpirit));
+      return;
+    }
+
+    setDefenderId(spiritId);
+    setDefenderIvs(getRecommendedIvs(spiritId));
+  }
+
+  function toggleIv(side: "attacker" | "defender", key: StatKey) {
     const setter = side === "attacker" ? setAttackerIvs : setDefenderIvs;
 
-    setter((previous) => ({
-      ...previous,
-      [key]: safeValue,
-    }));
+    setter((previous) => {
+      const checked = previous[key] === PERFECT_IV_VALUE;
+      const selectedCount = countPerfectIvLines(previous);
+
+      if (!checked && selectedCount >= PERFECT_IV_LINE_COUNT) {
+        return previous;
+      }
+
+      return {
+        ...previous,
+        [key]: checked ? 0 : PERFECT_IV_VALUE,
+      };
+    });
   }
 
   return (
     <main className="page">
       <header className="hero">
         <div>
-          <p className="eyebrow">PVP 等级固定 {PVP_LEVEL}</p>
+          <p className="eyebrow">
+            PVP 等级 {PVP_LEVEL} · 默认五星满成长 · 最多三条 +60 个体
+          </p>
           <h1>洛克王国：世界 PVP 伤害计算器</h1>
         </div>
         <div className="hero-summary">
@@ -258,119 +371,110 @@ export default function App() {
         </div>
       </header>
 
+      <section className="rule-note">
+        <strong>当前逻辑：</strong>
+        选择技能后会自动使用技能类型、威力、连击数和本系加成。克制、天气和减伤暂时保留手动修正，后续接入技能库和克制表后再自动计算。
+      </section>
+
       <div className="battle-grid">
         <SpiritPanel
           title="进攻方"
+          search={attackerSearch}
           spirit={attacker}
           spiritId={attackerId}
           natureId={attackerNatureId}
           ivs={attackerIvs}
+          growthValues={DEFAULT_PVP_GROWTH_VALUES}
+          baseFormulaStats={attackerBaseFormulaStats}
           actualStats={attackerStats}
-          onSpiritChange={setAttackerId}
+          onSearchChange={setAttackerSearch}
+          onSpiritChange={(spiritId) => changeSpirit("attacker", spiritId)}
           onNatureChange={setAttackerNatureId}
-          onIvChange={(key, value) => updateIv("attacker", key, value)}
+          onIvToggle={(key) => toggleIv("attacker", key)}
         />
 
         <SpiritPanel
           title="防守方"
+          search={defenderSearch}
           spirit={defender}
           spiritId={defenderId}
           natureId={defenderNatureId}
           ivs={defenderIvs}
+          growthValues={DEFAULT_PVP_GROWTH_VALUES}
+          baseFormulaStats={defenderBaseFormulaStats}
           actualStats={defenderStats}
-          onSpiritChange={setDefenderId}
+          onSearchChange={setDefenderSearch}
+          onSpiritChange={(spiritId) => changeSpirit("defender", spiritId)}
           onNatureChange={setDefenderNatureId}
-          onIvChange={(key, value) => updateIv("defender", key, value)}
+          onIvToggle={(key) => toggleIv("defender", key)}
         />
       </div>
 
       <section className="panel">
         <div className="panel-heading">
           <h2>技能与战斗参数</h2>
-          <span>单技能计算</span>
+          <span>自动带入技能参数</span>
         </div>
 
-        <div className="form-grid">
+        <div className="skill-card compact-skill-card">
           <label>
+            进攻方常见技能
+            <select
+              value={selectedSkill.id}
+              onChange={(event) => {
+                const nextSkill =
+                  skills.find((skill) => skill.id === event.target.value) ??
+                  selectedSkill;
+                applySkill(nextSkill);
+              }}
+            >
+              {availableSkills.map((skill) => (
+                <option key={skill.id} value={skill.id}>
+                  {skill.name} · {skill.element} · {skill.power}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <div className="skill-meta">
+            <strong>{selectedSkill.name}</strong>
+            <span>
+              {selectedSkill.element} /{" "}
+              {selectedSkill.category === "physical" ? "物理" : "魔法"}
+            </span>
+            <p>{selectedSkill.description ?? "暂无技能说明。"}</p>
+            {selectedSkill.notes ? <em>{selectedSkill.notes}</em> : null}
+          </div>
+        </div>
+
+        <div className="auto-param-grid">
+          <p>
             技能类型
-            <select
-              value={category}
-              onChange={(event) =>
-                setCategory(event.target.value as SkillCategory)
-              }
-            >
-              <option value="physical">物理：物攻 / 物防</option>
-              <option value="magical">魔法：魔攻 / 魔防</option>
-            </select>
-          </label>
-
-          <label>
+            <strong>{selectedSkill.category === "physical" ? "物理" : "魔法"}</strong>
+          </p>
+          <p>
             技能威力
-            <input
-              min={0}
-              type="number"
-              value={skillPower}
-              onChange={(event) =>
-                setSkillPower(clampNonNegative(safeNumber(event.target.value)))
-              }
-            />
-          </label>
-
-          <label>
-            应对倍率
-            <input
-              min={0}
-              step="0.01"
-              type="number"
-              value={responseMultiplier}
-              onChange={(event) =>
-                setResponseMultiplier(
-                  clampNonNegative(safeNumber(event.target.value))
-                )
-              }
-            />
-          </label>
-
-          <label>
-            威力加成
-            <input
-              min={0}
-              type="number"
-              value={powerBonus}
-              onChange={(event) =>
-                setPowerBonus(clampNonNegative(safeNumber(event.target.value)))
-              }
-            />
-          </label>
-
-          <label>
-            威力提升 buff
-            <input
-              min={0}
-              step="0.01"
-              type="number"
-              value={powerBuffMultiplier}
-              onChange={(event) =>
-                setPowerBuffMultiplier(
-                  clampNonNegative(safeNumber(event.target.value))
-                )
-              }
-            />
-          </label>
-
-          <label>
+            <strong>{selectedSkill.power}</strong>
+          </p>
+          <p>
             本系加成
-            <select
-              value={stabMultiplier}
-              onChange={(event) =>
-                setStabMultiplier(safeNumber(event.target.value, 1))
-              }
-            >
-              <option value={1}>1</option>
-              <option value={1.25}>1.25</option>
-            </select>
-          </label>
+            <strong>{stabMultiplier}</strong>
+          </p>
+          <p>
+            连击数
+            <strong>{hitCount}</strong>
+          </p>
+          <p>
+            威力加成
+            <strong>{powerBonus}</strong>
+          </p>
+          <p>
+            威力提升
+            <strong>{powerBuffMultiplier}</strong>
+          </p>
+        </div>
 
+        <div className="manual-adjustments">
           <label>
             克制关系
             <input
@@ -403,18 +507,6 @@ export default function App() {
           </label>
 
           <label>
-            连击数
-            <input
-              min={1}
-              type="number"
-              value={hitCount}
-              onChange={(event) =>
-                setHitCount(Math.max(1, safeNumber(event.target.value, 1)))
-              }
-            />
-          </label>
-
-          <label>
             总减伤比例
             <input
               max={0.99}
@@ -435,71 +527,6 @@ export default function App() {
           <option value="2" />
           <option value="3" />
         </datalist>
-
-        <div className="ability-block">
-          <h3>能力等级</h3>
-          <div className="form-grid compact">
-            <label>
-              进攻方攻击提升
-              <input
-                min={0}
-                step="0.01"
-                type="number"
-                value={attackerAttackUp}
-                onChange={(event) =>
-                  setAttackerAttackUp(
-                    clampNonNegative(safeNumber(event.target.value))
-                  )
-                }
-              />
-            </label>
-
-            <label>
-              进攻方攻击降低
-              <input
-                min={0}
-                step="0.01"
-                type="number"
-                value={attackerAttackDown}
-                onChange={(event) =>
-                  setAttackerAttackDown(
-                    clampNonNegative(safeNumber(event.target.value))
-                  )
-                }
-              />
-            </label>
-
-            <label>
-              防守方防御提升
-              <input
-                min={0}
-                step="0.01"
-                type="number"
-                value={defenderDefenseUp}
-                onChange={(event) =>
-                  setDefenderDefenseUp(
-                    clampNonNegative(safeNumber(event.target.value))
-                  )
-                }
-              />
-            </label>
-
-            <label>
-              防守方防御降低
-              <input
-                min={0}
-                step="0.01"
-                type="number"
-                value={defenderDefenseDown}
-                onChange={(event) =>
-                  setDefenderDefenseDown(
-                    clampNonNegative(safeNumber(event.target.value))
-                  )
-                }
-              />
-            </label>
-          </div>
-        </div>
       </section>
 
       <section className="result-panel">
@@ -533,8 +560,10 @@ export default function App() {
             <strong>{formatNumber(damageResult.effectivePower)}</strong>
           </p>
           <p>
-            能力等级倍率
-            <strong>{formatNumber(damageResult.abilityMultiplier, 3)}</strong>
+            本系 / 克制 / 天气
+            <strong>
+              {stabMultiplier} / {typeMultiplier} / {weatherMultiplier}
+            </strong>
           </p>
           <p>
             总减伤

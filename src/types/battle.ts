@@ -4,6 +4,8 @@ export type BattleStats = Record<StatKey, number>;
 
 export type IndividualValues = Record<StatKey, number>;
 
+export type GrowthValues = Record<StatKey, number>;
+
 export type NatureModifier = Partial<Record<StatKey, number>>;
 
 export type Spirit = {
@@ -11,6 +13,12 @@ export type Spirit = {
   name: string;
   elements: string[];
   baseStats: BattleStats;
+  dexNo?: string;
+  form?: string;
+  stage?: string;
+  imageUrl?: string;
+  sourceUrl?: string;
+  commonSkillIds?: string[];
 };
 
 export type Nature = {
@@ -24,9 +32,16 @@ export type SkillCategory = "physical" | "magical";
 export type Skill = {
   id: string;
   name: string;
+  element: string;
   category: SkillCategory;
   power: number;
-  element?: string;
+  description?: string;
+  stableDamage: boolean;
+  defaultHitCount?: number;
+  defaultPowerBonus?: number;
+  defaultPowerBuffMultiplier?: number;
+  notes?: string;
+  sourceUrl?: string;
 };
 
 export type CommonBuild = {
@@ -36,6 +51,8 @@ export type CommonBuild = {
   individualValues: IndividualValues;
   natureId: string;
   skillIds: string[];
+  sourceUrl?: string;
+  notes?: string;
 };
 
 export type DamageInput = {
