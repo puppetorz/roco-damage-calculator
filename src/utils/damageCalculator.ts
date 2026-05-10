@@ -42,7 +42,7 @@ export function calculateAbilityMultiplier(input: DamageInput): number {
 }
 
 export function calculateEffectivePower(input: DamageInput): number {
-  // 有效威力 = 技能威力 * 应对倍率 + 威力加成；不稳定触发项先不自动计入。
+  // 有效威力 = 技能威力 * 应对倍率 + 威力加成；不稳定触发项由规则层显式传入。
   const skillPower = clampNonNegative(input.skillPower);
   const responseMultiplier = clampMultiplier(input.responseMultiplier);
   const powerBonus = Math.max(0, input.powerBonus);
@@ -88,7 +88,7 @@ export function calculateDamage(input: DamageInput): DamageResult {
     hitCount *
     (1 - totalDamageReduction);
 
-  // 最终伤害取整规则暂未完全确定，当前与属性一致集中使用 gameRound。
+  // 最终伤害取整规则暂未完全确定，当前集中使用 gameRound，后续只需替换 gameRound。
   const damage = Math.max(MIN_DAMAGE, gameRound(rawDamage));
   const hp = Math.max(MIN_DEFENSE, input.defenderStats.hp);
   const hpPercent = (damage / hp) * 100;

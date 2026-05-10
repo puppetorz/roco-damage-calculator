@@ -10,6 +10,8 @@
     "preview": "vite preview",
     "import:data": "node scripts/importWikiData.mjs",
     "import:spirits": "node scripts/importSpiritStatsFromXlsx.mjs",
+    "import:spirits:bwiki": "node scripts/importSpiritsFromBwiki.mjs",
+    "import:skills": "node scripts/importSkillsFromBwiki.mjs",
     "validate:data": "node scripts/validateData.mjs"
   },
   "dependencies": {

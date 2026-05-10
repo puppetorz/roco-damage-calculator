@@ -6,31 +6,46 @@ const generatedDir = join(root, "src", "data", "generated");
 const reportPath = join(root, "data-import-report.md");
 
 const requiredStats = ["hp", "atk", "spa", "def", "spd", "spe"];
-const allowedCategories = new Set(["physical", "magical"]);
-const allowedElements = new Set([
-  "冰",
+const statKeys = new Set(requiredStats);
+const allowedCategories = new Set(["physical", "magical", "status", "defense"]);
+const knownElements = new Set([
   "草",
-  "虫",
-  "地",
+  "火",
+  "水",
+  "光",
+  "土",
+  "冰",
+  "龙",
   "电",
   "毒",
-  "恶",
-  "光",
-  "幻",
-  "火",
-  "机",
-  "龙",
-  "萌",
-  "普",
-  "水",
+  "虫",
   "武",
   "翼",
+  "萌",
   "幽",
+  "恶",
+  "普通",
+  "幻",
+  "机械",
+]);
+const elementAliases = new Map([
+  ["普", "普通"],
+  ["普通", "普通"],
+  ["普通系", "普通"],
+  ["机", "机械"],
+  ["机械", "机械"],
+  ["机械系", "机械"],
+  ["恶魔", "恶"],
+  ["恶魔系", "恶"],
+  ["幽灵", "幽"],
+  ["幽灵系", "幽"],
+  ["地", "土"],
+  ["地系", "土"],
 ]);
 
 function extractConstExpression(source, exportName) {
   const pattern = new RegExp(
-    `export const ${exportName} = ([\\s\\S]*?) satisfies`,
+    `export const ${exportName} = ([\\s\\S]*?) satisfies [^;]+;`,
     "m"
   );
   const match = source.match(pattern);
@@ -39,14 +54,23 @@ function extractConstExpression(source, exportName) {
     throw new Error(`无法从生成文件中读取 ${exportName}`);
   }
 
-  return Function(`"use strict"; return (${match[1]});`)();
+  return JSON.parse(match[1]);
+}
+
+function normalizeElement(value) {
+  const cleaned = String(value ?? "").trim().replace(/系$/, "");
+  return elementAliases.get(cleaned) ?? cleaned;
+}
+
+function createDefenseKey(elements) {
+  return elements.map(normalizeElement).join("/");
 }
 
 function validateStats(spirit, errors) {
   for (const key of requiredStats) {
     const value = spirit.baseStats?.[key];
 
-    if (!Number.isFinite(value)) {
+    if (!Number.isFinite(value) || value <= 0) {
       errors.push(`${spirit.id}: 缺少有效种族值 ${key}`);
     }
   }
@@ -63,10 +87,40 @@ function validateElements(spirit, errors, warnings) {
   }
 
   for (const element of spirit.elements) {
-    if (!allowedElements.has(element)) {
+    const normalized = normalizeElement(element);
+
+    if (!knownElements.has(normalized)) {
       warnings.push(`${spirit.id}: 未知属性 ${element}`);
     }
   }
+}
+
+function collectMissingTypeChartEntries(skills, spirits) {
+  const attackElements = new Set(
+    skills.map((skill) => normalizeElement(skill.element)).filter(Boolean)
+  );
+  const defenseKeys = new Set(spirits.map((spirit) => createDefenseKey(spirit.elements)));
+  const missing = [];
+
+  for (const attackElement of attackElements) {
+    if (!knownElements.has(attackElement)) {
+      missing.push(`未知技能属性 ${attackElement}`);
+      continue;
+    }
+
+    for (const defenseKey of defenseKeys) {
+      const defenders = defenseKey.split("/");
+      const hasUnknownDefender = defenders.some(
+        (element) => !knownElements.has(element)
+      );
+
+      if (hasUnknownDefender) {
+        missing.push(`${attackElement} -> ${defenseKey}`);
+      }
+    }
+  }
+
+  return missing;
 }
 
 async function main() {
@@ -100,9 +154,27 @@ async function main() {
     validateStats(spirit, errors);
     validateElements(spirit, errors, warnings);
 
+    if (!spirit.sourceUrl) {
+      errors.push(`${spirit.id}: 缺少 sourceUrl`);
+    }
+
+    if ((spirit.traits?.length ?? 0) === 0) {
+      warnings.push(`${spirit.id}: 无特性数据`);
+    }
+
+    for (const name of spirit.unresolvedSkillNames ?? []) {
+      warnings.push(`${spirit.id}: 未匹配技能 ${name}`);
+    }
+
     for (const skillId of spirit.commonSkillIds ?? []) {
       if (!skillIds.has(skillId)) {
         errors.push(`${spirit.id}: 常见技能不存在 ${skillId}`);
+      }
+    }
+
+    for (const skillId of spirit.learnableSkillIds ?? []) {
+      if (!skillIds.has(skillId)) {
+        errors.push(`${spirit.id}: 可学技能不存在 ${skillId}`);
       }
     }
   }
@@ -116,8 +188,10 @@ async function main() {
       errors.push(`${skill.id}: 技能威力不是数字`);
     }
 
-    if (!skill.stableDamage) {
-      warnings.push(`${skill.id}: 不稳定技能不会自动进入确定伤害假设`);
+    for (const spiritId of skill.learnableSpiritIds ?? []) {
+      if (!spiritIds.has(spiritId)) {
+        errors.push(`${skill.id}: 可学精灵不存在 ${spiritId}`);
+      }
     }
   }
 
@@ -140,9 +214,27 @@ async function main() {
 
     if (!Array.isArray(keys) || keys.length !== 3) {
       errors.push(`${spiritId}: 推荐个体必须正好 3 条`);
+      continue;
+    }
+
+    for (const key of keys) {
+      if (!statKeys.has(key)) {
+        errors.push(`${spiritId}: 推荐个体字段无效 ${key}`);
+      }
     }
   }
 
+  const missingTypeChartEntries = collectMissingTypeChartEntries(skills, spirits);
+  for (const entry of missingTypeChartEntries) {
+    warnings.push(`克制表缺失：${entry}`);
+  }
+
+  const linkedSpiritCount = spirits.filter(
+    (spirit) => (spirit.learnableSkillIds?.length ?? 0) > 0
+  ).length;
+  const defenseTypeCount = new Set(
+    spirits.map((spirit) => createDefenseKey(spirit.elements))
+  ).size;
   const report = [
     "# 数据导入/校验报告",
     "",
@@ -150,6 +242,9 @@ async function main() {
     `- 技能数量：${skills.length}`,
     `- 常见配置数量：${builds.length}`,
     `- 推荐个体数量：${Object.keys(recommendedIndividualKeys).length}`,
+    `- 已匹配可学技能的精灵：${linkedSpiritCount}`,
+    `- 防守属性组合数量：${defenseTypeCount}`,
+    `- 克制表缺失数量：${missingTypeChartEntries.length}`,
     `- 校验状态：${errors.length === 0 ? "通过" : "失败"}`,
     "",
     "## 错误",

@@ -8,17 +8,27 @@ export type GrowthValues = Record<StatKey, number>;
 
 export type NatureModifier = Partial<Record<StatKey, number>>;
 
+export type Trait = {
+  name: string;
+  description?: string;
+};
+
 export type Spirit = {
   id: string;
   name: string;
   elements: string[];
   baseStats: BattleStats;
   dexNo?: string;
+  pageId?: number;
   form?: string;
   stage?: string;
   imageUrl?: string;
   sourceUrl?: string;
+  traits?: Trait[];
   commonSkillIds?: string[];
+  learnableSkillIds?: string[];
+  learnableSkillNames?: string[];
+  unresolvedSkillNames?: string[];
 };
 
 export type Nature = {
@@ -27,7 +37,9 @@ export type Nature = {
   modifiers: NatureModifier;
 };
 
-export type SkillCategory = "physical" | "magical";
+export type DamageSkillCategory = "physical" | "magical";
+
+export type SkillCategory = DamageSkillCategory | "status" | "defense";
 
 export type Skill = {
   id: string;
@@ -42,6 +54,8 @@ export type Skill = {
   defaultPowerBuffMultiplier?: number;
   notes?: string;
   sourceUrl?: string;
+  learnableSpiritNames?: string[];
+  learnableSpiritIds?: string[];
 };
 
 export type CommonBuild = {
@@ -56,7 +70,7 @@ export type CommonBuild = {
 };
 
 export type DamageInput = {
-  category: SkillCategory;
+  category: DamageSkillCategory;
 
   attackerStats: BattleStats;
   defenderStats: BattleStats;
@@ -93,4 +107,126 @@ export type DamageResult = {
   damage: number;
   hpPercent: number;
   risk: DamageRisk;
+};
+
+export type EffectSourceType = "skill" | "trait";
+
+export type EffectCondition =
+  | "always"
+  | "manual"
+  | "responseAttack"
+  | "responseStatus"
+  | "responseDefense"
+  | "typeAdvantage";
+
+export type EffectTarget = "attacker" | "defender";
+
+export type EffectRule =
+  | {
+      id: string;
+      sourceType: EffectSourceType;
+      sourceName: string;
+      kind: "hitCountBase";
+      label: string;
+      description: string;
+      hitCount: number;
+    }
+  | {
+      id: string;
+      sourceType: EffectSourceType;
+      sourceName: string;
+      kind: "hitCountPerUse";
+      label: string;
+      description: string;
+      amount: number;
+    }
+  | {
+      id: string;
+      sourceType: EffectSourceType;
+      sourceName: string;
+      kind: "hitCountMultiplier";
+      label: string;
+      description: string;
+      condition: EffectCondition;
+      multiplier: number;
+    }
+  | {
+      id: string;
+      sourceType: EffectSourceType;
+      sourceName: string;
+      kind: "hitCountOverride";
+      label: string;
+      description: string;
+      condition: EffectCondition;
+      hitCount: number;
+    }
+  | {
+      id: string;
+      sourceType: EffectSourceType;
+      sourceName: string;
+      kind: "powerBonusPerUse";
+      label: string;
+      description: string;
+      amount: number;
+    }
+  | {
+      id: string;
+      sourceType: EffectSourceType;
+      sourceName: string;
+      kind: "powerBonusToggle";
+      label: string;
+      description: string;
+      condition: EffectCondition;
+      amount: number;
+    }
+  | {
+      id: string;
+      sourceType: EffectSourceType;
+      sourceName: string;
+      kind: "powerMultiplierToggle";
+      label: string;
+      description: string;
+      condition: EffectCondition;
+      multiplier: number;
+    }
+  | {
+      id: string;
+      sourceType: EffectSourceType;
+      sourceName: string;
+      kind: "powerFromEnemyCost";
+      label: string;
+      description: string;
+      multiplier: number;
+    }
+  | {
+      id: string;
+      sourceType: EffectSourceType;
+      sourceName: string;
+      kind: "statModifier";
+      label: string;
+      description: string;
+      condition: EffectCondition;
+      target: EffectTarget;
+      statKeys: StatKey[];
+      rate: number;
+      stackable: boolean;
+    }
+  | {
+      id: string;
+      sourceType: EffectSourceType;
+      sourceName: string;
+      kind: "note";
+      label: string;
+      description: string;
+    };
+
+export type StatModifierValues = Record<StatKey, number>;
+
+export type BattleModifierState = {
+  ruleEnabled: Record<string, boolean>;
+  ruleStacks: Record<string, number>;
+  skillUseCount: number;
+  enemyTotalSkillCost: number;
+  manualAttacker: StatModifierValues;
+  manualDefender: StatModifierValues;
 };

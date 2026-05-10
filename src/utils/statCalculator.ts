@@ -139,14 +139,8 @@ export function calculatePvpBaseStats(
 export function calculatePvpStats(
   baseStats: BattleStats,
   ivs: IndividualValues,
-  nature: Nature,
-  growthValues: GrowthValues = DEFAULT_PVP_GROWTH_VALUES
+  nature: Nature
 ): BattleStats {
-  const baseResult = calculatePvpBaseStats(baseStats, ivs, nature);
-
-  return STAT_KEYS.reduce((result, key) => {
-    // 五星满成长直接加在最终属性上，不受性格影响：生命 +100，其余属性 +50。
-    result[key] = baseResult[key] + clampGrowthValue(key, growthValues[key]);
-    return result;
-  }, {} as BattleStats);
+  // 公式里的最终 +100 / +50 已经是 PVP 实际属性的一部分，不再额外叠加五星成长。
+  return calculatePvpBaseStats(baseStats, ivs, nature);
 }

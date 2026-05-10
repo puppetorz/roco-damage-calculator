@@ -1,1116 +1,2286 @@
 import type { CommonBuild, StatKey } from "../../types/battle";
 
+export const generatedBuilds = [] satisfies CommonBuild[];
+
 export const generatedRecommendedIndividualKeys = {
-  "spirit_1_3": [
+  "spirit_3167": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_4_4": [
+  "spirit_3168": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_4_5": [
+  "spirit_3169": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_7_6": [
+  "spirit_3170": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_7_7": [
+  "spirit_5187": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_10_8": [
+  "spirit_3171": [
     "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3172": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3173": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_5188": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3174": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3175": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_5189": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3176": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3177": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4849": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_6868": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_7121": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_6866": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_6867": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_5190": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3178": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4850": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3179": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4851": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3180": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4852": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3277": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3278": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3279": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3181": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4853": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4854": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4855": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3182": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4856": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4857": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4858": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3183": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4859": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4860": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4861": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_5191": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3187": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3188": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3189": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3250": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4901": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3251": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4902": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3252": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4903": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3280": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3281": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3282": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_5199": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3271": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3272": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3216": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3217": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3218": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4886": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4885": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4887": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_5720": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3220": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3195": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3196": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3197": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3193": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3194": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4867": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4865": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4863": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4866": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4864": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_5192": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3268": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3269": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_5198": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3270": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3200": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4869": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4868": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3201": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4873": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4871": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3202": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4876": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4874": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3198": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_5193": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3199": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3203": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3204": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3205": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3214": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3215": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3206": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3207": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4877": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3208": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4878": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3240": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3241": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3247": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3244": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3245": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3246": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3224": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4888": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4889": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4890": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3225": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4891": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4892": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4893": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_5195": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3226": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4894": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4895": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4896": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3227": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3228": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3229": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3230": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3231": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3232": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3233": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3237": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3238": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3239": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4881": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4879": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4883": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4880": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_7005": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4884": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4882": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3305": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3248": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4899": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3249": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4900": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3253": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3254": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3255": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_5196": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3258": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3259": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3260": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3261": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3262": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3263": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3264": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3276": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3242": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3243": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3219": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3292": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3293": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3294": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3234": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3235": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3236": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3273": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3274": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3275": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3283": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3284": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3285": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3265": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3266": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3267": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_5197": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3333": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3334": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3287": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3288": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_5201": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3289": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3300": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3301": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_5202": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3302": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4907": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3303": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4908": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3304": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4909": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3463": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_5209": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3464": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3306": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3307": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3308": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3309": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3310": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3311": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3312": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3313": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3286": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_5200": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_6986": [
+    "hp",
     "spa",
     "spe"
   ],
-  "spirit_10_9": [
+  "spirit_6987": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_11_10": [
+  "spirit_3317": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_11_11": [
+  "spirit_3318": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_11_12": [
+  "spirit_3319": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_11_13": [
+  "spirit_3323": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_11_14": [
+  "spirit_3324": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_11_15": [
+  "spirit_3320": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_11_16": [
+  "spirit_3321": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_14_17": [
+  "spirit_3322": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_14_18": [
+  "spirit_3330": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_17_19": [
+  "spirit_3331": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_20_20": [
+  "spirit_5203": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_20_21": [
+  "spirit_3332": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_20_22": [
+  "spirit_4988": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_20_23": [
+  "spirit_4989": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_20_24": [
+  "spirit_3327": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_23_25": [
+  "spirit_3328": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_26_26": [
+  "spirit_3329": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_26_27": [
+  "spirit_3491": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_29_28": [
+  "spirit_3492": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_29_29": [
+  "spirit_3493": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_31_30": [
+  "spirit_3335": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_34_31": [
+  "spirit_3336": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_34_32": [
+  "spirit_3337": [
     "hp",
     "atk",
+    "spe"
+  ],
+  "spirit_3338": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3339": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3340": [
+    "hp",
+    "spa",
     "spe"
   ],
-  "spirit_34_33": [
+  "spirit_3341": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_34_34": [
+  "spirit_3342": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_35_35": [
+  "spirit_3343": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_35_36": [
+  "spirit_3382": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_38_37": [
+  "spirit_5216": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_40_38": [
+  "spirit_5217": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_40_39": [
+  "spirit_3388": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_40_40": [
+  "spirit_4925": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_40_41": [
+  "spirit_3389": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_40_42": [
+  "spirit_4926": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_40_43": [
+  "spirit_3390": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_40_44": [
+  "spirit_4927": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_43_45": [
+  "spirit_3184": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_43_46": [
+  "spirit_3185": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_46_47": [
+  "spirit_4098": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_46_48": [
+  "spirit_3396": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_46_49": [
+  "spirit_6882": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_48_50": [
+  "spirit_3397": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_48_51": [
+  "spirit_6883": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_51_52": [
+  "spirit_3398": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_53_53": [
+  "spirit_6884": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_56_54": [
+  "spirit_3363": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_56_55": [
+  "spirit_3364": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_58_56": [
+  "spirit_3365": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_59_57": [
+  "spirit_3383": [
     "hp",
-    "spa",
+    "atk",
+    "spe"
+  ],
+  "spirit_3384": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3409": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3410": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3354": [
+    "hp",
+    "atk",
     "spe"
   ],
-  "spirit_62_58": [
+  "spirit_3355": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_65_59": [
+  "spirit_3385": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_65_60": [
+  "spirit_3386": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_65_61": [
+  "spirit_3494": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_65_62": [
+  "spirit_3495": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_65_63": [
+  "spirit_3496": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_68_64": [
+  "spirit_3399": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_70_65": [
+  "spirit_4928": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_72_66": [
+  "spirit_3400": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_75_67": [
+  "spirit_4929": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_78_68": [
+  "spirit_3401": [
     "hp",
-    "spa",
+    "atk",
+    "spe"
+  ],
+  "spirit_4930": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3402": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4931": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3403": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_4932": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_5207": [
+    "hp",
+    "atk",
     "spe"
   ],
-  "spirit_78_69": [
+  "spirit_6889": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_78_70": [
+  "spirit_6890": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_79_71": [
+  "spirit_3406": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_81_72": [
+  "spirit_3407": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_81_73": [
+  "spirit_3408": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_84_74": [
+  "spirit_3391": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_84_75": [
+  "spirit_3392": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_87_76": [
+  "spirit_3393": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_90_77": [
+  "spirit_5205": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_91_78": [
+  "spirit_3416": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_92_79": [
+  "spirit_3417": [
     "hp",
     "atk",
+    "spe"
+  ],
+  "spirit_3394": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_5206": [
+    "hp",
+    "spa",
     "spe"
   ],
-  "spirit_94_80": [
+  "spirit_3395": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_95_81": [
+  "spirit_3413": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_98_82": [
+  "spirit_3414": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_101_83": [
+  "spirit_3377": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_104_84": [
+  "spirit_3378": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_107_85": [
+  "spirit_3379": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_110_86": [
+  "spirit_3437": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_110_87": [
+  "spirit_3438": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_112_88": [
+  "spirit_4936": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_115_89": [
+  "spirit_4938": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_115_90": [
+  "spirit_7108": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_117_91": [
+  "spirit_6893": [
     "hp",
-    "spa",
+    "atk",
+    "spe"
+  ],
+  "spirit_3515": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3516": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3517": [
+    "hp",
+    "atk",
     "spe"
   ],
-  "spirit_117_92": [
+  "spirit_3353": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_120_93": [
+  "spirit_3362": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_120_94": [
+  "spirit_4922": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_122_95": [
+  "spirit_4923": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_122_96": [
+  "spirit_4986": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_124_97": [
+  "spirit_3426": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_127_98": [
+  "spirit_3427": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_130_99": [
+  "spirit_3428": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_131_100": [
+  "spirit_3298": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_131_101": [
+  "spirit_3299": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_133_102": [
+  "spirit_3374": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_136_103": [
+  "spirit_3375": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_138_104": [
+  "spirit_5204": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_141_105": [
+  "spirit_3376": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_144_106": [
+  "spirit_3370": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_144_107": [
+  "spirit_3371": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_146_108": [
+  "spirit_3356": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_149_109": [
+  "spirit_3357": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_152_110": [
+  "spirit_3358": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_155_111": [
+  "spirit_3359": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_158_112": [
+  "spirit_3360": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_161_113": [
+  "spirit_4912": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_162_114": [
+  "spirit_4913": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_164_115": [
+  "spirit_3361": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_167_116": [
+  "spirit_4914": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_167_117": [
+  "spirit_4915": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_170_118": [
+  "spirit_4916": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_173_119": [
+  "spirit_4917": [
     "hp",
     "atk",
+    "spe"
+  ],
+  "spirit_4918": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_4919": [
+    "hp",
+    "spa",
     "spe"
   ],
-  "spirit_173_120": [
+  "spirit_4920": [
     "hp",
     "atk",
+    "spe"
+  ],
+  "spirit_4921": [
+    "hp",
+    "spa",
     "spe"
   ],
-  "spirit_176_121": [
+  "spirit_4910": [
     "hp",
     "atk",
+    "spe"
+  ],
+  "spirit_3344": [
+    "hp",
+    "spa",
     "spe"
   ],
-  "spirit_178_122": [
+  "spirit_4911": [
     "hp",
     "atk",
+    "spe"
+  ],
+  "spirit_3345": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3346": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3347": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3348": [
+    "hp",
+    "spa",
     "spe"
   ],
-  "spirit_180_123": [
+  "spirit_3349": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_182_124": [
+  "spirit_3350": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_184_125": [
+  "spirit_3351": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_187_126": [
+  "spirit_3352": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_189_127": [
+  "spirit_3442": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_189_128": [
+  "spirit_3443": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_190_129": [
+  "spirit_3444": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_190_130": [
+  "spirit_5259": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_191_131": [
+  "spirit_5258": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_191_132": [
+  "spirit_5260": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_192_133": [
+  "spirit_3497": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_192_134": [
+  "spirit_3498": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_192_135": [
+  "spirit_3499": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_192_136": [
+  "spirit_3190": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_194_137": [
+  "spirit_3191": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_197_138": [
+  "spirit_3192": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_200_139": [
+  "spirit_3421": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_200_140": [
+  "spirit_4933": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_202_141": [
+  "spirit_3422": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_204_142": [
+  "spirit_4934": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_204_143": [
+  "spirit_3423": [
     "hp",
-    "spa",
+    "atk",
+    "spe"
+  ],
+  "spirit_4935": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3424": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3425": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_3221": [
+    "hp",
+    "atk",
     "spe"
   ],
-  "spirit_206_144": [
+  "spirit_3222": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_209_145": [
+  "spirit_3223": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_211_146": [
+  "spirit_3429": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_213_147": [
+  "spirit_3430": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_215_148": [
+  "spirit_3431": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_218_149": [
+  "spirit_3432": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_219_150": [
+  "spirit_6895": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_220_151": [
+  "spirit_6896": [
     "hp",
     "spa",
+    "spe"
+  ],
+  "spirit_3415": [
+    "hp",
+    "atk",
     "spe"
   ],
-  "spirit_220_152": [
+  "spirit_3387": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_220_153": [
+  "spirit_3439": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_220_154": [
+  "spirit_3440": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_223_155": [
+  "spirit_3441": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_225_156": [
+  "spirit_3295": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_228_157": [
+  "spirit_4904": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_228_158": [
+  "spirit_3296": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_230_159": [
+  "spirit_4905": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_233_160": [
+  "spirit_3297": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_236_161": [
+  "spirit_4906": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_236_162": [
+  "spirit_6900": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_236_163": [
+  "spirit_6901": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_236_164": [
+  "spirit_6902": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_236_165": [
+  "spirit_3449": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_236_166": [
+  "spirit_3450": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_236_167": [
+  "spirit_3404": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_236_168": [
+  "spirit_3405": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_236_169": [
+  "spirit_5208": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_238_170": [
+  "spirit_3451": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_238_171": [
+  "spirit_3452": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_241_172": [
+  "spirit_3458": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_243_173": [
+  "spirit_3459": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_245_174": [
+  "spirit_3445": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_248_175": [
+  "spirit_3446": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_251_176": [
+  "spirit_3488": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_254_177": [
+  "spirit_3489": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_257_178": [
+  "spirit_3490": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_260_179": [
+  "spirit_3465": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_260_180": [
+  "spirit_3466": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_262_181": [
+  "spirit_3467": [
     "hp",
     "atk",
+    "spe"
+  ],
+  "spirit_3473": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3474": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "spirit_3475": [
+    "hp",
+    "spa",
     "spe"
   ],
-  "spirit_265_182": [
+  "spirit_3476": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_268_183": [
+  "spirit_3477": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_269_184": [
+  "spirit_3478": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_271_185": [
+  "spirit_3479": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_272_186": [
+  "spirit_3480": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_273_187": [
+  "spirit_3482": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_276_188": [
+  "spirit_3483": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_279_189": [
+  "spirit_3484": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_279_190": [
+  "spirit_3485": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_281_191": [
+  "spirit_3486": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_282_192": [
+  "spirit_3487": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_284_193": [
+  "spirit_3366": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_286_194": [
+  "spirit_3367": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_286_195": [
+  "spirit_3368": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_288_196": [
+  "spirit_3369": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_290_197": [
+  "spirit_3470": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_292_198": [
+  "spirit_3471": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_295_199": [
+  "spirit_3472": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_297_200": [
+  "spirit_3212": [
     "hp",
-    "atk",
+    "spa",
+    "spe"
+  ],
+  "spirit_3213": [
+    "hp",
+    "spa",
     "spe"
   ],
-  "spirit_298_201": [
+  "spirit_7107": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_301_202": [
+  "spirit_3380": [
     "hp",
-    "spa",
+    "atk",
     "spe"
   ],
-  "spirit_302_203": [
+  "spirit_3381": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_305_204": [
+  "spirit_3433": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_306_205": [
+  "spirit_3434": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_309_206": [
+  "spirit_3418": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_312_207": [
+  "spirit_3419": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_314_208": [
+  "spirit_3420": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_315_209": [
+  "spirit_3468": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_316_210": [
+  "spirit_3469": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_319_211": [
+  "spirit_5267": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_321_212": [
+  "spirit_5268": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_322_213": [
+  "spirit_5269": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_324_214": [
+  "spirit_3460": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_326_215": [
+  "spirit_3461": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_329_216": [
+  "spirit_3462": [
     "hp",
     "spa",
+    "spe"
+  ],
+  "spirit_7131": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "spirit_7130": [
+    "hp",
+    "atk",
     "spe"
   ],
-  "spirit_331_217": [
+  "spirit_7133": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_334_218": [
+  "spirit_7132": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_336_219": [
+  "spirit_3505": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_337_220": [
+  "spirit_3506": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_339_221": [
+  "spirit_3507": [
     "hp",
-    "atk",
+    "spa",
     "spe"
   ],
-  "spirit_341_222": [
+  "spirit_3508": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_344_223": [
+  "spirit_3509": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_347_224": [
+  "spirit_3510": [
     "hp",
     "spa",
     "spe"
   ]
 } satisfies Record<string, StatKey[]>;
-
-export const generatedBuilds = [] satisfies CommonBuild[];
