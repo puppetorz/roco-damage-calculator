@@ -26,6 +26,7 @@ import {
   getConditionLabel,
   parseSkillRules,
   parseTraitRules,
+  ruleUsesStack,
 } from "./utils/effectRuleParser";
 import {
   PERFECT_IV_LINE_COUNT,
@@ -61,6 +62,10 @@ const riskClassName: Record<DamageResult["risk"], string> = {
 
 const manualStatKeys: StatKey[] = ["atk", "spa", "def", "spd", "spe"];
 const skillMap = new Map(skills.map((skill) => [skill.id, skill]));
+const spiritMap = new Map(spirits.map((spirit) => [spirit.id, spirit]));
+const SPIRIT_HISTORY_STORAGE_KEY = "roco-spirit-search-history";
+const SPIRIT_HISTORY_STORAGE_VERSION = 1;
+const MAX_SPIRIT_HISTORY = 8;
 
 function getRecommendedIvs(spiritId: string): IndividualValues {
   return createIndividualValuesFromKeys(
@@ -93,6 +98,79 @@ function formatSpiritOption(spirit: Spirit): string {
   ]
     .filter(Boolean)
     .join(" · ");
+}
+
+function formatSpiritHistoryItem(spirit: Spirit): string {
+  return [formatSpiritOption(spirit), spirit.elements.join(" / ")]
+    .filter(Boolean)
+    .join(" · ");
+}
+
+function normalizeSpiritHistoryIds(ids: unknown): string[] {
+  if (!Array.isArray(ids)) {
+    return [];
+  }
+
+  const uniqueIds = new Set<string>();
+  const validIds: string[] = [];
+
+  for (const id of ids) {
+    if (typeof id !== "string" || uniqueIds.has(id) || !spiritMap.has(id)) {
+      continue;
+    }
+
+    uniqueIds.add(id);
+    validIds.push(id);
+
+    if (validIds.length >= MAX_SPIRIT_HISTORY) {
+      break;
+    }
+  }
+
+  return validIds;
+}
+
+function readSpiritHistoryIds(): string[] {
+  try {
+    const raw = window.localStorage.getItem(SPIRIT_HISTORY_STORAGE_KEY);
+    if (!raw) {
+      return [];
+    }
+
+    const parsed = JSON.parse(raw) as unknown;
+
+    if (Array.isArray(parsed)) {
+      return normalizeSpiritHistoryIds(parsed);
+    }
+
+    if (
+      parsed &&
+      typeof parsed === "object" &&
+      "version" in parsed &&
+      "spiritIds" in parsed &&
+      parsed.version === SPIRIT_HISTORY_STORAGE_VERSION
+    ) {
+      return normalizeSpiritHistoryIds(parsed.spiritIds);
+    }
+  } catch {
+    return [];
+  }
+
+  return [];
+}
+
+function writeSpiritHistoryIds(spiritIds: string[]): void {
+  try {
+    window.localStorage.setItem(
+      SPIRIT_HISTORY_STORAGE_KEY,
+      JSON.stringify({
+        version: SPIRIT_HISTORY_STORAGE_VERSION,
+        spiritIds,
+      })
+    );
+  } catch {
+    // localStorage 可能被浏览器禁用；历史功能失败时不影响计算器主体功能。
+  }
 }
 
 function filterSpirits(query: string, selectedSpirit: Spirit): Spirit[] {
@@ -170,16 +248,13 @@ function hasConfigurableSkillRule(rule: EffectRule): boolean {
     rule.kind === "hitCountPerUse" ||
     rule.kind === "powerBonusPerUse" ||
     rule.kind === "powerFromEnemyCost" ||
+    ruleUsesStack(rule) ||
     ("condition" in rule && rule.condition !== "always")
   );
 }
 
 function needsRuleToggle(rule: EffectRule): boolean {
-  return (
-    "condition" in rule &&
-    rule.condition !== "always" &&
-    !(rule.kind === "statModifier" && rule.stackable)
-  );
+  return "condition" in rule && rule.condition !== "always" && !ruleUsesStack(rule);
 }
 
 type SpiritPanelProps = {
@@ -189,10 +264,13 @@ type SpiritPanelProps = {
   spiritId: string;
   natureId: string;
   ivs: IndividualValues;
+  historySpirits: Spirit[];
   baseFormulaStats: BattleStats;
   actualStats: BattleStats;
   onSearchChange: (query: string) => void;
   onSpiritChange: (spiritId: string) => void;
+  onClearHistory: () => void;
+  onHistorySelect: (spiritId: string) => void;
   onNatureChange: (natureId: string) => void;
   onIvToggle: (key: StatKey) => void;
 };
@@ -204,15 +282,19 @@ function SpiritPanel({
   spiritId,
   natureId,
   ivs,
+  historySpirits,
   baseFormulaStats,
   actualStats,
   onSearchChange,
   onSpiritChange,
+  onClearHistory,
+  onHistorySelect,
   onNatureChange,
   onIvToggle,
 }: SpiritPanelProps) {
   const selectedIvLineCount = countPerfectIvLines(ivs);
   const spiritOptions = filterSpirits(search, spirit);
+  const showHistory = search.trim().length === 0 && historySpirits.length > 0;
 
   return (
     <section className="panel spirit-panel">
@@ -231,6 +313,29 @@ function SpiritPanel({
             onChange={(event) => onSearchChange(event.target.value)}
           />
         </label>
+
+        {showHistory ? (
+          <div className="search-history" aria-label={`${title}最近选择`}>
+            <div className="search-history-heading">
+              <strong>最近选择</strong>
+              <button type="button" onClick={onClearHistory}>
+                清空
+              </button>
+            </div>
+            <div className="search-history-list">
+              {historySpirits.map((item) => (
+                <button
+                  key={item.id}
+                  className={item.id === spiritId ? "is-active" : ""}
+                  type="button"
+                  onClick={() => onHistorySelect(item.id)}
+                >
+                  {formatSpiritHistoryItem(item)}
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : null}
 
         <label>
           精灵
@@ -323,6 +428,22 @@ type RuleControlProps = {
   onRuleStacksChange: (ruleId: string, stacks: number) => void;
 };
 
+function getStackLabel(rule: EffectRule): string {
+  if (rule.kind === "statModifier") {
+    return rule.stackLabel ?? "触发层数/次数";
+  }
+
+  if (
+    rule.kind === "hitCountBonusStack" ||
+    rule.kind === "powerBonusStack" ||
+    rule.kind === "powerMultiplierStack"
+  ) {
+    return rule.stackLabel;
+  }
+
+  return "触发层数/次数";
+}
+
 function RuleControl({
   rule,
   state,
@@ -347,12 +468,12 @@ function RuleControl({
     );
   }
 
-  if (rule.kind === "statModifier" && rule.stackable) {
+  if (ruleUsesStack(rule)) {
     return (
       <label className="rule-control stack-control">
         {rule.label}
         <span>
-          触发层数/次数 · {getConditionLabel(rule.condition)}
+          {getStackLabel(rule)} · {"condition" in rule ? getConditionLabel(rule.condition) : "手动确认"}
         </span>
         <input
           min="0"
@@ -456,9 +577,15 @@ export default function App() {
   const [modifierState, setModifierState] = useState<BattleModifierState>(() =>
     createDefaultBattleModifierState()
   );
+  const [spiritHistoryIds, setSpiritHistoryIds] = useState<string[]>(() =>
+    readSpiritHistoryIds()
+  );
 
   const attacker = spirits.find((item) => item.id === attackerId) ?? spirits[0];
   const defender = spirits.find((item) => item.id === defenderId) ?? spirits[0];
+  const historySpirits = spiritHistoryIds
+    .map((spiritId) => spiritMap.get(spiritId))
+    .filter((item): item is Spirit => Boolean(item));
   const attackerNature: Nature =
     natures.find((item) => item.id === attackerNatureId) ?? natures[0];
   const defenderNature: Nature =
@@ -548,7 +675,29 @@ export default function App() {
     });
   }
 
+  function rememberSpiritHistory(spiritId: string): void {
+    if (!spiritMap.has(spiritId)) {
+      return;
+    }
+
+    setSpiritHistoryIds((current) => {
+      const next = [
+        spiritId,
+        ...current.filter((currentId) => currentId !== spiritId && spiritMap.has(currentId)),
+      ].slice(0, MAX_SPIRIT_HISTORY);
+
+      writeSpiritHistoryIds(next);
+      return next;
+    });
+  }
+
+  function clearSpiritHistory(): void {
+    setSpiritHistoryIds([]);
+    writeSpiritHistoryIds([]);
+  }
+
   function handleAttackerChange(nextId: string): void {
+    rememberSpiritHistory(nextId);
     setAttackerId(nextId);
     setAttackerIvs(getRecommendedIvs(nextId));
     const nextSpirit = spirits.find((item) => item.id === nextId) ?? attacker;
@@ -557,6 +706,7 @@ export default function App() {
   }
 
   function handleDefenderChange(nextId: string): void {
+    rememberSpiritHistory(nextId);
     setDefenderId(nextId);
     setDefenderIvs(getRecommendedIvs(nextId));
   }
@@ -636,12 +786,15 @@ export default function App() {
         <SpiritPanel
           actualStats={attackerActualStats}
           baseFormulaStats={attackerBaseStats}
+          historySpirits={historySpirits}
           ivs={attackerIvs}
           natureId={attackerNatureId}
           search={attackerSearch}
           spirit={attacker}
           spiritId={attackerId}
           title="进攻方"
+          onClearHistory={clearSpiritHistory}
+          onHistorySelect={handleAttackerChange}
           onIvToggle={handleIvToggle("attacker")}
           onNatureChange={setAttackerNatureId}
           onSearchChange={setAttackerSearch}
@@ -651,12 +804,15 @@ export default function App() {
         <SpiritPanel
           actualStats={defenderActualStats}
           baseFormulaStats={defenderBaseStats}
+          historySpirits={historySpirits}
           ivs={defenderIvs}
           natureId={defenderNatureId}
           search={defenderSearch}
           spirit={defender}
           spiritId={defenderId}
           title="防守方"
+          onClearHistory={clearSpiritHistory}
+          onHistorySelect={handleDefenderChange}
           onIvToggle={handleIvToggle("defender")}
           onNatureChange={setDefenderNatureId}
           onSearchChange={setDefenderSearch}

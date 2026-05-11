@@ -117,108 +117,99 @@ export type EffectCondition =
   | "responseAttack"
   | "responseStatus"
   | "responseDefense"
-  | "typeAdvantage";
+  | "typeAdvantage"
+  | "beforeEnemy"
+  | "afterEnemy"
+  | "enemySwitch"
+  | "lowHp"
+  | "fieldActive";
 
 export type EffectTarget = "attacker" | "defender";
 
+type BaseEffectRule = {
+  id: string;
+  sourceType: EffectSourceType;
+  sourceName: string;
+  label: string;
+  description: string;
+};
+
 export type EffectRule =
-  | {
-      id: string;
-      sourceType: EffectSourceType;
-      sourceName: string;
+  | (BaseEffectRule & {
       kind: "hitCountBase";
-      label: string;
-      description: string;
       hitCount: number;
-    }
-  | {
-      id: string;
-      sourceType: EffectSourceType;
-      sourceName: string;
+    })
+  | (BaseEffectRule & {
       kind: "hitCountPerUse";
-      label: string;
-      description: string;
       amount: number;
-    }
-  | {
-      id: string;
-      sourceType: EffectSourceType;
-      sourceName: string;
+    })
+  | (BaseEffectRule & {
+      kind: "hitCountBonusToggle";
+      condition: EffectCondition;
+      amount: number;
+    })
+  | (BaseEffectRule & {
+      kind: "hitCountBonusStack";
+      condition: EffectCondition;
+      amountPerStack: number;
+      stackLabel: string;
+    })
+  | (BaseEffectRule & {
       kind: "hitCountMultiplier";
-      label: string;
-      description: string;
       condition: EffectCondition;
       multiplier: number;
-    }
-  | {
-      id: string;
-      sourceType: EffectSourceType;
-      sourceName: string;
+    })
+  | (BaseEffectRule & {
       kind: "hitCountOverride";
-      label: string;
-      description: string;
       condition: EffectCondition;
       hitCount: number;
-    }
-  | {
-      id: string;
-      sourceType: EffectSourceType;
-      sourceName: string;
+    })
+  | (BaseEffectRule & {
       kind: "powerBonusPerUse";
-      label: string;
-      description: string;
       amount: number;
-    }
-  | {
-      id: string;
-      sourceType: EffectSourceType;
-      sourceName: string;
+    })
+  | (BaseEffectRule & {
       kind: "powerBonusToggle";
-      label: string;
-      description: string;
       condition: EffectCondition;
       amount: number;
-    }
-  | {
-      id: string;
-      sourceType: EffectSourceType;
-      sourceName: string;
+      appliesToSkillElements?: string[];
+    })
+  | (BaseEffectRule & {
+      kind: "powerBonusStack";
+      condition: EffectCondition;
+      amountPerStack: number;
+      stackLabel: string;
+      appliesToSkillElements?: string[];
+    })
+  | (BaseEffectRule & {
       kind: "powerMultiplierToggle";
-      label: string;
-      description: string;
       condition: EffectCondition;
       multiplier: number;
-    }
-  | {
-      id: string;
-      sourceType: EffectSourceType;
-      sourceName: string;
+      appliesToSkillElements?: string[];
+    })
+  | (BaseEffectRule & {
+      kind: "powerMultiplierStack";
+      condition: EffectCondition;
+      ratePerStack: number;
+      stackLabel: string;
+      appliesToSkillElements?: string[];
+    })
+  | (BaseEffectRule & {
       kind: "powerFromEnemyCost";
-      label: string;
-      description: string;
       multiplier: number;
-    }
-  | {
-      id: string;
-      sourceType: EffectSourceType;
-      sourceName: string;
+    })
+  | (BaseEffectRule & {
       kind: "statModifier";
-      label: string;
-      description: string;
       condition: EffectCondition;
       target: EffectTarget;
       statKeys: StatKey[];
       rate: number;
       stackable: boolean;
-    }
-  | {
-      id: string;
-      sourceType: EffectSourceType;
-      sourceName: string;
+      stackLabel?: string;
+    })
+  | (BaseEffectRule & {
       kind: "note";
-      label: string;
-      description: string;
-    };
+    });
 
 export type StatModifierValues = Record<StatKey, number>;
 

@@ -9,6 +9,7 @@ import type {
   StatKey,
   StatModifierValues,
 } from "../types/battle";
+import { normalizeElementName } from "./typeCalculator";
 
 const WEATHER_MULTIPLIER = 1;
 const DAMAGE_REDUCTIONS: number[] = [];
@@ -56,6 +57,10 @@ function clampNonNegative(value: number): number {
   return Math.max(0, value);
 }
 
+function getRuleStack(ruleId: string, state: BattleModifierState): number {
+  return Math.max(0, Math.round(state.ruleStacks[ruleId] ?? 0));
+}
+
 function isRuleActive(rule: EffectRule, state: BattleModifierState): boolean {
   if (!("condition" in rule)) {
     return true;
@@ -65,8 +70,13 @@ function isRuleActive(rule: EffectRule, state: BattleModifierState): boolean {
     return true;
   }
 
-  if (rule.kind === "statModifier" && rule.stackable) {
-    return (state.ruleStacks[rule.id] ?? 0) > 0;
+  if (
+    (rule.kind === "statModifier" && rule.stackable) ||
+    rule.kind === "hitCountBonusStack" ||
+    rule.kind === "powerBonusStack" ||
+    rule.kind === "powerMultiplierStack"
+  ) {
+    return getRuleStack(rule.id, state) > 0;
   }
 
   return Boolean(state.ruleEnabled[rule.id]);
@@ -76,6 +86,38 @@ function addSummary(summaries: string[], text: string): void {
   if (!summaries.includes(text)) {
     summaries.push(text);
   }
+}
+
+function normalizeSkillElement(value: string): string {
+  return normalizeElementName(value) ?? value.trim().replace(/系$/, "");
+}
+
+function powerRuleAppliesToSkill(
+  rule: {
+    sourceName: string;
+    label: string;
+    appliesToSkillElements?: string[];
+  },
+  skill: Skill,
+  notes: string[]
+): boolean {
+  const allowedElements = rule.appliesToSkillElements;
+  if (!allowedElements || allowedElements.length === 0) {
+    return true;
+  }
+
+  const currentElement = normalizeSkillElement(skill.element);
+  const normalizedAllowed = allowedElements.map(normalizeSkillElement);
+
+  if (normalizedAllowed.includes(currentElement)) {
+    return true;
+  }
+
+  addSummary(
+    notes,
+    `${rule.sourceName}：当前技能属性为 ${skill.element}，不属于 ${allowedElements.join("/")}，${rule.label} 未计入。`
+  );
+  return false;
 }
 
 function formatPercent(value: number): string {
@@ -99,10 +141,15 @@ function conditionLabel(condition: EffectCondition): string {
   const labels: Record<EffectCondition, string> = {
     always: "默认",
     manual: "手动确认",
-    responseAttack: "应对攻击",
+    responseAttack: "应对攻击/应对成功",
     responseStatus: "应对状态",
     responseDefense: "应对防御",
     typeAdvantage: "克制触发",
+    beforeEnemy: "先于敌方攻击",
+    afterEnemy: "后手攻击",
+    enemySwitch: "敌方本回合更换精灵",
+    lowHp: "生命低于 50%",
+    fieldActive: "在场时",
   };
 
   return labels[condition];
@@ -146,9 +193,7 @@ function applyStatRule(
   defenderModifiers: StatModifierValues,
   summaries: string[]
 ): void {
-  const stacks = rule.stackable
-    ? Math.max(0, Math.round(state.ruleStacks[rule.id] ?? 0))
-    : 1;
+  const stacks = rule.stackable ? getRuleStack(rule.id, state) : 1;
   const value = rule.rate * stacks;
   const target = rule.target === "attacker" ? attackerModifiers : defenderModifiers;
 
@@ -228,6 +273,17 @@ export function resolveDamageInput({
     }
 
     switch (rule.kind) {
+      case "hitCountBonusToggle":
+        hitCount += rule.amount;
+        addSummary(summaries, `${rule.sourceName}：${conditionLabel(rule.condition)}，连击 +${rule.amount}`);
+        break;
+      case "hitCountBonusStack": {
+        const stacks = getRuleStack(rule.id, state);
+        const value = rule.amountPerStack * stacks;
+        hitCount += value;
+        addSummary(summaries, `${rule.sourceName}：${rule.stackLabel} ${stacks}，连击 +${value}`);
+        break;
+      }
       case "hitCountMultiplier":
         hitCount *= rule.multiplier;
         addSummary(summaries, `${rule.sourceName}：${conditionLabel(rule.condition)}，连击 x${rule.multiplier}`);
@@ -237,13 +293,39 @@ export function resolveDamageInput({
         addSummary(summaries, `${rule.sourceName}：${conditionLabel(rule.condition)}，连击变为 ${rule.hitCount}`);
         break;
       case "powerBonusToggle":
+        if (!powerRuleAppliesToSkill(rule, skill, notes)) {
+          break;
+        }
         powerBonus += rule.amount;
         addSummary(summaries, `${rule.sourceName}：${conditionLabel(rule.condition)}，威力 +${rule.amount}`);
         break;
+      case "powerBonusStack": {
+        if (!powerRuleAppliesToSkill(rule, skill, notes)) {
+          break;
+        }
+        const stacks = getRuleStack(rule.id, state);
+        const value = rule.amountPerStack * stacks;
+        powerBonus += value;
+        addSummary(summaries, `${rule.sourceName}：${rule.stackLabel} ${stacks}，威力 +${value}`);
+        break;
+      }
       case "powerMultiplierToggle":
+        if (!powerRuleAppliesToSkill(rule, skill, notes)) {
+          break;
+        }
         powerBuffMultiplier *= rule.multiplier;
         addSummary(summaries, `${rule.sourceName}：${conditionLabel(rule.condition)}，威力 x${rule.multiplier}`);
         break;
+      case "powerMultiplierStack": {
+        if (!powerRuleAppliesToSkill(rule, skill, notes)) {
+          break;
+        }
+        const stacks = getRuleStack(rule.id, state);
+        const multiplier = 1 + rule.ratePerStack * stacks;
+        powerBuffMultiplier *= multiplier;
+        addSummary(summaries, `${rule.sourceName}：${rule.stackLabel} ${stacks}，威力 ${formatPercent(rule.ratePerStack * stacks)}`);
+        break;
+      }
       case "powerFromEnemyCost":
         skillPower = clampNonNegative(state.enemyTotalSkillCost) * rule.multiplier;
         addSummary(summaries, `${rule.sourceName}：敌方技能总能耗 ${state.enemyTotalSkillCost}，威力 ${skillPower}`);
