@@ -1388,7 +1388,7 @@ export default function App() {
                 <strong>{damageResult.defense}</strong>
               </div>
               <div>
-                <span>技能威力</span>
+                <span>基础威力</span>
                 <strong>{formatNumber(resolvedDamageInput.skillPower)}</strong>
               </div>
               <div>
@@ -1400,12 +1400,28 @@ export default function App() {
                 <strong>{formatNumber(resolvedDamageInput.powerBuffMultiplier)}</strong>
               </div>
               <div>
+                <span>局内威力</span>
+                <strong>{formatNumber(damageResult.inBattlePower)}</strong>
+              </div>
+              <div>
                 <span>连击数</span>
-                <strong>{formatNumber(resolvedDamageInput.hitCount)}</strong>
+                <strong>{formatNumber(damageResult.hitCount)}</strong>
               </div>
               <div>
                 <span>能力等级倍率</span>
                 <strong>{formatNumber(damageResult.abilityMultiplier)}</strong>
+              </div>
+              <div>
+                <span>修正攻击</span>
+                <strong>{formatNumber(damageResult.adjustedAttack)}</strong>
+              </div>
+              <div>
+                <span>37/41 中间值</span>
+                <strong>{formatNumber(damageResult.singleHitIntermediate)}</strong>
+              </div>
+              <div>
+                <span>单击伤害</span>
+                <strong>{formatNumber(damageResult.singleHitDamage)}</strong>
               </div>
               <div>
                 <span>本系加成</span>

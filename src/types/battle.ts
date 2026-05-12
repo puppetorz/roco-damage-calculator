@@ -101,8 +101,13 @@ export type DamageResult = {
   attack: number;
   defense: number;
   effectivePower: number;
+  inBattlePower: number;
+  adjustedAttack: number;
   abilityMultiplier: number;
   totalDamageReduction: number;
+  singleHitIntermediate: number;
+  singleHitDamage: number;
+  hitCount: number;
   rawDamage: number;
   damage: number;
   hpPercent: number;

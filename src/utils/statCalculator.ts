@@ -60,6 +60,11 @@ export function gameRound(value: number): number {
   return Math.round(value);
 }
 
+export function gameFloor(value: number): number {
+  // 伤害公式里的向下取整集中封装，后续如果游戏取整规则有差异，只需要替换这里。
+  return Math.floor(value);
+}
+
 export function clampIndividualValue(value: number): number {
   if (!Number.isFinite(value)) {
     return MIN_INDIVIDUAL_VALUE;

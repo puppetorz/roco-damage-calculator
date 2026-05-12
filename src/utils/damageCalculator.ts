@@ -1,7 +1,8 @@
 import type { DamageInput, DamageResult } from "../types/battle";
-import { gameRound } from "./statCalculator";
+import { gameFloor, gameRound } from "./statCalculator";
 
-const DAMAGE_FORMULA_BASE_MULTIPLIER = 0.9;
+const DAMAGE_FORMULA_ATTACK_NUMERATOR = 37;
+const DAMAGE_FORMULA_ATTACK_DENOMINATOR = 41;
 const MIN_DEFENSE = 1;
 const MIN_DAMAGE = 1;
 const MIN_HIT_COUNT = 1;
@@ -75,21 +76,28 @@ export function calculateDamage(input: DamageInput): DamageResult {
   );
   const hitCount = Math.max(MIN_HIT_COUNT, gameRound(input.hitCount));
 
-  // PVP 伤害公式：攻防比 * 0.9 * 有效威力 * 能力等级 * 威力提升 * 本系 * 克制 * 天气 * 连击 * 减伤后承伤。
-  const rawDamage =
-    (safeAttack / safeDefense) *
-    DAMAGE_FORMULA_BASE_MULTIPLIER *
+  // 局内威力 = (技能威力 * 应对倍率 + 威力加成) * 威力提升 * 本系 * 克制 * 天气。
+  const inBattlePower =
     effectivePower *
-    abilityMultiplier *
     clampMultiplier(input.powerBuffMultiplier) *
     clampMultiplier(input.stabMultiplier) *
     clampMultiplier(input.typeMultiplier) *
-    clampMultiplier(input.weatherMultiplier) *
-    hitCount *
-    (1 - totalDamageReduction);
+    clampMultiplier(input.weatherMultiplier);
 
-  // 最终伤害取整规则暂未完全确定，当前集中使用 gameRound，后续只需替换 gameRound。
-  const damage = Math.max(MIN_DAMAGE, gameRound(rawDamage));
+  // 实战推导的新 PVP 伤害公式：
+  // 1. 能力等级作用在进攻值上，得到修正攻击。
+  // 2. 先计算 37 * 局内威力 * 修正攻击 / 41，并用 gameRound 做游戏四舍五入。
+  // 3. 再除以防御并用 gameFloor 向下取整，得到单击伤害。
+  // 4. 最后单击伤害 * 连击数 * 减伤后承伤，并再次向下取整为最终伤害。
+  const adjustedAttack = safeAttack * abilityMultiplier;
+  const singleHitIntermediate = gameRound(
+    (DAMAGE_FORMULA_ATTACK_NUMERATOR * inBattlePower * adjustedAttack) /
+      DAMAGE_FORMULA_ATTACK_DENOMINATOR
+  );
+  const singleHitDamage = gameFloor(singleHitIntermediate / safeDefense);
+  const rawDamage = singleHitDamage * hitCount * (1 - totalDamageReduction);
+
+  const damage = Math.max(MIN_DAMAGE, gameFloor(rawDamage));
   const hp = Math.max(MIN_DEFENSE, input.defenderStats.hp);
   const hpPercent = (damage / hp) * 100;
 
@@ -108,8 +116,13 @@ export function calculateDamage(input: DamageInput): DamageResult {
     attack: safeAttack,
     defense: safeDefense,
     effectivePower,
+    inBattlePower,
+    adjustedAttack,
     abilityMultiplier,
     totalDamageReduction,
+    singleHitIntermediate,
+    singleHitDamage,
+    hitCount,
     rawDamage,
     damage,
     hpPercent,
