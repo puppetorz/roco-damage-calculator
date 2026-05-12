@@ -33,7 +33,6 @@ import {
   PERFECT_IV_VALUE,
   PVP_LEVEL,
   STAT_KEYS,
-  calculatePvpBaseStats,
   calculatePvpStats,
   createIndividualValuesFromKeys,
 } from "./utils/statCalculator";
@@ -62,10 +61,26 @@ const riskClassName: Record<DamageResult["risk"], string> = {
 
 const manualStatKeys: StatKey[] = ["atk", "spa", "def", "spd", "spe"];
 const skillMap = new Map(skills.map((skill) => [skill.id, skill]));
+const natureMap = new Map(natures.map((nature) => [nature.id, nature]));
 const spiritMap = new Map(spirits.map((spirit) => [spirit.id, spirit]));
 const SPIRIT_HISTORY_STORAGE_KEY = "roco-spirit-search-history";
 const SPIRIT_HISTORY_STORAGE_VERSION = 1;
 const MAX_SPIRIT_HISTORY = 8;
+const SPIRIT_PRESET_STORAGE_KEY = "roco-spirit-presets";
+const SPIRIT_PRESET_STORAGE_VERSION = 1;
+
+type PresetSide = "attacker" | "defender";
+
+type SpiritPreset = {
+  id: string;
+  name: string;
+  spiritId: string;
+  natureId: string;
+  ivs: IndividualValues;
+  skillId?: string;
+  createdAt: number;
+  updatedAt: number;
+};
 
 function getRecommendedIvs(spiritId: string): IndividualValues {
   return createIndividualValuesFromKeys(
@@ -75,6 +90,10 @@ function getRecommendedIvs(spiritId: string): IndividualValues {
 
 function countPerfectIvLines(ivs: IndividualValues): number {
   return STAT_KEYS.filter((key) => ivs[key] === PERFECT_IV_VALUE).length;
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return Boolean(value) && typeof value === "object" && !Array.isArray(value);
 }
 
 function formatPercent(value: number): string {
@@ -102,6 +121,27 @@ function formatSpiritOption(spirit: Spirit): string {
 
 function formatSpiritHistoryItem(spirit: Spirit): string {
   return [formatSpiritOption(spirit), spirit.elements.join(" / ")]
+    .filter(Boolean)
+    .join(" · ");
+}
+
+function formatIvSummary(ivs: IndividualValues): string {
+  const selectedLabels = STAT_KEYS.filter((key) => ivs[key] === PERFECT_IV_VALUE).map(
+    (key) => statLabels[key]
+  );
+
+  return selectedLabels.length > 0
+    ? `${selectedLabels.join("/")} +60`
+    : "未选择 +60 个体";
+}
+
+function formatPresetDefaultName(
+  spirit: Spirit,
+  nature: Nature,
+  ivs: IndividualValues,
+  skill?: Skill
+): string {
+  return [spirit.name, nature.name, formatIvSummary(ivs), skill?.name]
     .filter(Boolean)
     .join(" · ");
 }
@@ -171,6 +211,136 @@ function writeSpiritHistoryIds(spiritIds: string[]): void {
   } catch {
     // localStorage 可能被浏览器禁用；历史功能失败时不影响计算器主体功能。
   }
+}
+
+function normalizePresetIvs(value: unknown): IndividualValues | undefined {
+  if (!isRecord(value)) {
+    return undefined;
+  }
+
+  const ivs = {} as IndividualValues;
+
+  for (const key of STAT_KEYS) {
+    const raw = value[key];
+    if (typeof raw !== "number" || !Number.isFinite(raw)) {
+      return undefined;
+    }
+
+    const rounded = Math.round(raw);
+    if (rounded !== 0 && rounded !== PERFECT_IV_VALUE) {
+      return undefined;
+    }
+
+    ivs[key] = rounded;
+  }
+
+  return countPerfectIvLines(ivs) <= PERFECT_IV_LINE_COUNT ? ivs : undefined;
+}
+
+function normalizeSpiritPreset(value: unknown): SpiritPreset | undefined {
+  if (!isRecord(value)) {
+    return undefined;
+  }
+
+  const id = typeof value.id === "string" ? value.id : "";
+  const name = typeof value.name === "string" ? value.name.trim() : "";
+  const spiritId = typeof value.spiritId === "string" ? value.spiritId : "";
+  const natureId = typeof value.natureId === "string" ? value.natureId : "";
+  const createdAt = typeof value.createdAt === "number" ? value.createdAt : 0;
+  const updatedAt = typeof value.updatedAt === "number" ? value.updatedAt : 0;
+  const ivs = normalizePresetIvs(value.ivs);
+
+  if (
+    !id ||
+    !name ||
+    !spiritMap.has(spiritId) ||
+    !natureMap.has(natureId) ||
+    !ivs ||
+    !Number.isFinite(createdAt) ||
+    !Number.isFinite(updatedAt)
+  ) {
+    return undefined;
+  }
+
+  const skillId = typeof value.skillId === "string" ? value.skillId : undefined;
+  const validSkillId =
+    skillId &&
+    skillMap.has(skillId) &&
+    getAllSkillsForSpirit(spiritMap.get(spiritId)!).some((skill) => skill.id === skillId)
+      ? skillId
+      : undefined;
+
+  return {
+    id,
+    name,
+    spiritId,
+    natureId,
+    ivs,
+    skillId: validSkillId,
+    createdAt,
+    updatedAt,
+  };
+}
+
+function readSpiritPresets(): SpiritPreset[] {
+  try {
+    const raw = window.localStorage.getItem(SPIRIT_PRESET_STORAGE_KEY);
+    if (!raw) {
+      return [];
+    }
+
+    const parsed = JSON.parse(raw) as unknown;
+    const rawPresets =
+      isRecord(parsed) &&
+      parsed.version === SPIRIT_PRESET_STORAGE_VERSION &&
+      Array.isArray(parsed.presets)
+        ? parsed.presets
+        : Array.isArray(parsed)
+          ? parsed
+          : [];
+
+    return rawPresets
+      .map(normalizeSpiritPreset)
+      .filter((preset): preset is SpiritPreset => Boolean(preset))
+      .sort((left, right) => right.updatedAt - left.updatedAt);
+  } catch {
+    return [];
+  }
+}
+
+function writeSpiritPresets(presets: SpiritPreset[]): void {
+  try {
+    window.localStorage.setItem(
+      SPIRIT_PRESET_STORAGE_KEY,
+      JSON.stringify({
+        version: SPIRIT_PRESET_STORAGE_VERSION,
+        presets,
+      })
+    );
+  } catch {
+    // localStorage 不可用时只影响预设持久化，不影响当前计算。
+  }
+}
+
+function createSpiritPreset(options: {
+  name: string;
+  spirit: Spirit;
+  nature: Nature;
+  ivs: IndividualValues;
+  skill?: Skill;
+}): SpiritPreset {
+  const now = Date.now();
+
+  return {
+    id: `preset_${now}_${Math.random().toString(36).slice(2, 8)}`,
+    name: options.name,
+    spiritId: options.spirit.id,
+    natureId: options.nature.id,
+    ivs: { ...options.ivs },
+    skillId: options.skill?.id,
+    createdAt: now,
+    updatedAt: now,
+  };
 }
 
 function filterSpirits(query: string, selectedSpirit: Spirit): Spirit[] {
@@ -259,36 +429,54 @@ function needsRuleToggle(rule: EffectRule): boolean {
 
 type SpiritPanelProps = {
   title: string;
+  side: PresetSide;
   search: string;
   spirit: Spirit;
   spiritId: string;
   natureId: string;
   ivs: IndividualValues;
   historySpirits: Spirit[];
-  baseFormulaStats: BattleStats;
+  presets: SpiritPreset[];
+  presetDraftName: string;
+  savingPreset: boolean;
   actualStats: BattleStats;
   onSearchChange: (query: string) => void;
   onSpiritChange: (spiritId: string) => void;
   onClearHistory: () => void;
   onHistorySelect: (spiritId: string) => void;
+  onBeginPresetSave: (side: PresetSide) => void;
+  onPresetDraftNameChange: (name: string) => void;
+  onConfirmPresetSave: (side: PresetSide) => void;
+  onCancelPresetSave: () => void;
+  onApplyPreset: (side: PresetSide, presetId: string) => void;
+  onDeletePreset: (presetId: string) => void;
   onNatureChange: (natureId: string) => void;
   onIvToggle: (key: StatKey) => void;
 };
 
 function SpiritPanel({
   title,
+  side,
   search,
   spirit,
   spiritId,
   natureId,
   ivs,
   historySpirits,
-  baseFormulaStats,
+  presets,
+  presetDraftName,
+  savingPreset,
   actualStats,
   onSearchChange,
   onSpiritChange,
   onClearHistory,
   onHistorySelect,
+  onBeginPresetSave,
+  onPresetDraftNameChange,
+  onConfirmPresetSave,
+  onCancelPresetSave,
+  onApplyPreset,
+  onDeletePreset,
   onNatureChange,
   onIvToggle,
 }: SpiritPanelProps) {
@@ -370,6 +558,84 @@ function SpiritPanel({
         已选择 {selectedIvLineCount} / {PERFECT_IV_LINE_COUNT} 条 +60 个体
       </div>
 
+      <div className="preset-box">
+        <div className="preset-heading">
+          <div>
+            <strong>精灵预设</strong>
+            <span>保存精灵、性格、个体{side === "attacker" ? "和技能" : ""}</span>
+          </div>
+          <button type="button" onClick={() => onBeginPresetSave(side)}>
+            保存当前
+          </button>
+        </div>
+
+        {savingPreset ? (
+          <div className="preset-save-row">
+            <input
+              aria-label={`${title}预设名称`}
+              value={presetDraftName}
+              onChange={(event) => onPresetDraftNameChange(event.target.value)}
+            />
+            <button
+              disabled={presetDraftName.trim().length === 0}
+              type="button"
+              onClick={() => onConfirmPresetSave(side)}
+            >
+              保存
+            </button>
+            <button type="button" onClick={onCancelPresetSave}>
+              取消
+            </button>
+          </div>
+        ) : null}
+
+        {presets.length > 0 ? (
+          <div className="preset-list">
+            {presets.map((preset) => {
+              const presetSpirit = spiritMap.get(preset.spiritId);
+              const presetNature = natures.find(
+                (nature) => nature.id === preset.natureId
+              );
+              const presetSkill = preset.skillId
+                ? skillMap.get(preset.skillId)
+                : undefined;
+
+              if (!presetSpirit || !presetNature) {
+                return null;
+              }
+
+              return (
+                <article className="preset-item" key={preset.id}>
+                  <div>
+                    <strong>{preset.name}</strong>
+                    <span>
+                      {formatSpiritOption(presetSpirit)} · {presetNature.name}
+                    </span>
+                    <em>
+                      {formatIvSummary(preset.ivs)}
+                      {presetSkill ? ` · ${presetSkill.name}` : ""}
+                    </em>
+                  </div>
+                  <div className="preset-actions">
+                    <button
+                      type="button"
+                      onClick={() => onApplyPreset(side, preset.id)}
+                    >
+                      套用到{title}
+                    </button>
+                    <button type="button" onClick={() => onDeletePreset(preset.id)}>
+                      删除
+                    </button>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        ) : (
+          <p className="preset-empty">暂无预设，保存当前配置后会显示在这里。</p>
+        )}
+      </div>
+
       <div className="trait-list">
         <strong>特性</strong>
         <span>可识别效果会在下方动态生成控件</span>
@@ -389,7 +655,6 @@ function SpiritPanel({
         <div className="stat-table-head">属性</div>
         <div className="stat-table-head">种族</div>
         <div className="stat-table-head">个体</div>
-        <div className="stat-table-head">公式基础</div>
         <div className="stat-table-head">PVP 实际</div>
 
         {STAT_KEYS.map((key) => {
@@ -411,7 +676,6 @@ function SpiritPanel({
                 />
                 <span>{checked ? "+60" : "0"}</span>
               </label>
-              <strong>{baseFormulaStats[key]}</strong>
               <strong className="actual-stat">{actualStats[key]}</strong>
             </div>
           );
@@ -580,6 +844,11 @@ export default function App() {
   const [spiritHistoryIds, setSpiritHistoryIds] = useState<string[]>(() =>
     readSpiritHistoryIds()
   );
+  const [spiritPresets, setSpiritPresets] = useState<SpiritPreset[]>(() =>
+    readSpiritPresets()
+  );
+  const [savingPresetSide, setSavingPresetSide] = useState<PresetSide | null>(null);
+  const [presetDraftName, setPresetDraftName] = useState("");
 
   const attacker = spirits.find((item) => item.id === attackerId) ?? spirits[0];
   const defender = spirits.find((item) => item.id === defenderId) ?? spirits[0];
@@ -591,16 +860,6 @@ export default function App() {
   const defenderNature: Nature =
     natures.find((item) => item.id === defenderNatureId) ?? natures[0];
 
-  const attackerBaseStats = calculatePvpBaseStats(
-    attacker.baseStats,
-    attackerIvs,
-    attackerNature
-  );
-  const defenderBaseStats = calculatePvpBaseStats(
-    defender.baseStats,
-    defenderIvs,
-    defenderNature
-  );
   const attackerActualStats = calculatePvpStats(
     attacker.baseStats,
     attackerIvs,
@@ -696,6 +955,115 @@ export default function App() {
     writeSpiritHistoryIds([]);
   }
 
+  function getPresetDraftContext(side: PresetSide): {
+    spirit: Spirit;
+    nature: Nature;
+    ivs: IndividualValues;
+    skill?: Skill;
+  } {
+    if (side === "attacker") {
+      return {
+        spirit: attacker,
+        nature: attackerNature,
+        ivs: attackerIvs,
+        skill: selectedSkill,
+      };
+    }
+
+    return {
+      spirit: defender,
+      nature: defenderNature,
+      ivs: defenderIvs,
+    };
+  }
+
+  function beginPresetSave(side: PresetSide): void {
+    const context = getPresetDraftContext(side);
+    setPresetDraftName(
+      formatPresetDefaultName(
+        context.spirit,
+        context.nature,
+        context.ivs,
+        side === "attacker" ? context.skill : undefined
+      )
+    );
+    setSavingPresetSide(side);
+  }
+
+  function confirmPresetSave(side: PresetSide): void {
+    const name = presetDraftName.trim();
+    if (!name) {
+      return;
+    }
+
+    const context = getPresetDraftContext(side);
+    const preset = createSpiritPreset({
+      name,
+      spirit: context.spirit,
+      nature: context.nature,
+      ivs: context.ivs,
+      skill: side === "attacker" ? context.skill : undefined,
+    });
+
+    setSpiritPresets((current) => {
+      const next = [preset, ...current].sort((left, right) => right.updatedAt - left.updatedAt);
+      writeSpiritPresets(next);
+      return next;
+    });
+    setSavingPresetSide(null);
+    setPresetDraftName("");
+  }
+
+  function cancelPresetSave(): void {
+    setSavingPresetSide(null);
+    setPresetDraftName("");
+  }
+
+  function applyPreset(side: PresetSide, presetId: string): void {
+    const preset = spiritPresets.find((item) => item.id === presetId);
+    const presetSpirit = preset ? spiritMap.get(preset.spiritId) : undefined;
+    const presetNature = preset ? natureMap.get(preset.natureId) : undefined;
+
+    if (!preset || !presetSpirit || !presetNature) {
+      return;
+    }
+
+    rememberSpiritHistory(preset.spiritId);
+
+    if (side === "attacker") {
+      const availablePresetSkills = getDamageSkillsForSpirit(presetSpirit);
+      const presetSkillIsAvailable = Boolean(
+        preset.skillId &&
+          availablePresetSkills.some((skill) => skill.id === preset.skillId)
+      );
+
+      setAttackerId(preset.spiritId);
+      setAttackerNatureId(preset.natureId);
+      setAttackerIvs({ ...preset.ivs });
+      setAttackerSearch("");
+      setSelectedSkillId(
+        presetSkillIsAvailable
+          ? preset.skillId!
+          : getDefaultSkillForSpirit(presetSpirit)?.id ?? ""
+      );
+      resetDynamicState();
+      return;
+    }
+
+    setDefenderId(preset.spiritId);
+    setDefenderNatureId(preset.natureId);
+    setDefenderIvs({ ...preset.ivs });
+    setDefenderSearch("");
+  }
+
+  function deletePreset(presetId: string): void {
+    setSpiritPresets((current) => {
+      const next = current.filter((preset) => preset.id !== presetId);
+      writeSpiritPresets(next);
+      return next;
+    });
+  }
+
   function handleAttackerChange(nextId: string): void {
     rememberSpiritHistory(nextId);
     setAttackerId(nextId);
@@ -785,36 +1153,54 @@ export default function App() {
       <div className="battle-grid">
         <SpiritPanel
           actualStats={attackerActualStats}
-          baseFormulaStats={attackerBaseStats}
           historySpirits={historySpirits}
           ivs={attackerIvs}
           natureId={attackerNatureId}
+          presetDraftName={presetDraftName}
+          presets={spiritPresets}
           search={attackerSearch}
+          savingPreset={savingPresetSide === "attacker"}
+          side="attacker"
           spirit={attacker}
           spiritId={attackerId}
           title="进攻方"
+          onApplyPreset={applyPreset}
+          onBeginPresetSave={beginPresetSave}
+          onCancelPresetSave={cancelPresetSave}
           onClearHistory={clearSpiritHistory}
+          onConfirmPresetSave={confirmPresetSave}
+          onDeletePreset={deletePreset}
           onHistorySelect={handleAttackerChange}
           onIvToggle={handleIvToggle("attacker")}
           onNatureChange={setAttackerNatureId}
+          onPresetDraftNameChange={setPresetDraftName}
           onSearchChange={setAttackerSearch}
           onSpiritChange={handleAttackerChange}
         />
 
         <SpiritPanel
           actualStats={defenderActualStats}
-          baseFormulaStats={defenderBaseStats}
           historySpirits={historySpirits}
           ivs={defenderIvs}
           natureId={defenderNatureId}
+          presetDraftName={presetDraftName}
+          presets={spiritPresets}
           search={defenderSearch}
+          savingPreset={savingPresetSide === "defender"}
+          side="defender"
           spirit={defender}
           spiritId={defenderId}
           title="防守方"
+          onApplyPreset={applyPreset}
+          onBeginPresetSave={beginPresetSave}
+          onCancelPresetSave={cancelPresetSave}
           onClearHistory={clearSpiritHistory}
+          onConfirmPresetSave={confirmPresetSave}
+          onDeletePreset={deletePreset}
           onHistorySelect={handleDefenderChange}
           onIvToggle={handleIvToggle("defender")}
           onNatureChange={setDefenderNatureId}
+          onPresetDraftNameChange={setPresetDraftName}
           onSearchChange={setDefenderSearch}
           onSpiritChange={handleDefenderChange}
         />
