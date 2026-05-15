@@ -8,10 +8,15 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "package:local": "npm run build && node scripts/packageLocal.mjs",
     "import:data": "node scripts/importWikiData.mjs",
+    "import:pvp-lineups": "node scripts/importPvpLineupsFromBwiki.mjs",
     "import:spirits": "node scripts/importSpiritStatsFromXlsx.mjs",
     "import:spirits:bwiki": "node scripts/importSpiritsFromBwiki.mjs",
     "import:skills": "node scripts/importSkillsFromBwiki.mjs",
+    "analyze:pvp-teams": "npx --yes tsx scripts/analyzePvpTeams.mts",
+    "simulate:pvp-battle": "npx --yes tsx scripts/simulatePvpBattle.mts",
+    "verify:pvp-rules": "npx --yes tsx scripts/verifyPvpBattleRules.mts",
     "validate:data": "node scripts/validateData.mjs"
   },
   "dependencies": {

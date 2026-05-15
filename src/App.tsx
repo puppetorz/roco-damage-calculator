@@ -1,7 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
-import { recommendedIndividualKeys } from "./data/builds";
 import { natures } from "./data/natures";
 import { skills } from "./data/skills";
 import { spirits } from "./data/spirits";
@@ -14,10 +13,20 @@ import type {
   IndividualValues,
   Nature,
   Skill,
+  SkillCategory,
   Spirit,
   StatKey,
 } from "./types/battle";
+import { ELEMENTS } from "./data/typeChart";
 import { calculateDamage } from "./utils/damageCalculator";
+import {
+  getAllSkillsForSpirit,
+  getDamageSkillsForSpirit,
+  getDefaultSkillForSpirit,
+  getRecommendedIvs,
+  getStabMultiplier,
+  getTraitRules,
+} from "./utils/combatantBuilder";
 import {
   createDefaultBattleModifierState,
   resolveDamageInput,
@@ -34,9 +43,8 @@ import {
   PVP_LEVEL,
   STAT_KEYS,
   calculatePvpStats,
-  createIndividualValuesFromKeys,
 } from "./utils/statCalculator";
-import { calculateTypeMultiplier } from "./utils/typeCalculator";
+import { calculateTypeMultiplier, createDefenseTypeKey } from "./utils/typeCalculator";
 
 const statLabels: Record<StatKey, string> = {
   hp: "生命",
@@ -50,6 +58,13 @@ const statLabels: Record<StatKey, string> = {
 const categoryLabels: Record<DamageSkillCategory, string> = {
   physical: "物理",
   magical: "魔法",
+};
+
+const skillCategoryLabels: Record<SkillCategory, string> = {
+  physical: "物理",
+  magical: "魔法",
+  status: "状态",
+  defense: "防御",
 };
 
 const riskClassName: Record<DamageResult["risk"], string> = {
@@ -69,6 +84,87 @@ const MAX_SPIRIT_HISTORY = 8;
 const SPIRIT_PRESET_STORAGE_KEY = "roco-spirit-presets";
 const SPIRIT_PRESET_STORAGE_VERSION = 1;
 
+type PageKey = "calculator" | "spirits" | "skills" | "types" | "rules" | "updates";
+
+const routes: Array<{
+  key: PageKey;
+  label: string;
+  description: string;
+}> = [
+  { key: "calculator", label: "伤害计算", description: "单技能与动态参数" },
+  { key: "spirits", label: "精灵图鉴", description: "种族值、特性、技能" },
+  { key: "skills", label: "技能图鉴", description: "威力、能耗、规则" },
+  { key: "types", label: "克制表", description: "属性倍率查询" },
+  { key: "rules", label: "规则调试", description: "解析结果核对" },
+  { key: "updates", label: "版本公告", description: "更新记录与计划" },
+];
+
+type UpdateAnnouncement = {
+  version: string;
+  date: string;
+  title: string;
+  highlights: string[];
+  notes?: string[];
+};
+
+const updateAnnouncements: UpdateAnnouncement[] = [
+  {
+    version: "v0.6.0",
+    date: "2026-05-16",
+    title: "PVP 工作台第一阶段",
+    highlights: [
+      "新增精灵图鉴、技能图鉴、克制表、规则调试页面。",
+      "默认仍保留伤害计算器，新增 hash 导航用于快速切换功能。",
+      "图鉴页面可以把精灵或技能回填到当前计算器。",
+    ],
+    notes: [
+      "本阶段不改变核心伤害公式。",
+      "规则调试页用于排查特性、连击和威力解析问题。",
+    ],
+  },
+  {
+    version: "v0.5.0",
+    date: "2026-05-15",
+    title: "本地离线启动包",
+    highlights: [
+      "新增 Windows 离线包，可双击启动计算器。",
+      "离线包内置静态数据，不依赖 Node、npm、Vite 或外网。",
+      "修复批处理启动脚本编码导致的双击失败问题。",
+    ],
+  },
+  {
+    version: "v0.4.0",
+    date: "2026-05-14",
+    title: "精灵预设与搜索历史",
+    highlights: [
+      "新增精灵预设保存、套用、删除功能。",
+      "进攻方和防守方共用最近选择历史。",
+      "历史和预设使用浏览器 localStorage 长期保存。",
+    ],
+  },
+  {
+    version: "v0.3.0",
+    date: "2026-05-13",
+    title: "PVP 伤害公式修正",
+    highlights: [
+      "伤害公式修正为 37/41 推导公式。",
+      "连击改为单击伤害取整后再乘连击数。",
+      "保留 gameRound 和 gameFloor，方便后续继续校准取整规则。",
+    ],
+    notes: ["0.5 取整细节仍以集中封装为准，后续可继续根据实战样本修正。"],
+  },
+  {
+    version: "v0.2.0",
+    date: "2026-05-12",
+    title: "动态特性与技能机制",
+    highlights: [
+      "新增特性层数、技能连击、威力变化、应对触发等动态控件。",
+      "新增手动修正模块，用于录入已经发生的强化或削弱。",
+      "未能稳定解析的效果会进入未计入提示，避免静默误算。",
+    ],
+  },
+];
+
 type PresetSide = "attacker" | "defender";
 
 type SpiritPreset = {
@@ -81,12 +177,6 @@ type SpiritPreset = {
   createdAt: number;
   updatedAt: number;
 };
-
-function getRecommendedIvs(spiritId: string): IndividualValues {
-  return createIndividualValuesFromKeys(
-    recommendedIndividualKeys[spiritId] ?? ["hp", "atk", "spe"]
-  );
-}
 
 function countPerfectIvLines(ivs: IndividualValues): number {
   return STAT_KEYS.filter((key) => ivs[key] === PERFECT_IV_VALUE).length;
@@ -108,6 +198,15 @@ function formatRate(value: number): string {
   return `${value >= 0 ? "+" : ""}${Math.round(value * 100)}%`;
 }
 
+function getPageFromHash(hash = window.location.hash): PageKey {
+  const value = hash.replace(/^#\/?/, "") as PageKey;
+  return routes.some((route) => route.key === value) ? value : "calculator";
+}
+
+function navigateToPage(page: PageKey): void {
+  window.location.hash = `/${page}`;
+}
+
 function formatSpiritOption(spirit: Spirit): string {
   return [
     spirit.dexNo ? `${spirit.dexNo}` : "",
@@ -123,6 +222,96 @@ function formatSpiritHistoryItem(spirit: Spirit): string {
   return [formatSpiritOption(spirit), spirit.elements.join(" / ")]
     .filter(Boolean)
     .join(" · ");
+}
+
+function formatSkillOption(skill: Skill): string {
+  return [
+    skill.name,
+    skill.element,
+    skillCategoryLabels[skill.category],
+    skill.power > 0 ? skill.power : "动态威力",
+  ]
+    .filter(Boolean)
+    .join(" · ");
+}
+
+function getSkillDescription(skill: Skill): string {
+  return (
+    skill.description ??
+    skill.rawDescriptionText ??
+    skill.rawEffectText ??
+    skill.effectEntries?.join("；") ??
+    "暂无技能说明。"
+  );
+}
+
+function getSpiritSearchText(spirit: Spirit): string {
+  return [
+    spirit.name,
+    spirit.dexNo,
+    spirit.form,
+    spirit.stage,
+    spirit.elements.join("/"),
+    ...(spirit.traits?.flatMap((trait) => [trait.name, trait.description]) ?? []),
+    ...(spirit.learnableSkillNames ?? []),
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function getSkillSearchText(skill: Skill): string {
+  return [
+    skill.name,
+    skill.element,
+    skillCategoryLabels[skill.category],
+    skill.power,
+    skill.energyCost,
+    getSkillDescription(skill),
+    ...(skill.learnableSpiritNames ?? []),
+  ]
+    .filter((value) => value !== undefined && value !== null)
+    .join(" ")
+    .toLowerCase();
+}
+
+function getRuleSummary(rule: EffectRule): string {
+  switch (rule.kind) {
+    case "hitCountBase":
+      return `基础 ${rule.hitCount} 连击`;
+    case "hitCountPerUse":
+      return `每次使用连击 +${rule.amount}`;
+    case "hitCountBonusToggle":
+      return `${getConditionLabel(rule.condition)}时连击 +${rule.amount}`;
+    case "hitCountBonusStack":
+      return `${rule.stackLabel}每层/次连击 +${rule.amountPerStack}`;
+    case "hitCountMultiplier":
+      return `${getConditionLabel(rule.condition)}时连击 x${rule.multiplier}`;
+    case "hitCountOverride":
+      return `${getConditionLabel(rule.condition)}时连击变为 ${rule.hitCount}`;
+    case "powerBonusPerUse":
+      return `每次使用威力 +${rule.amount}`;
+    case "powerBonusToggle":
+      return `${getConditionLabel(rule.condition)}时威力 +${rule.amount}`;
+    case "powerBonusStack":
+      return `${rule.stackLabel}每层/次威力 +${rule.amountPerStack}`;
+    case "powerMultiplierToggle":
+      return `${getConditionLabel(rule.condition)}时威力 x${rule.multiplier}`;
+    case "powerMultiplierStack":
+      return `${rule.stackLabel}每层/次威力 +${Math.round(rule.ratePerStack * 100)}%`;
+    case "powerFromEnemyCost":
+      return `威力 = 敌方技能总能耗 x${rule.multiplier}`;
+    case "statModifier":
+      return `${rule.target === "attacker" ? "进攻方" : "防守方"} ${rule.statKeys
+        .map((key) => statLabels[key])
+        .join("/")} ${formatRate(rule.rate)}${rule.stackable ? " / 层" : ""}`;
+    case "note":
+      return "未计入公式，仅作提示";
+  }
+}
+
+function getRuleFormulaStatus(rule: EffectRule): string {
+  return rule.kind === "note" ? "未计入提示" : "可计入公式";
 }
 
 function formatIvSummary(ivs: IndividualValues): string {
@@ -366,51 +555,6 @@ function filterSpirits(query: string, selectedSpirit: Spirit): Spirit[] {
   return filtered.some((spirit) => spirit.id === selectedSpirit.id)
     ? filtered
     : [selectedSpirit, ...filtered];
-}
-
-function isDamageSkill(skill: Skill): skill is Skill & {
-  category: DamageSkillCategory;
-} {
-  const hasDynamicPower = (skill.description ?? "").includes(
-    "威力等于敌方精灵技能总能耗"
-  );
-
-  return (
-    (skill.category === "physical" || skill.category === "magical") &&
-    (skill.power > 0 || hasDynamicPower)
-  );
-}
-
-function getAllSkillsForSpirit(spirit: Spirit): Skill[] {
-  const commonSkillIds = spirit.commonSkillIds ?? [];
-  const learnableSkillIds = spirit.learnableSkillIds ?? [];
-  const skillIds = commonSkillIds.length > 0 ? commonSkillIds : learnableSkillIds;
-
-  return skillIds
-    .map((skillId) => skillMap.get(skillId))
-    .filter((skill): skill is Skill => Boolean(skill));
-}
-
-function getDamageSkillsForSpirit(
-  spirit: Spirit
-): Array<Skill & { category: DamageSkillCategory }> {
-  return getAllSkillsForSpirit(spirit).filter(isDamageSkill);
-}
-
-function getDefaultSkillForSpirit(spirit: Spirit): Skill | undefined {
-  return getDamageSkillsForSpirit(spirit)[0];
-}
-
-function getStabMultiplier(attacker: Spirit, skill?: Skill): number {
-  if (!skill) {
-    return 1;
-  }
-
-  return attacker.elements.includes(skill.element) ? 1.25 : 1;
-}
-
-function getTraitRules(spirit: Spirit): EffectRule[] {
-  return (spirit.traits ?? []).flatMap(parseTraitRules);
 }
 
 function hasConfigurableSkillRule(rule: EffectRule): boolean {
@@ -820,6 +964,653 @@ function ManualModifierGroup({
   );
 }
 
+type SpiritDexViewProps = {
+  attackerId: string;
+  defenderId: string;
+  onUseAsAttacker: (spiritId: string) => void;
+  onUseAsDefender: (spiritId: string) => void;
+};
+
+function SpiritDexView({
+  attackerId,
+  defenderId,
+  onUseAsAttacker,
+  onUseAsDefender,
+}: SpiritDexViewProps) {
+  const [query, setQuery] = useState("");
+  const [elementFilter, setElementFilter] = useState("all");
+  const [selectedId, setSelectedId] = useState(spirits[0]?.id ?? "");
+  const normalizedQuery = query.trim().toLowerCase();
+  const filteredSpirits = spirits.filter((spirit) => {
+    const matchesQuery =
+      normalizedQuery.length === 0 ||
+      getSpiritSearchText(spirit).includes(normalizedQuery);
+    const matchesElement =
+      elementFilter === "all" || spirit.elements.includes(elementFilter);
+    return matchesQuery && matchesElement;
+  });
+  const selectedSpirit =
+    filteredSpirits.find((spirit) => spirit.id === selectedId) ??
+    filteredSpirits[0] ??
+    spiritMap.get(selectedId) ??
+    spirits[0];
+  const selectedSkills = selectedSpirit ? getAllSkillsForSpirit(selectedSpirit) : [];
+
+  return (
+    <section className="workspace-grid">
+      <div className="panel dex-list-panel">
+        <div className="panel-heading">
+          <h2>精灵图鉴</h2>
+          <span>{filteredSpirits.length} / {spirits.length}</span>
+        </div>
+        <div className="dex-filters">
+          <label>
+            搜索
+            <input
+              placeholder="名称、编号、形态、属性、特性或技能"
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+            />
+          </label>
+          <label>
+            属性
+            <select
+              value={elementFilter}
+              onChange={(event) => setElementFilter(event.target.value)}
+            >
+              <option value="all">全部属性</option>
+              {ELEMENTS.map((element) => (
+                <option key={element} value={element}>
+                  {element}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+        <div className="dex-list">
+          {filteredSpirits.map((spirit) => (
+            <button
+              key={spirit.id}
+              className={spirit.id === selectedSpirit?.id ? "dex-row is-active" : "dex-row"}
+              type="button"
+              onClick={() => setSelectedId(spirit.id)}
+            >
+              <span>{formatSpiritOption(spirit)}</span>
+              <em>{spirit.elements.join(" / ")}</em>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {selectedSpirit ? (
+        <article className="panel dex-detail-panel">
+          <div className="detail-heading">
+            <div>
+              <p>{selectedSpirit.elements.join(" / ")}</p>
+              <h2>{formatSpiritOption(selectedSpirit)}</h2>
+            </div>
+            {selectedSpirit.imageUrl ? (
+              <img alt={selectedSpirit.name} src={selectedSpirit.imageUrl} />
+            ) : null}
+          </div>
+
+          <div className="detail-actions">
+            <button
+              className={selectedSpirit.id === attackerId ? "is-current" : ""}
+              type="button"
+              onClick={() => onUseAsAttacker(selectedSpirit.id)}
+            >
+              设为进攻方
+            </button>
+            <button
+              className={selectedSpirit.id === defenderId ? "is-current" : ""}
+              type="button"
+              onClick={() => onUseAsDefender(selectedSpirit.id)}
+            >
+              设为防守方
+            </button>
+          </div>
+
+          <div className="mini-stat-grid">
+            {STAT_KEYS.map((key) => (
+              <div key={key}>
+                <span>{statLabels[key]}</span>
+                <strong>{selectedSpirit.baseStats[key]}</strong>
+              </div>
+            ))}
+          </div>
+
+          <div className="detail-section">
+            <h3>特性</h3>
+            {(selectedSpirit.traits?.length ?? 0) > 0 ? (
+              selectedSpirit.traits?.map((trait) => (
+                <div className="trait-card" key={trait.name}>
+                  <b>{trait.name}</b>
+                  <p>{trait.description ?? "暂无说明。"}</p>
+                </div>
+              ))
+            ) : (
+              <p className="muted-text">暂无特性数据。</p>
+            )}
+          </div>
+
+          <div className="detail-section">
+            <h3>可学习技能</h3>
+            {selectedSkills.length > 0 ? (
+              <div className="compact-chip-list">
+                {selectedSkills.map((skill) => (
+                  <span key={skill.id}>{formatSkillOption(skill)}</span>
+                ))}
+              </div>
+            ) : (
+              <p className="muted-text">暂无已匹配技能。</p>
+            )}
+            {(selectedSpirit.unresolvedSkillNames?.length ?? 0) > 0 ? (
+              <p className="warning-text">
+                未匹配技能：{selectedSpirit.unresolvedSkillNames?.join("、")}
+              </p>
+            ) : null}
+          </div>
+        </article>
+      ) : null}
+    </section>
+  );
+}
+
+type SkillDexViewProps = {
+  attacker: Spirit;
+  selectedSkill?: Skill;
+  onUseSkill: (skillId: string) => void;
+};
+
+function SkillDexView({ attacker, selectedSkill, onUseSkill }: SkillDexViewProps) {
+  const [query, setQuery] = useState("");
+  const [elementFilter, setElementFilter] = useState("all");
+  const [categoryFilter, setCategoryFilter] = useState<SkillCategory | "all">("all");
+  const [calculableFilter, setCalculableFilter] = useState("all");
+  const [selectedId, setSelectedId] = useState(selectedSkill?.id ?? skills[0]?.id ?? "");
+  const attackerSkillIds = new Set(getAllSkillsForSpirit(attacker).map((skill) => skill.id));
+  const attackerDamageSkillIds = new Set(
+    getDamageSkillsForSpirit(attacker).map((skill) => skill.id)
+  );
+  const normalizedQuery = query.trim().toLowerCase();
+  const filteredSkills = skills.filter((skill) => {
+    const isDamage = skill.category === "physical" || skill.category === "magical";
+    return (
+      (normalizedQuery.length === 0 ||
+        getSkillSearchText(skill).includes(normalizedQuery)) &&
+      (elementFilter === "all" || skill.element === elementFilter) &&
+      (categoryFilter === "all" || skill.category === categoryFilter) &&
+      (calculableFilter === "all" ||
+        (calculableFilter === "calculable" ? isDamage : !isDamage))
+    );
+  });
+  const focusSkill =
+    filteredSkills.find((skill) => skill.id === selectedId) ??
+    filteredSkills[0] ??
+    skillMap.get(selectedId) ??
+    skills[0];
+  const focusRules = focusSkill ? parseSkillRules(focusSkill) : [];
+  const canUseForAttacker = focusSkill ? attackerDamageSkillIds.has(focusSkill.id) : false;
+
+  return (
+    <section className="workspace-grid">
+      <div className="panel dex-list-panel">
+        <div className="panel-heading">
+          <h2>技能图鉴</h2>
+          <span>{filteredSkills.length} / {skills.length}</span>
+        </div>
+        <div className="dex-filters three-columns">
+          <label>
+            搜索
+            <input
+              placeholder="技能名、属性、描述或可学习精灵"
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+            />
+          </label>
+          <label>
+            属性
+            <select
+              value={elementFilter}
+              onChange={(event) => setElementFilter(event.target.value)}
+            >
+              <option value="all">全部属性</option>
+              {ELEMENTS.map((element) => (
+                <option key={element} value={element}>
+                  {element}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label>
+            类型
+            <select
+              value={categoryFilter}
+              onChange={(event) =>
+                setCategoryFilter(event.target.value as SkillCategory | "all")
+              }
+            >
+              <option value="all">全部类型</option>
+              <option value="physical">物理</option>
+              <option value="magical">魔法</option>
+              <option value="status">状态</option>
+              <option value="defense">防御</option>
+            </select>
+          </label>
+          <label>
+            可计算
+            <select
+              value={calculableFilter}
+              onChange={(event) => setCalculableFilter(event.target.value)}
+            >
+              <option value="all">全部技能</option>
+              <option value="calculable">可算伤害</option>
+              <option value="non-calculable">非伤害/暂不可算</option>
+            </select>
+          </label>
+        </div>
+        <div className="dex-list">
+          {filteredSkills.map((skill) => (
+            <button
+              key={skill.id}
+              className={skill.id === focusSkill?.id ? "dex-row is-active" : "dex-row"}
+              type="button"
+              onClick={() => setSelectedId(skill.id)}
+            >
+              <span>{formatSkillOption(skill)}</span>
+              <em>{attackerSkillIds.has(skill.id) ? "当前进攻方可学" : "资料技能"}</em>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {focusSkill ? (
+        <article className="panel dex-detail-panel">
+          <div className="detail-heading">
+            <div>
+              <p>
+                {focusSkill.element} · {skillCategoryLabels[focusSkill.category]}
+              </p>
+              <h2>{focusSkill.name}</h2>
+            </div>
+            <div className="skill-power-badge">
+              <span>威力</span>
+              <strong>{focusSkill.power > 0 ? focusSkill.power : "动态"}</strong>
+            </div>
+          </div>
+          <div className="detail-actions">
+            <button
+              disabled={!canUseForAttacker}
+              type="button"
+              onClick={() => onUseSkill(focusSkill.id)}
+            >
+              用于当前进攻方
+            </button>
+          </div>
+          <div className="info-grid">
+            <div>
+              <span>能耗</span>
+              <strong>{focusSkill.energyCost ?? "-"}</strong>
+            </div>
+            <div>
+              <span>稳定计入</span>
+              <strong>{focusSkill.stableDamage ? "是" : "否"}</strong>
+            </div>
+            <div>
+              <span>可学习精灵</span>
+              <strong>{focusSkill.learnableSpiritNames?.length ?? 0}</strong>
+            </div>
+          </div>
+          <div className="detail-section">
+            <h3>技能说明</h3>
+            <p>{getSkillDescription(focusSkill)}</p>
+            {focusSkill.notes ? <p className="warning-text">{focusSkill.notes}</p> : null}
+          </div>
+          <RuleSummaryList rules={focusRules} />
+          <div className="detail-section">
+            <h3>可学习精灵</h3>
+            {(focusSkill.learnableSpiritNames?.length ?? 0) > 0 ? (
+              <div className="compact-chip-list">
+                {focusSkill.learnableSpiritNames?.slice(0, 80).map((name) => (
+                  <span key={name}>{name}</span>
+                ))}
+              </div>
+            ) : (
+              <p className="muted-text">暂无可学习精灵数据。</p>
+            )}
+          </div>
+        </article>
+      ) : null}
+    </section>
+  );
+}
+
+type TypeChartViewProps = {
+  defender: Spirit;
+  selectedSkill?: Skill;
+};
+
+function TypeChartView({ defender, selectedSkill }: TypeChartViewProps) {
+  const [attackElement, setAttackElement] = useState<string>(
+    selectedSkill?.element ?? "普通"
+  );
+  const [firstDefense, setFirstDefense] = useState<string>(
+    defender.elements[0] ?? "普通"
+  );
+  const [secondDefense, setSecondDefense] = useState<string>(
+    defender.elements[1] ?? ""
+  );
+  const defenseElements = [firstDefense, secondDefense].filter(Boolean);
+  const selectedResult = calculateTypeMultiplier(attackElement, defenseElements);
+  const currentResult = calculateTypeMultiplier(
+    selectedSkill?.element ?? "普通",
+    defender.elements
+  );
+
+  return (
+    <section className="panel type-panel">
+      <div className="panel-heading">
+        <h2>克制表</h2>
+        <span>双属性按当前表计算</span>
+      </div>
+      <div className="type-query">
+        <label>
+          进攻属性
+          <select
+            value={attackElement}
+            onChange={(event) => setAttackElement(event.target.value)}
+          >
+            {ELEMENTS.map((element) => (
+              <option key={element} value={element}>
+                {element}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
+          防守属性一
+          <select
+            value={firstDefense}
+            onChange={(event) => setFirstDefense(event.target.value)}
+          >
+            {ELEMENTS.map((element) => (
+              <option key={element} value={element}>
+                {element}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
+          防守属性二
+          <select
+            value={secondDefense}
+            onChange={(event) => setSecondDefense(event.target.value)}
+          >
+            <option value="">无</option>
+            {ELEMENTS.map((element) => (
+              <option key={element} value={element}>
+                {element}
+              </option>
+            ))}
+          </select>
+        </label>
+        <div className="type-result-card">
+          <span>
+            {attackElement} → {createDefenseTypeKey(defenseElements)}
+          </span>
+          <strong>{selectedResult.multiplier}</strong>
+          {!selectedResult.found ? <em>未录入，按 1 计算</em> : null}
+        </div>
+      </div>
+
+      <div className="current-type-note">
+        当前计算器：{selectedSkill?.element ?? "普通"} →{" "}
+        {defender.elements.join(" / ")} = {currentResult.multiplier}
+        {!currentResult.found ? "（未录入，按 1）" : ""}
+      </div>
+
+      <div className="type-table-wrap">
+        <table className="type-table">
+          <thead>
+            <tr>
+              <th>攻 \ 防</th>
+              {ELEMENTS.map((defense) => (
+                <th key={defense}>{defense}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {ELEMENTS.map((attack) => (
+              <tr key={attack}>
+                <th>{attack}</th>
+                {ELEMENTS.map((defense) => {
+                  const result = calculateTypeMultiplier(attack, [defense]);
+                  const active =
+                    attack === attackElement &&
+                    defenseElements.length === 1 &&
+                    defense === firstDefense;
+                  return (
+                    <td
+                      key={`${attack}-${defense}`}
+                      className={`${active ? "is-active" : ""} type-rate-${String(
+                        result.multiplier
+                      ).replace(".", "-")}`}
+                    >
+                      {result.multiplier}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
+function RuleSummaryList({ rules }: { rules: EffectRule[] }) {
+  return (
+    <div className="detail-section">
+      <h3>规则摘要</h3>
+      {rules.length > 0 ? (
+        <div className="rule-debug-list">
+          {rules.map((rule) => (
+            <article className="rule-debug-card" key={rule.id}>
+              <div>
+                <strong>{rule.label}</strong>
+                <span>{rule.kind} · {getRuleFormulaStatus(rule)}</span>
+              </div>
+              <p>{getRuleSummary(rule)}</p>
+              <em>{rule.description}</em>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <p className="muted-text">没有解析到可展示规则。</p>
+      )}
+    </div>
+  );
+}
+
+function RulesDebugView() {
+  const [mode, setMode] = useState<"skill" | "trait">("skill");
+  const [query, setQuery] = useState("");
+  const [selectedId, setSelectedId] = useState(skills[0]?.id ?? "");
+  const traitEntries = spirits.flatMap((spirit) =>
+    (spirit.traits ?? []).map((trait) => ({
+      id: `${spirit.id}:${trait.name}`,
+      spirit,
+      trait,
+    }))
+  );
+  const normalizedQuery = query.trim().toLowerCase();
+  const skillOptions = skills.filter(
+    (skill) =>
+      normalizedQuery.length === 0 || getSkillSearchText(skill).includes(normalizedQuery)
+  );
+  const traitOptions = traitEntries.filter((entry) =>
+    normalizedQuery.length === 0
+      ? true
+      : [formatSpiritOption(entry.spirit), entry.trait.name, entry.trait.description]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase()
+          .includes(normalizedQuery)
+  );
+  const selectedSkill =
+    skillOptions.find((skill) => skill.id === selectedId) ??
+    skillOptions[0] ??
+    skillMap.get(selectedId);
+  const selectedTrait =
+    traitOptions.find((entry) => entry.id === selectedId) ??
+    traitOptions[0] ??
+    traitEntries.find((entry) => entry.id === selectedId);
+  const rules =
+    mode === "skill" && selectedSkill
+      ? parseSkillRules(selectedSkill)
+      : mode === "trait" && selectedTrait
+        ? parseTraitRules(selectedTrait.trait)
+        : [];
+  const rawText =
+    mode === "skill"
+      ? selectedSkill
+        ? getSkillDescription(selectedSkill)
+        : ""
+      : selectedTrait?.trait.description ?? "";
+
+  return (
+    <section className="workspace-grid">
+      <div className="panel dex-list-panel">
+        <div className="panel-heading">
+          <h2>规则调试</h2>
+          <span>{mode === "skill" ? skillOptions.length : traitOptions.length} 项</span>
+        </div>
+        <div className="dex-filters">
+          <label>
+            类型
+            <select
+              value={mode}
+              onChange={(event) => {
+                const nextMode = event.target.value as "skill" | "trait";
+                setMode(nextMode);
+                setSelectedId(
+                  nextMode === "skill" ? skills[0]?.id ?? "" : traitEntries[0]?.id ?? ""
+                );
+              }}
+            >
+              <option value="skill">技能</option>
+              <option value="trait">特性</option>
+            </select>
+          </label>
+          <label>
+            搜索
+            <input
+              placeholder="搜索技能、精灵、特性或描述"
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+            />
+          </label>
+        </div>
+        <div className="dex-list">
+          {mode === "skill"
+            ? skillOptions.map((skill) => (
+                <button
+                  key={skill.id}
+                  className={skill.id === selectedSkill?.id ? "dex-row is-active" : "dex-row"}
+                  type="button"
+                  onClick={() => setSelectedId(skill.id)}
+                >
+                  <span>{formatSkillOption(skill)}</span>
+                  <em>{parseSkillRules(skill).length} 条规则</em>
+                </button>
+              ))
+            : traitOptions.map((entry) => (
+                <button
+                  key={entry.id}
+                  className={entry.id === selectedTrait?.id ? "dex-row is-active" : "dex-row"}
+                  type="button"
+                  onClick={() => setSelectedId(entry.id)}
+                >
+                  <span>{entry.trait.name}</span>
+                  <em>{formatSpiritOption(entry.spirit)}</em>
+                </button>
+              ))}
+        </div>
+      </div>
+
+      <article className="panel dex-detail-panel">
+        <div className="detail-heading">
+          <div>
+            <p>{mode === "skill" ? "技能描述解析" : "特性描述解析"}</p>
+            <h2>
+              {mode === "skill"
+                ? selectedSkill?.name ?? "未选择"
+                : selectedTrait
+                  ? `${selectedTrait.spirit.name} · ${selectedTrait.trait.name}`
+                  : "未选择"}
+            </h2>
+          </div>
+        </div>
+        <div className="detail-section">
+          <h3>原始描述</h3>
+          <p>{rawText || "暂无描述。"}</p>
+        </div>
+        <RuleSummaryList rules={rules} />
+      </article>
+    </section>
+  );
+}
+
+function UpdateAnnouncementsView() {
+  const latest = updateAnnouncements[0];
+
+  return (
+    <section className="updates-page">
+      <div className="panel updates-hero">
+        <div>
+          <p>当前版本</p>
+          <h2>{latest.version} · {latest.title}</h2>
+          <span>{latest.date}</span>
+        </div>
+        <div className="updates-hero-note">
+          这里记录计算器的重要更新、已上线能力和仍需校准的规则，方便玩家确认当前版本是否包含自己需要的功能。
+        </div>
+      </div>
+
+      <div className="updates-timeline">
+        {updateAnnouncements.map((announcement) => (
+          <article className="panel update-card" key={announcement.version}>
+            <div className="update-meta">
+              <strong>{announcement.version}</strong>
+              <span>{announcement.date}</span>
+            </div>
+            <div className="update-body">
+              <h3>{announcement.title}</h3>
+              <ul>
+                {announcement.highlights.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              {announcement.notes && announcement.notes.length > 0 ? (
+                <div className="update-notes">
+                  {announcement.notes.map((note) => (
+                    <span key={note}>{note}</span>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default function App() {
   const initialAttacker = spirits[0];
   const initialDefender = spirits[2] ?? spirits[0];
@@ -849,6 +1640,18 @@ export default function App() {
   );
   const [savingPresetSide, setSavingPresetSide] = useState<PresetSide | null>(null);
   const [presetDraftName, setPresetDraftName] = useState("");
+  const [activePage, setActivePage] = useState<PageKey>(() => getPageFromHash());
+
+  useEffect(() => {
+    const syncPageFromHash = () => setActivePage(getPageFromHash());
+    window.addEventListener("hashchange", syncPageFromHash);
+
+    if (!window.location.hash) {
+      window.history.replaceState(null, "", "#/calculator");
+    }
+
+    return () => window.removeEventListener("hashchange", syncPageFromHash);
+  }, []);
 
   const attacker = spirits.find((item) => item.id === attackerId) ?? spirits[0];
   const defender = spirits.find((item) => item.id === defenderId) ?? spirits[0];
@@ -1084,6 +1887,27 @@ export default function App() {
     resetDynamicState(true);
   }
 
+  function applySpiritFromDex(side: PresetSide, spiritId: string): void {
+    if (side === "attacker") {
+      handleAttackerChange(spiritId);
+      setAttackerSearch("");
+    } else {
+      handleDefenderChange(spiritId);
+      setDefenderSearch("");
+    }
+
+    navigateToPage("calculator");
+  }
+
+  function useSkillFromDex(skillId: string): void {
+    if (!availableSkills.some((skill) => skill.id === skillId)) {
+      return;
+    }
+
+    handleSkillChange(skillId);
+    navigateToPage("calculator");
+  }
+
   function updateRuleEnabled(ruleId: string, enabled: boolean): void {
     setModifierState((current) => ({
       ...current,
@@ -1145,11 +1969,26 @@ export default function App() {
       <header className="app-header">
         <div>
           <p>PVP 等级固定 {PVP_LEVEL}</p>
-          <h1>洛克王国：世界 PVP 伤害计算器</h1>
+          <h1>洛克王国：世界 PVP 工作台</h1>
         </div>
-        <span>特性层数 · 技能机制 · 手动修正</span>
+        <span>伤害计算 · 图鉴资料 · 规则调试</span>
       </header>
 
+      <nav className="workspace-nav" aria-label="PVP 工作台导航">
+        {routes.map((route) => (
+          <a
+            key={route.key}
+            className={activePage === route.key ? "is-active" : ""}
+            href={`#/${route.key}`}
+          >
+            <strong>{route.label}</strong>
+            <span>{route.description}</span>
+          </a>
+        ))}
+      </nav>
+
+      {activePage === "calculator" ? (
+      <>
       <div className="battle-grid">
         <SpiritPanel
           actualStats={attackerActualStats}
@@ -1474,6 +2313,34 @@ export default function App() {
           </div>
         ) : null}
       </section>
+      </>
+      ) : null}
+
+      {activePage === "spirits" ? (
+        <SpiritDexView
+          attackerId={attacker.id}
+          defenderId={defender.id}
+          onUseAsAttacker={(spiritId) => applySpiritFromDex("attacker", spiritId)}
+          onUseAsDefender={(spiritId) => applySpiritFromDex("defender", spiritId)}
+        />
+      ) : null}
+
+      {activePage === "skills" ? (
+        <SkillDexView
+          attacker={attacker}
+          selectedSkill={selectedSkill}
+          onUseSkill={useSkillFromDex}
+        />
+      ) : null}
+
+      {activePage === "types" ? (
+        <TypeChartView defender={defender} selectedSkill={selectedSkill} />
+      ) : null}
+
+      {activePage === "rules" ? <RulesDebugView /> : null}
+
+      {activePage === "updates" ? <UpdateAnnouncementsView /> : null}
+
     </main>
   );
 }

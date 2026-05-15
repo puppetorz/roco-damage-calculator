@@ -138,10 +138,18 @@ async function main() {
     join(generatedDir, "builds.generated.ts"),
     "utf8"
   );
+  const pvpLineupsSource = await readFile(
+    join(generatedDir, "pvpLineups.generated.ts"),
+    "utf8"
+  );
 
   const spirits = extractConstExpression(spiritsSource, "generatedSpirits");
   const skills = extractConstExpression(skillsSource, "generatedSkills");
   const builds = extractConstExpression(buildsSource, "generatedBuilds");
+  const pvpLineups = extractConstExpression(
+    pvpLineupsSource,
+    "generatedPvpLineups"
+  );
   const recommendedIndividualKeys = extractConstExpression(
     buildsSource,
     "generatedRecommendedIndividualKeys"
@@ -193,6 +201,39 @@ async function main() {
         errors.push(`${skill.id}: 可学精灵不存在 ${spiritId}`);
       }
     }
+
+    for (const effect of skill.parsedEffects ?? []) {
+      if (!effect.kind || !effect.rawText) {
+        errors.push(`${skill.id}: 技能效果缺少 kind/rawText`);
+      }
+
+      if (effect.trigger?.kind === "carriedSkillElement") {
+        const element = normalizeElement(effect.trigger.element);
+        if (!knownElements.has(element)) {
+          warnings.push(`${skill.id}: 携带技能触发未知属性 ${effect.trigger.element}`);
+        }
+      }
+    }
+  }
+
+  const refraction = skills.find((skill) => skill.name === "折射");
+  if (!refraction) {
+    errors.push("缺少技能：折射");
+  } else {
+    const refractionElements = new Set(
+      (refraction.parsedEffects ?? [])
+        .map((effect) =>
+          effect.trigger?.kind === "carriedSkillElement"
+            ? normalizeElement(effect.trigger.element)
+            : undefined
+        )
+        .filter(Boolean)
+    );
+    for (const element of ["土", "普通", "机械", "草", "火", "冰", "毒", "虫", "龙", "翼", "水", "武", "光", "幻", "幽", "恶", "电", "萌"]) {
+      if (!refractionElements.has(element)) {
+        errors.push(`折射缺少 ${element}系携带触发效果`);
+      }
+    }
   }
 
   for (const build of builds) {
@@ -203,6 +244,37 @@ async function main() {
     for (const skillId of build.skillIds) {
       if (!skillIds.has(skillId)) {
         errors.push(`${build.id}: 配招引用的技能不存在 ${skillId}`);
+      }
+    }
+  }
+
+  for (const lineup of pvpLineups) {
+    if (!lineup.id || !lineup.title) {
+      errors.push(`PVP 阵容缺少 id/title: ${JSON.stringify(lineup).slice(0, 120)}`);
+    }
+
+    if (!Array.isArray(lineup.members) || lineup.members.length !== 6) {
+      errors.push(`${lineup.id}: PVP 阵容成员必须为 6 个`);
+      continue;
+    }
+
+    for (const member of lineup.members) {
+      if (member.spiritId && !spiritIds.has(member.spiritId)) {
+        errors.push(`${lineup.id}: 阵容精灵不存在 ${member.spiritId}`);
+      }
+
+      if (!member.spiritId && member.spiritName) {
+        warnings.push(`${lineup.id}: 未匹配阵容精灵 ${member.spiritName}`);
+      }
+
+      for (const skillId of member.skillIds ?? []) {
+        if (!skillIds.has(skillId)) {
+          errors.push(`${lineup.id}: 阵容技能不存在 ${skillId}`);
+        }
+      }
+
+      for (const skillName of member.unresolvedSkillNames ?? []) {
+        warnings.push(`${lineup.id}: 未匹配阵容技能 ${skillName}`);
       }
     }
   }
@@ -241,6 +313,7 @@ async function main() {
     `- 精灵数量：${spirits.length}`,
     `- 技能数量：${skills.length}`,
     `- 常见配置数量：${builds.length}`,
+    `- PVP 阵容数量：${pvpLineups.length}`,
     `- 推荐个体数量：${Object.keys(recommendedIndividualKeys).length}`,
     `- 已匹配可学技能的精灵：${linkedSpiritCount}`,
     `- 防守属性组合数量：${defenseTypeCount}`,

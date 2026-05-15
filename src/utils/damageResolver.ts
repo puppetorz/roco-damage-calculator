@@ -343,6 +343,7 @@ export function resolveDamageInput({
 
   const attackStage = getAttackStage(skill.category, attackerModifiers);
   const defenseStage = getDefenseStage(skill.category, defenderModifiers);
+  const finalHitCount = Math.max(1, Math.round(hitCount));
 
   return {
     input: {
@@ -356,14 +357,14 @@ export function resolveDamageInput({
       stabMultiplier,
       typeMultiplier,
       weatherMultiplier: WEATHER_MULTIPLIER,
-      hitCount,
+      hitCount: finalHitCount,
       damageReductions: DAMAGE_REDUCTIONS,
       attackerAttackUp: attackStage.up,
       attackerAttackDown: attackStage.down,
       defenderDefenseUp: defenseStage.up,
       defenderDefenseDown: defenseStage.down,
     },
-    hitCount,
+    hitCount: finalHitCount,
     skillPower,
     powerBonus,
     powerBuffMultiplier,
