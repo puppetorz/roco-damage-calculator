@@ -693,6 +693,9 @@ export const generatedSkills = [
       "厉毒修萝",
       "柴渣虫",
       "燃薪虫",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "咕咕帽",
       "咕德帽帽",
       "小鼓象",
@@ -745,6 +748,9 @@ export const generatedSkills = [
       "lcx_spirit_280",
       "lcx_spirit_267",
       "lcx_spirit_268",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_388",
       "lcx_spirit_389",
       "lcx_spirit_386",
@@ -932,6 +938,9 @@ export const generatedSkills = [
       "夜枭",
       "火红尾",
       "雅丹鬃",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "学院呱呱"
     ],
     "learnableSpiritIds": [
@@ -993,6 +1002,9 @@ export const generatedSkills = [
       "lcx_spirit_254",
       "lcx_spirit_375",
       "lcx_spirit_376",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_345"
     ]
   },
@@ -1128,6 +1140,9 @@ export const generatedSkills = [
       "疾光千兽",
       "嗜光嗡嗡",
       "窃光蚊",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "学院呱呱"
     ],
     "learnableSpiritIds": [
@@ -1244,6 +1259,9 @@ export const generatedSkills = [
       "lcx_spirit_321",
       "lcx_spirit_214",
       "lcx_spirit_215",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_345"
     ]
   },
@@ -1811,6 +1829,9 @@ export const generatedSkills = [
       "海豹船长",
       "翡翠水母",
       "琉璃水母",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "猴麦仔",
       "音碟吼",
       "学院呱呱"
@@ -1826,6 +1847,9 @@ export const generatedSkills = [
       "lcx_spirit_189",
       "lcx_spirit_185",
       "lcx_spirit_186",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_397",
       "lcx_spirit_398",
       "lcx_spirit_345"
@@ -2047,6 +2071,8 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "小雪人",
       "雪怪",
@@ -2137,6 +2163,8 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_382",
       "lcx_spirit_383",
@@ -2528,6 +2556,8 @@ export const generatedSkills = [
       "书卷守护",
       "古卷执政官",
       "古卷匣魔像",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "学院呱呱"
     ],
@@ -2551,6 +2581,8 @@ export const generatedSkills = [
       "lcx_spirit_312",
       "lcx_spirit_313",
       "lcx_spirit_314",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_345"
     ]
@@ -2598,6 +2630,8 @@ export const generatedSkills = [
       "秩序鱿墨",
       "小甲虫",
       "铠甲虫",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "学院呱呱"
     ],
@@ -2619,6 +2653,8 @@ export const generatedSkills = [
       "lcx_spirit_368",
       "lcx_spirit_283",
       "lcx_spirit_284",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_345"
     ]
@@ -2683,6 +2719,9 @@ export const generatedSkills = [
       "书卷守护",
       "古卷执政官",
       "古卷匣魔像",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "学院呱呱"
@@ -2719,6 +2758,9 @@ export const generatedSkills = [
       "lcx_spirit_312",
       "lcx_spirit_313",
       "lcx_spirit_314",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_345"
@@ -3001,6 +3043,8 @@ export const generatedSkills = [
       "春团",
       "春兔",
       "春花兔",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "小雪人",
       "雪怪",
@@ -3008,7 +3052,8 @@ export const generatedSkills = [
       "爆焰喷喷",
       "小丑豆豆",
       "小丑兔",
-      "小丑公爵"
+      "小丑公爵",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_1",
@@ -3231,6 +3276,8 @@ export const generatedSkills = [
       "lcx_spirit_339",
       "lcx_spirit_340",
       "lcx_spirit_341",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_382",
       "lcx_spirit_383",
@@ -3238,7 +3285,8 @@ export const generatedSkills = [
       "lcx_spirit_385",
       "lcx_spirit_392",
       "lcx_spirit_393",
-      "lcx_spirit_394"
+      "lcx_spirit_394",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -3424,6 +3472,8 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "猴麦仔",
       "音碟吼",
@@ -3431,7 +3481,8 @@ export const generatedSkills = [
       "小丑兔",
       "小丑公爵",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_1",
@@ -3600,6 +3651,8 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_397",
       "lcx_spirit_398",
@@ -3607,7 +3660,8 @@ export const generatedSkills = [
       "lcx_spirit_393",
       "lcx_spirit_394",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -3762,7 +3816,8 @@ export const generatedSkills = [
       "小鼓象",
       "巨鼓象",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -3897,7 +3952,8 @@ export const generatedSkills = [
       "lcx_spirit_386",
       "lcx_spirit_387",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -4338,6 +4394,9 @@ export const generatedSkills = [
       "小帕尔",
       "帕尔萨斯",
       "龙息帕尔",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小鼓象",
       "巨鼓象"
     ],
@@ -4392,6 +4451,9 @@ export const generatedSkills = [
       "lcx_spirit_322",
       "lcx_spirit_323",
       "lcx_spirit_324",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_386",
       "lcx_spirit_387"
     ]
@@ -4563,6 +4625,9 @@ export const generatedSkills = [
       "上岸蛙",
       "火红尾",
       "雅丹鬃",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "加油海葵",
       "加油蟹",
       "咕咕帽",
@@ -4714,6 +4779,9 @@ export const generatedSkills = [
       "lcx_spirit_374",
       "lcx_spirit_375",
       "lcx_spirit_376",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_395",
       "lcx_spirit_396",
       "lcx_spirit_388",
@@ -4813,6 +4881,9 @@ export const generatedSkills = [
       "粉星仔",
       "粉耳星兔",
       "落陨星兔",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "猴麦仔",
       "音碟吼"
     ],
@@ -4899,6 +4970,9 @@ export const generatedSkills = [
       "lcx_spirit_294",
       "lcx_spirit_295",
       "lcx_spirit_296",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_397",
       "lcx_spirit_398"
     ]
@@ -5133,6 +5207,8 @@ export const generatedSkills = [
       "粉星仔",
       "粉耳星兔",
       "落陨星兔",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "烟花团",
       "烟花伯爵",
@@ -5183,6 +5259,8 @@ export const generatedSkills = [
       "lcx_spirit_294",
       "lcx_spirit_295",
       "lcx_spirit_296",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_390",
       "lcx_spirit_391",
@@ -6498,7 +6576,12 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "爆焰仔",
@@ -6991,7 +7074,12 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_384",
@@ -7180,6 +7268,8 @@ export const generatedSkills = [
       "月牙雪熊",
       "柴渣虫",
       "燃薪虫",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -7326,6 +7416,8 @@ export const generatedSkills = [
       "lcx_spirit_371",
       "lcx_spirit_267",
       "lcx_spirit_268",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -7430,6 +7522,8 @@ export const generatedSkills = [
       "月牙雪熊",
       "柴渣虫",
       "燃薪虫",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -7498,6 +7592,8 @@ export const generatedSkills = [
       "lcx_spirit_371",
       "lcx_spirit_267",
       "lcx_spirit_268",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -7614,6 +7710,8 @@ export const generatedSkills = [
       "春团",
       "春兔",
       "春花兔",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "猴麦仔",
       "音碟吼"
@@ -7690,6 +7788,8 @@ export const generatedSkills = [
       "lcx_spirit_339",
       "lcx_spirit_340",
       "lcx_spirit_341",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_397",
       "lcx_spirit_398"
@@ -7870,6 +7970,8 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "小雪人",
       "雪怪",
@@ -8033,6 +8135,8 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_382",
       "lcx_spirit_383",
@@ -8570,6 +8674,9 @@ export const generatedSkills = [
       "春团",
       "春兔",
       "春花兔",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "爆焰仔",
       "爆焰喷喷",
       "咕咕帽",
@@ -8743,6 +8850,9 @@ export const generatedSkills = [
       "lcx_spirit_339",
       "lcx_spirit_340",
       "lcx_spirit_341",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_384",
       "lcx_spirit_385",
       "lcx_spirit_388",
@@ -9075,6 +9185,9 @@ export const generatedSkills = [
       "蓬叶虫金黄的样子",
       "风滚暮虫",
       "风滚暮虫金黄的样子",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "猴麦仔",
       "音碟吼"
     ],
@@ -9109,6 +9222,9 @@ export const generatedSkills = [
       "spirit_3304",
       "spirit_4909",
       "lcx_spirit_138",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_397",
       "lcx_spirit_398"
     ]
@@ -9436,6 +9552,9 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "爆焰仔",
@@ -9444,8 +9563,7 @@ export const generatedSkills = [
       "音碟吼",
       "小丑豆豆",
       "小丑兔",
-      "小丑公爵",
-      "学院呱呱"
+      "小丑公爵"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_1",
@@ -9651,6 +9769,9 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_384",
@@ -9659,8 +9780,7 @@ export const generatedSkills = [
       "lcx_spirit_398",
       "lcx_spirit_392",
       "lcx_spirit_393",
-      "lcx_spirit_394",
-      "lcx_spirit_345"
+      "lcx_spirit_394"
     ]
   },
   {
@@ -9721,6 +9841,9 @@ export const generatedSkills = [
       "画间沉铁兽",
       "双灯鱼",
       "利灯鱼",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "学院呱呱"
     ],
     "learnableSpiritIds": [
@@ -9753,6 +9876,9 @@ export const generatedSkills = [
       "lcx_spirit_310",
       "lcx_spirit_46",
       "lcx_spirit_47",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_345"
     ]
   },
@@ -10205,6 +10331,9 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "学院呱呱"
     ],
     "learnableSpiritIds": [
@@ -10357,6 +10486,9 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_345"
     ]
   },
@@ -11347,6 +11479,9 @@ export const generatedSkills = [
       "犀角鸟",
       "光纤兽",
       "疾光千兽",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "猴麦仔",
       "音碟吼"
     ],
@@ -11414,6 +11549,9 @@ export const generatedSkills = [
       "lcx_spirit_319",
       "lcx_spirit_320",
       "lcx_spirit_321",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_397",
       "lcx_spirit_398"
     ]
@@ -11643,10 +11781,14 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "猴麦仔",
       "音碟吼",
       "烟花团",
-      "烟花伯爵"
+      "烟花伯爵",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_11",
@@ -11881,10 +12023,14 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_397",
       "lcx_spirit_398",
       "lcx_spirit_390",
-      "lcx_spirit_391"
+      "lcx_spirit_391",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -12102,7 +12248,12 @@ export const generatedSkills = [
       "春团",
       "春兔",
       "春花兔",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "炫光迪迪",
       "霹雳迪迪",
       "小鼓象",
@@ -12326,7 +12477,12 @@ export const generatedSkills = [
       "lcx_spirit_339",
       "lcx_spirit_340",
       "lcx_spirit_341",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_399",
       "lcx_spirit_400",
       "lcx_spirit_386",
@@ -12515,6 +12671,8 @@ export const generatedSkills = [
       "贝加尔",
       "贝古斯",
       "落陨星兔",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -12685,6 +12843,8 @@ export const generatedSkills = [
       "lcx_spirit_358",
       "lcx_spirit_359",
       "lcx_spirit_296",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -13173,6 +13333,9 @@ export const generatedSkills = [
       "格兰球",
       "嗜光嗡嗡",
       "窃光蚊",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "猴麦仔",
       "音碟吼",
       "学院呱呱"
@@ -13204,6 +13367,9 @@ export const generatedSkills = [
       "lcx_spirit_275",
       "lcx_spirit_214",
       "lcx_spirit_215",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_397",
       "lcx_spirit_398",
       "lcx_spirit_345"
@@ -13649,6 +13815,8 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "猴麦仔",
       "音碟吼",
@@ -13760,6 +13928,8 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_397",
       "lcx_spirit_398",
@@ -13940,8 +14110,7 @@ export const generatedSkills = [
       "春花兔",
       "幽星光",
       "曜星光",
-      "暮星辰",
-      "学院呱呱"
+      "暮星辰"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -14065,8 +14234,7 @@ export const generatedSkills = [
       "lcx_spirit_341",
       "lcx_spirit_342",
       "lcx_spirit_343",
-      "lcx_spirit_344",
-      "lcx_spirit_345"
+      "lcx_spirit_344"
     ]
   },
   {
@@ -14586,7 +14754,8 @@ export const generatedSkills = [
       "小鼓象",
       "巨鼓象",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -14712,7 +14881,8 @@ export const generatedSkills = [
       "lcx_spirit_386",
       "lcx_spirit_387",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -15844,6 +16014,8 @@ export const generatedSkills = [
       "月牙雪熊",
       "柴渣虫",
       "燃薪虫",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -15967,6 +16139,8 @@ export const generatedSkills = [
       "lcx_spirit_371",
       "lcx_spirit_267",
       "lcx_spirit_268",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -16329,6 +16503,9 @@ export const generatedSkills = [
       "夜枭",
       "火红尾",
       "雅丹鬃",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "牵线木偶",
@@ -16512,6 +16689,9 @@ export const generatedSkills = [
       "lcx_spirit_254",
       "lcx_spirit_375",
       "lcx_spirit_376",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_124",
@@ -17641,6 +17821,9 @@ export const generatedSkills = [
       "夜枭",
       "火红尾",
       "雅丹鬃",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "爆焰仔",
@@ -17804,6 +17987,9 @@ export const generatedSkills = [
       "lcx_spirit_254",
       "lcx_spirit_375",
       "lcx_spirit_376",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_384",
@@ -18647,7 +18833,8 @@ export const generatedSkills = [
       "炫光迪迪",
       "霹雳迪迪",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -18819,7 +19006,8 @@ export const generatedSkills = [
       "lcx_spirit_399",
       "lcx_spirit_400",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -19212,6 +19400,8 @@ export const generatedSkills = [
       "月牙雪熊",
       "柴渣虫",
       "燃薪虫",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -19326,6 +19516,8 @@ export const generatedSkills = [
       "lcx_spirit_371",
       "lcx_spirit_267",
       "lcx_spirit_268",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -19741,8 +19933,7 @@ export const generatedSkills = [
       "咕咕帽",
       "咕德帽帽",
       "小鼓象",
-      "巨鼓象",
-      "学院呱呱"
+      "巨鼓象"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_1",
@@ -19815,8 +20006,7 @@ export const generatedSkills = [
       "lcx_spirit_388",
       "lcx_spirit_389",
       "lcx_spirit_386",
-      "lcx_spirit_387",
-      "lcx_spirit_345"
+      "lcx_spirit_387"
     ]
   },
   {
@@ -20572,7 +20762,8 @@ export const generatedSkills = [
       "红丝绒",
       "红绒十字",
       "火红尾",
-      "雅丹鬃"
+      "雅丹鬃",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_161",
@@ -20582,7 +20773,8 @@ export const generatedSkills = [
       "lcx_spirit_25",
       "lcx_spirit_26",
       "lcx_spirit_375",
-      "lcx_spirit_376"
+      "lcx_spirit_376",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -20613,7 +20805,8 @@ export const generatedSkills = [
       "夜宿颅",
       "夜枭",
       "火红尾",
-      "雅丹鬃"
+      "雅丹鬃",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_172",
@@ -20623,7 +20816,8 @@ export const generatedSkills = [
       "lcx_spirit_253",
       "lcx_spirit_254",
       "lcx_spirit_375",
-      "lcx_spirit_376"
+      "lcx_spirit_376",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -20789,8 +20983,7 @@ export const generatedSkills = [
       "双灯鱼",
       "利灯鱼",
       "柴渣虫",
-      "燃薪虫",
-      "学院呱呱"
+      "燃薪虫"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_8",
@@ -20864,8 +21057,7 @@ export const generatedSkills = [
       "lcx_spirit_46",
       "lcx_spirit_47",
       "lcx_spirit_267",
-      "lcx_spirit_268",
-      "lcx_spirit_345"
+      "lcx_spirit_268"
     ]
   },
   {
@@ -21519,7 +21711,8 @@ export const generatedSkills = [
       "小鼓象",
       "巨鼓象",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -21708,7 +21901,8 @@ export const generatedSkills = [
       "lcx_spirit_386",
       "lcx_spirit_387",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -22158,6 +22352,8 @@ export const generatedSkills = [
       "落星虫",
       "陨星虫",
       "月牙雪熊",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -22248,6 +22444,8 @@ export const generatedSkills = [
       "lcx_spirit_305",
       "lcx_spirit_306",
       "lcx_spirit_371",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -22715,6 +22913,9 @@ export const generatedSkills = [
       "夜枭",
       "火红尾",
       "雅丹鬃",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "学院呱呱"
@@ -22914,6 +23115,9 @@ export const generatedSkills = [
       "lcx_spirit_254",
       "lcx_spirit_375",
       "lcx_spirit_376",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_345"
@@ -23088,6 +23292,9 @@ export const generatedSkills = [
       "高脚鹬",
       "胆小鳗鱼",
       "闪电鳗鱼",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "学院呱呱"
     ],
     "learnableSpiritIds": [
@@ -23109,6 +23316,9 @@ export const generatedSkills = [
       "lcx_spirit_192",
       "lcx_spirit_183",
       "lcx_spirit_184",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_345"
     ]
   },
@@ -23174,6 +23384,9 @@ export const generatedSkills = [
       "抹茶布丁",
       "椰浆布丁",
       "熔岩布丁",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "加油海葵",
       "加油蟹",
       "学院呱呱"
@@ -23231,6 +23444,9 @@ export const generatedSkills = [
       "lcx_spirit_201",
       "lcx_spirit_202",
       "lcx_spirit_203",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_395",
       "lcx_spirit_396",
       "lcx_spirit_345"
@@ -24283,7 +24499,8 @@ export const generatedSkills = [
       "布瓜蝌",
       "上岸蛙",
       "小鼓象",
-      "巨鼓象"
+      "巨鼓象",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_1",
@@ -24359,7 +24576,8 @@ export const generatedSkills = [
       "lcx_spirit_373",
       "lcx_spirit_374",
       "lcx_spirit_386",
-      "lcx_spirit_387"
+      "lcx_spirit_387",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -24546,6 +24764,9 @@ export const generatedSkills = [
       "疾光千兽",
       "嗜光嗡嗡",
       "窃光蚊",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小鼓象",
       "巨鼓象",
       "学院呱呱"
@@ -24571,6 +24792,9 @@ export const generatedSkills = [
       "lcx_spirit_321",
       "lcx_spirit_214",
       "lcx_spirit_215",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_386",
       "lcx_spirit_387",
       "lcx_spirit_345"
@@ -25368,8 +25592,7 @@ export const generatedSkills = [
       "嗜光嗡嗡",
       "窃光蚊",
       "火红尾",
-      "雅丹鬃",
-      "学院呱呱"
+      "雅丹鬃"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_1",
@@ -25418,8 +25641,7 @@ export const generatedSkills = [
       "lcx_spirit_214",
       "lcx_spirit_215",
       "lcx_spirit_375",
-      "lcx_spirit_376",
-      "lcx_spirit_345"
+      "lcx_spirit_376"
     ]
   },
   {
@@ -25489,6 +25711,9 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "炫光迪迪",
       "霹雳迪迪",
       "学院呱呱"
@@ -25545,6 +25770,9 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_399",
       "lcx_spirit_400",
       "lcx_spirit_345"
@@ -25722,7 +25950,12 @@ export const generatedSkills = [
       "光纤兽",
       "疾光千兽",
       "月牙雪熊",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "爆焰仔",
@@ -25917,7 +26150,12 @@ export const generatedSkills = [
       "lcx_spirit_320",
       "lcx_spirit_321",
       "lcx_spirit_371",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_384",
@@ -26157,6 +26395,8 @@ export const generatedSkills = [
       "光纤兽",
       "疾光千兽",
       "月牙雪熊",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -26318,6 +26558,8 @@ export const generatedSkills = [
       "lcx_spirit_320",
       "lcx_spirit_321",
       "lcx_spirit_371",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -26362,6 +26604,8 @@ export const generatedSkills = [
       "圣剑侍从",
       "圣剑-X",
       "圣剑骑士",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "小鼓象",
       "巨鼓象"
@@ -26380,6 +26624,8 @@ export const generatedSkills = [
       "lcx_spirit_238",
       "lcx_spirit_239",
       "spirit_5208",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_386",
       "lcx_spirit_387"
@@ -26645,6 +26891,8 @@ export const generatedSkills = [
       "贝瑟",
       "贝加尔",
       "贝古斯",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "小鼓象",
       "巨鼓象"
@@ -26673,6 +26921,8 @@ export const generatedSkills = [
       "lcx_spirit_357",
       "lcx_spirit_358",
       "lcx_spirit_359",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_386",
       "lcx_spirit_387"
@@ -26786,6 +27036,8 @@ export const generatedSkills = [
       "贝瑟",
       "贝加尔",
       "贝古斯",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "猴麦仔",
       "音碟吼",
@@ -26802,6 +27054,8 @@ export const generatedSkills = [
       "lcx_spirit_357",
       "lcx_spirit_358",
       "lcx_spirit_359",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_397",
       "lcx_spirit_398",
@@ -27049,6 +27303,8 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "猴麦仔",
       "音碟吼",
@@ -27241,6 +27497,8 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_397",
       "lcx_spirit_398",
@@ -27364,7 +27622,12 @@ export const generatedSkills = [
       "贝瑟",
       "贝加尔",
       "贝古斯",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "猴麦仔",
@@ -27419,7 +27682,12 @@ export const generatedSkills = [
       "lcx_spirit_357",
       "lcx_spirit_358",
       "lcx_spirit_359",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_397",
@@ -27481,8 +27749,9 @@ export const generatedSkills = [
       "贝瑟",
       "贝加尔",
       "贝古斯",
-      "机墓方舟",
-      "学院呱呱"
+      "钨丝贝贝",
+      "辉光幕机",
+      "机墓方舟"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_159",
@@ -27497,8 +27766,9 @@ export const generatedSkills = [
       "lcx_spirit_357",
       "lcx_spirit_358",
       "lcx_spirit_359",
-      "lcx_spirit_381",
-      "lcx_spirit_345"
+      "lcx_spirit_379",
+      "lcx_spirit_380",
+      "lcx_spirit_381"
     ]
   },
   {
@@ -27540,6 +27810,8 @@ export const generatedSkills = [
       "圣剑侍从",
       "圣剑-X",
       "圣剑骑士",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "小鼓象",
       "巨鼓象"
@@ -27555,6 +27827,8 @@ export const generatedSkills = [
       "lcx_spirit_238",
       "lcx_spirit_239",
       "spirit_5208",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_386",
       "lcx_spirit_387"
@@ -27599,6 +27873,8 @@ export const generatedSkills = [
       "圣剑侍从",
       "圣剑-X",
       "圣剑骑士",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "小鼓象",
       "巨鼓象",
@@ -27624,6 +27900,8 @@ export const generatedSkills = [
       "lcx_spirit_238",
       "lcx_spirit_239",
       "spirit_5208",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_386",
       "lcx_spirit_387",
@@ -27813,9 +28091,12 @@ export const generatedSkills = [
       "春团",
       "春兔",
       "春花兔",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -27970,9 +28251,12 @@ export const generatedSkills = [
       "lcx_spirit_339",
       "lcx_spirit_340",
       "lcx_spirit_341",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -28072,7 +28356,12 @@ export const generatedSkills = [
       "夜枭",
       "火红尾",
       "雅丹鬃",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "加油海葵",
@@ -28083,8 +28372,7 @@ export const generatedSkills = [
       "炫光迪迪",
       "霹雳迪迪",
       "小鼓象",
-      "巨鼓象",
-      "学院呱呱"
+      "巨鼓象"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_1",
@@ -28175,7 +28463,12 @@ export const generatedSkills = [
       "lcx_spirit_254",
       "lcx_spirit_375",
       "lcx_spirit_376",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_395",
@@ -28186,8 +28479,7 @@ export const generatedSkills = [
       "lcx_spirit_399",
       "lcx_spirit_400",
       "lcx_spirit_386",
-      "lcx_spirit_387",
-      "lcx_spirit_345"
+      "lcx_spirit_387"
     ]
   },
   {
@@ -29497,7 +29789,8 @@ export const generatedSkills = [
       "烟花团",
       "烟花伯爵",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -29662,7 +29955,8 @@ export const generatedSkills = [
       "lcx_spirit_390",
       "lcx_spirit_391",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -29987,6 +30281,8 @@ export const generatedSkills = [
       "星尘虫",
       "落星虫",
       "陨星虫",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟"
     ],
     "learnableSpiritIds": [
@@ -30027,6 +30323,8 @@ export const generatedSkills = [
       "lcx_spirit_304",
       "lcx_spirit_305",
       "lcx_spirit_306",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381"
     ]
   },
@@ -30457,6 +30755,8 @@ export const generatedSkills = [
       "星尘虫",
       "落星虫",
       "陨星虫",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "学院呱呱"
     ],
@@ -30500,6 +30800,8 @@ export const generatedSkills = [
       "lcx_spirit_304",
       "lcx_spirit_305",
       "lcx_spirit_306",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_345"
     ]
@@ -30543,6 +30845,8 @@ export const generatedSkills = [
       "鳗尾兽",
       "优优",
       "绒光优优",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "学院呱呱"
     ],
@@ -30565,6 +30869,8 @@ export const generatedSkills = [
       "lcx_spirit_251",
       "lcx_spirit_369",
       "lcx_spirit_370",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_345"
     ]
@@ -31849,8 +32155,7 @@ export const generatedSkills = [
       "布鲁斯",
       "雪顶布鲁斯",
       "冰钻布鲁斯",
-      "月牙雪熊",
-      "学院呱呱"
+      "月牙雪熊"
     ],
     "learnableSpiritIds": [
       "spirit_4868",
@@ -31874,8 +32179,7 @@ export const generatedSkills = [
       "lcx_spirit_331",
       "lcx_spirit_332",
       "lcx_spirit_333",
-      "lcx_spirit_371",
-      "lcx_spirit_345"
+      "lcx_spirit_371"
     ]
   },
   {
@@ -32393,7 +32697,8 @@ export const generatedSkills = [
       "小鼓象",
       "巨鼓象",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -32583,7 +32888,8 @@ export const generatedSkills = [
       "lcx_spirit_386",
       "lcx_spirit_387",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -33008,8 +33314,7 @@ export const generatedSkills = [
       "乌拉塔",
       "月牙雪熊",
       "小雪人",
-      "雪怪",
-      "学院呱呱"
+      "雪怪"
     ],
     "learnableSpiritIds": [
       "spirit_4868",
@@ -33027,8 +33332,7 @@ export const generatedSkills = [
       "spirit_4935",
       "lcx_spirit_371",
       "lcx_spirit_382",
-      "lcx_spirit_383",
-      "lcx_spirit_345"
+      "lcx_spirit_383"
     ]
   },
   {
@@ -33416,6 +33720,9 @@ export const generatedSkills = [
       "疾光千兽",
       "椰浆布丁",
       "月牙雪熊",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "学院呱呱"
@@ -33578,6 +33885,9 @@ export const generatedSkills = [
       "lcx_spirit_321",
       "lcx_spirit_202",
       "lcx_spirit_371",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_345"
@@ -34381,6 +34691,8 @@ export const generatedSkills = [
       "陨星虫",
       "柴渣虫",
       "燃薪虫",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -34486,6 +34798,8 @@ export const generatedSkills = [
       "lcx_spirit_306",
       "lcx_spirit_267",
       "lcx_spirit_268",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -35302,7 +35616,12 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "爆焰仔",
@@ -35791,7 +36110,12 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_384",
@@ -35953,7 +36277,8 @@ export const generatedSkills = [
       "帕尔萨斯",
       "龙息帕尔",
       "爆焰仔",
-      "爆焰喷喷"
+      "爆焰喷喷",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_240",
@@ -35971,7 +36296,8 @@ export const generatedSkills = [
       "lcx_spirit_323",
       "lcx_spirit_324",
       "lcx_spirit_384",
-      "lcx_spirit_385"
+      "lcx_spirit_385",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -36134,8 +36460,7 @@ export const generatedSkills = [
       "快鳍鱼",
       "龙鱼",
       "大头骨龙",
-      "寂灭骨龙",
-      "学院呱呱"
+      "寂灭骨龙"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_228",
@@ -36147,8 +36472,7 @@ export const generatedSkills = [
       "lcx_spirit_181",
       "lcx_spirit_182",
       "lcx_spirit_292",
-      "lcx_spirit_293",
-      "lcx_spirit_345"
+      "lcx_spirit_293"
     ]
   },
   {
@@ -36592,8 +36916,7 @@ export const generatedSkills = [
       "双灯鱼",
       "利灯鱼",
       "粉粉星",
-      "小皮球",
-      "学院呱呱"
+      "小皮球"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_61",
@@ -36629,8 +36952,7 @@ export const generatedSkills = [
       "lcx_spirit_46",
       "lcx_spirit_47",
       "lcx_spirit_302",
-      "lcx_spirit_303",
-      "lcx_spirit_345"
+      "lcx_spirit_303"
     ]
   },
   {
@@ -37170,7 +37492,8 @@ export const generatedSkills = [
       "小鼓象",
       "巨鼓象",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -37349,7 +37672,8 @@ export const generatedSkills = [
       "lcx_spirit_386",
       "lcx_spirit_387",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -37623,6 +37947,8 @@ export const generatedSkills = [
       "月牙雪熊",
       "柴渣虫",
       "燃薪虫",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -37728,6 +38054,8 @@ export const generatedSkills = [
       "lcx_spirit_371",
       "lcx_spirit_267",
       "lcx_spirit_268",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -37944,6 +38272,9 @@ export const generatedSkills = [
       "夜枭",
       "火红尾",
       "雅丹鬃",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "炫光迪迪",
@@ -38125,6 +38456,9 @@ export const generatedSkills = [
       "lcx_spirit_254",
       "lcx_spirit_375",
       "lcx_spirit_376",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_399",
@@ -39636,7 +39970,8 @@ export const generatedSkills = [
       "小鼓象",
       "巨鼓象",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -39815,7 +40150,8 @@ export const generatedSkills = [
       "lcx_spirit_386",
       "lcx_spirit_387",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -40403,6 +40739,8 @@ export const generatedSkills = [
       "夜枭",
       "火红尾",
       "雅丹鬃",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -40412,8 +40750,7 @@ export const generatedSkills = [
       "小丑兔",
       "小丑公爵",
       "烟花团",
-      "烟花伯爵",
-      "学院呱呱"
+      "烟花伯爵"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_1",
@@ -40585,6 +40922,8 @@ export const generatedSkills = [
       "lcx_spirit_254",
       "lcx_spirit_375",
       "lcx_spirit_376",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -40594,8 +40933,7 @@ export const generatedSkills = [
       "lcx_spirit_393",
       "lcx_spirit_394",
       "lcx_spirit_390",
-      "lcx_spirit_391",
-      "lcx_spirit_345"
+      "lcx_spirit_391"
     ]
   },
   {
@@ -40809,6 +41147,9 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "小丑豆豆",
@@ -41049,6 +41390,9 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_392",
@@ -42302,7 +42646,8 @@ export const generatedSkills = [
       "小鼓象",
       "巨鼓象",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -42468,7 +42813,8 @@ export const generatedSkills = [
       "lcx_spirit_386",
       "lcx_spirit_387",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -43195,7 +43541,12 @@ export const generatedSkills = [
       "夜枭",
       "火红尾",
       "雅丹鬃",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "爆焰仔",
@@ -43389,7 +43740,12 @@ export const generatedSkills = [
       "lcx_spirit_254",
       "lcx_spirit_375",
       "lcx_spirit_376",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_384",
@@ -43506,7 +43862,8 @@ export const generatedSkills = [
       "暮星辰",
       "小丑豆豆",
       "小丑兔",
-      "小丑公爵"
+      "小丑公爵",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_50",
@@ -43616,7 +43973,8 @@ export const generatedSkills = [
       "lcx_spirit_344",
       "lcx_spirit_392",
       "lcx_spirit_393",
-      "lcx_spirit_394"
+      "lcx_spirit_394",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -44613,6 +44971,8 @@ export const generatedSkills = [
       "春团",
       "春兔",
       "春花兔",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "小雪人",
       "雪怪",
@@ -44771,6 +45131,8 @@ export const generatedSkills = [
       "lcx_spirit_339",
       "lcx_spirit_340",
       "lcx_spirit_341",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_382",
       "lcx_spirit_383",
@@ -45103,7 +45465,8 @@ export const generatedSkills = [
       "小鼓象",
       "巨鼓象",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -45298,7 +45661,8 @@ export const generatedSkills = [
       "lcx_spirit_386",
       "lcx_spirit_387",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -46094,6 +46458,9 @@ export const generatedSkills = [
       "夜枭",
       "火红尾",
       "雅丹鬃",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "加油海葵",
       "加油蟹",
       "学院呱呱"
@@ -46283,6 +46650,9 @@ export const generatedSkills = [
       "lcx_spirit_254",
       "lcx_spirit_375",
       "lcx_spirit_376",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_395",
       "lcx_spirit_396",
       "lcx_spirit_345"
@@ -46400,6 +46770,9 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "加油海葵",
@@ -46408,8 +46781,7 @@ export const generatedSkills = [
       "小丑兔",
       "小丑公爵",
       "炫光迪迪",
-      "霹雳迪迪",
-      "学院呱呱"
+      "霹雳迪迪"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_12",
@@ -46516,6 +46888,9 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_395",
@@ -46524,8 +46899,7 @@ export const generatedSkills = [
       "lcx_spirit_393",
       "lcx_spirit_394",
       "lcx_spirit_399",
-      "lcx_spirit_400",
-      "lcx_spirit_345"
+      "lcx_spirit_400"
     ]
   },
   {
@@ -46767,6 +47141,9 @@ export const generatedSkills = [
       "春团",
       "春兔",
       "春花兔",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "学院呱呱"
     ],
     "learnableSpiritIds": [
@@ -46807,6 +47184,9 @@ export const generatedSkills = [
       "lcx_spirit_339",
       "lcx_spirit_340",
       "lcx_spirit_341",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_345"
     ]
   },
@@ -46902,7 +47282,8 @@ export const generatedSkills = [
       "武者鸡",
       "画间沉铁兽",
       "小雪人",
-      "雪怪"
+      "雪怪",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_11",
@@ -46986,7 +47367,8 @@ export const generatedSkills = [
       "lcx_spirit_266",
       "lcx_spirit_310",
       "lcx_spirit_382",
-      "lcx_spirit_383"
+      "lcx_spirit_383",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -47557,6 +47939,9 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "学院呱呱"
     ],
     "learnableSpiritIds": [
@@ -47595,6 +47980,9 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_345"
     ]
   },
@@ -47679,6 +48067,9 @@ export const generatedSkills = [
       "泥吼牙",
       "厉毒小萝",
       "厉毒修萝",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "学院呱呱"
     ],
     "learnableSpiritIds": [
@@ -47739,6 +48130,9 @@ export const generatedSkills = [
       "lcx_spirit_286",
       "lcx_spirit_279",
       "lcx_spirit_280",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_345"
     ]
   },
@@ -47829,6 +48223,9 @@ export const generatedSkills = [
       "噼啪鸟",
       "布瓜蝌",
       "上岸蛙",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "学院呱呱"
     ],
     "learnableSpiritIds": [
@@ -47895,6 +48292,9 @@ export const generatedSkills = [
       "lcx_spirit_249",
       "lcx_spirit_373",
       "lcx_spirit_374",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_345"
     ]
   },
@@ -47974,7 +48374,10 @@ export const generatedSkills = [
       "上岸蛙",
       "幽星光",
       "曜星光",
-      "暮星辰"
+      "暮星辰",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_5",
@@ -48036,7 +48439,10 @@ export const generatedSkills = [
       "lcx_spirit_374",
       "lcx_spirit_342",
       "lcx_spirit_343",
-      "lcx_spirit_344"
+      "lcx_spirit_344",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378"
     ]
   },
   {
@@ -48191,7 +48597,10 @@ export const generatedSkills = [
       "晕晕鸡",
       "绅士鸡",
       "武者鸡",
-      "噼啪鸟"
+      "噼啪鸟",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_126",
@@ -48204,7 +48613,10 @@ export const generatedSkills = [
       "lcx_spirit_264",
       "lcx_spirit_265",
       "lcx_spirit_266",
-      "lcx_spirit_249"
+      "lcx_spirit_249",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378"
     ]
   },
   {
@@ -48405,6 +48817,9 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "学院呱呱"
     ],
     "learnableSpiritIds": [
@@ -48435,6 +48850,9 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_345"
     ]
   },
@@ -48519,8 +48937,7 @@ export const generatedSkills = [
       "夜宿颅",
       "夜枭",
       "火红尾",
-      "雅丹鬃",
-      "学院呱呱"
+      "雅丹鬃"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_1",
@@ -48589,8 +49006,7 @@ export const generatedSkills = [
       "lcx_spirit_253",
       "lcx_spirit_254",
       "lcx_spirit_375",
-      "lcx_spirit_376",
-      "lcx_spirit_345"
+      "lcx_spirit_376"
     ]
   },
   {
@@ -48897,6 +49313,9 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "爆焰仔",
@@ -49101,6 +49520,9 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_384",
@@ -49723,6 +50145,9 @@ export const generatedSkills = [
       "春团",
       "春兔",
       "春花兔",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "加油海葵",
       "加油蟹",
       "小丑豆豆",
@@ -49737,7 +50162,8 @@ export const generatedSkills = [
       "小鼓象",
       "巨鼓象",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -49932,6 +50358,9 @@ export const generatedSkills = [
       "lcx_spirit_339",
       "lcx_spirit_340",
       "lcx_spirit_341",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_395",
       "lcx_spirit_396",
       "lcx_spirit_392",
@@ -49946,7 +50375,8 @@ export const generatedSkills = [
       "lcx_spirit_386",
       "lcx_spirit_387",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -50051,6 +50481,8 @@ export const generatedSkills = [
       "陨星虫",
       "柴渣虫",
       "燃薪虫",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -50117,6 +50549,8 @@ export const generatedSkills = [
       "lcx_spirit_306",
       "lcx_spirit_267",
       "lcx_spirit_268",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -51050,7 +51484,8 @@ export const generatedSkills = [
       "小鼓象",
       "巨鼓象",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -51207,7 +51642,8 @@ export const generatedSkills = [
       "lcx_spirit_386",
       "lcx_spirit_387",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -51576,8 +52012,7 @@ export const generatedSkills = [
       "雅丹鬃",
       "幽星光",
       "曜星光",
-      "暮星辰",
-      "学院呱呱"
+      "暮星辰"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_1",
@@ -51763,8 +52198,7 @@ export const generatedSkills = [
       "lcx_spirit_376",
       "lcx_spirit_342",
       "lcx_spirit_343",
-      "lcx_spirit_344",
-      "lcx_spirit_345"
+      "lcx_spirit_344"
     ]
   },
   {
@@ -51923,7 +52357,12 @@ export const generatedSkills = [
       "光纤兽",
       "疾光千兽",
       "月牙雪熊",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "爆焰仔",
@@ -52096,7 +52535,12 @@ export const generatedSkills = [
       "lcx_spirit_320",
       "lcx_spirit_321",
       "lcx_spirit_371",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_384",
@@ -52597,8 +53041,7 @@ export const generatedSkills = [
       "画间沉铁兽",
       "空空颅",
       "夜宿颅",
-      "夜枭",
-      "学院呱呱"
+      "夜枭"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_21",
@@ -52620,8 +53063,7 @@ export const generatedSkills = [
       "lcx_spirit_310",
       "lcx_spirit_252",
       "lcx_spirit_253",
-      "lcx_spirit_254",
-      "lcx_spirit_345"
+      "lcx_spirit_254"
     ]
   },
   {
@@ -54061,6 +54503,9 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "加油海葵",
@@ -54309,6 +54754,9 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_395",
@@ -54728,7 +55176,8 @@ export const generatedSkills = [
       "咕咕帽",
       "咕德帽帽",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -54888,7 +55337,8 @@ export const generatedSkills = [
       "lcx_spirit_388",
       "lcx_spirit_389",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -55032,6 +55482,8 @@ export const generatedSkills = [
       "柴渣虫",
       "燃薪虫",
       "落陨星兔",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -55140,6 +55592,8 @@ export const generatedSkills = [
       "lcx_spirit_267",
       "lcx_spirit_268",
       "lcx_spirit_296",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -55377,6 +55831,9 @@ export const generatedSkills = [
       "夜枭",
       "火红尾",
       "雅丹鬃",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "小丑豆豆",
@@ -55385,8 +55842,7 @@ export const generatedSkills = [
       "烟花团",
       "烟花伯爵",
       "咕咕帽",
-      "咕德帽帽",
-      "学院呱呱"
+      "咕德帽帽"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_1",
@@ -55547,6 +56003,9 @@ export const generatedSkills = [
       "lcx_spirit_254",
       "lcx_spirit_375",
       "lcx_spirit_376",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_392",
@@ -55555,8 +56014,7 @@ export const generatedSkills = [
       "lcx_spirit_390",
       "lcx_spirit_391",
       "lcx_spirit_388",
-      "lcx_spirit_389",
-      "lcx_spirit_345"
+      "lcx_spirit_389"
     ]
   },
   {
@@ -56360,7 +56818,8 @@ export const generatedSkills = [
       "炫光迪迪",
       "霹雳迪迪",
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -56532,7 +56991,8 @@ export const generatedSkills = [
       "lcx_spirit_399",
       "lcx_spirit_400",
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -57056,6 +57516,8 @@ export const generatedSkills = [
       "月牙雪熊",
       "柴渣虫",
       "燃薪虫",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -57171,6 +57633,8 @@ export const generatedSkills = [
       "lcx_spirit_371",
       "lcx_spirit_267",
       "lcx_spirit_268",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -58351,8 +58815,7 @@ export const generatedSkills = [
       "曜星光",
       "暮星辰",
       "牵线木偶",
-      "帅帅魔偶",
-      "学院呱呱"
+      "帅帅魔偶"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_1",
@@ -58405,8 +58868,7 @@ export const generatedSkills = [
       "lcx_spirit_343",
       "lcx_spirit_344",
       "lcx_spirit_124",
-      "lcx_spirit_125",
-      "lcx_spirit_345"
+      "lcx_spirit_125"
     ]
   },
   {
@@ -58451,6 +58913,8 @@ export const generatedSkills = [
       "月牙雪熊",
       "布瓜蝌",
       "上岸蛙",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "咕咕帽",
       "咕德帽帽",
@@ -58471,6 +58935,8 @@ export const generatedSkills = [
       "lcx_spirit_371",
       "lcx_spirit_373",
       "lcx_spirit_374",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_388",
       "lcx_spirit_389",
@@ -58542,6 +59008,8 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "咕咕帽",
       "咕德帽帽",
@@ -58581,6 +59049,8 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_388",
       "lcx_spirit_389",
@@ -59062,7 +59532,8 @@ export const generatedSkills = [
       "炫光迪迪",
       "霹雳迪迪",
       "小鼓象",
-      "巨鼓象"
+      "巨鼓象",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_2",
@@ -59225,7 +59696,8 @@ export const generatedSkills = [
       "lcx_spirit_399",
       "lcx_spirit_400",
       "lcx_spirit_386",
-      "lcx_spirit_387"
+      "lcx_spirit_387",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -59518,6 +59990,8 @@ export const generatedSkills = [
       "幽星光",
       "曜星光",
       "暮星辰",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "牵线木偶",
       "帅帅魔偶"
@@ -59545,6 +60019,8 @@ export const generatedSkills = [
       "lcx_spirit_342",
       "lcx_spirit_343",
       "lcx_spirit_344",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_124",
       "lcx_spirit_125"
@@ -59914,7 +60390,12 @@ export const generatedSkills = [
       "夜枭",
       "火红尾",
       "雅丹鬃",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
       "小雪人",
       "雪怪",
       "小鼓象",
@@ -60098,7 +60579,12 @@ export const generatedSkills = [
       "lcx_spirit_254",
       "lcx_spirit_375",
       "lcx_spirit_376",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_386",
@@ -60531,6 +61017,8 @@ export const generatedSkills = [
       "月牙雪熊",
       "柴渣虫",
       "燃薪虫",
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "爆焰仔",
       "爆焰喷喷",
@@ -60636,6 +61124,8 @@ export const generatedSkills = [
       "lcx_spirit_371",
       "lcx_spirit_267",
       "lcx_spirit_268",
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_384",
       "lcx_spirit_385",
@@ -61558,11 +62048,13 @@ export const generatedSkills = [
     "sourceUrl": "https://wiki.lcx.cab/lk/skill_list.php?search=%E8%89%B2%E6%95%A3",
     "learnableSpiritNames": [
       "炫光迪迪",
-      "霹雳迪迪"
+      "霹雳迪迪",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_399",
-      "lcx_spirit_400"
+      "lcx_spirit_400",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -61664,11 +62156,15 @@ export const generatedSkills = [
     "notes": "非确定伤害技能，暂不进入可计算技能候选。",
     "sourceUrl": "https://wiki.lcx.cab/lk/skill_list.php?search=%E7%9B%B8%E4%BD%8D%E7%A7%BB%E5%8A%A8",
     "learnableSpiritNames": [
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "小鼓象",
       "巨鼓象"
     ],
     "learnableSpiritIds": [
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_386",
       "lcx_spirit_387"
@@ -61740,14 +62236,20 @@ export const generatedSkills = [
     "notes": "由 LCX 导入；特殊效果已结构化记录，部分复杂效果按报告说明近似或暂不结算。",
     "sourceUrl": "https://wiki.lcx.cab/lk/skill_list.php?search=%E9%93%81%E8%92%BA%E8%97%9C",
     "learnableSpiritNames": [
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "猴麦仔",
-      "音碟吼"
+      "音碟吼",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_397",
-      "lcx_spirit_398"
+      "lcx_spirit_398",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -61818,9 +62320,13 @@ export const generatedSkills = [
     "notes": "非确定伤害技能，暂不进入可计算技能候选。",
     "sourceUrl": "https://wiki.lcx.cab/lk/skill_list.php?search=%E8%BF%87%E5%B1%B1%E8%BD%A6",
     "learnableSpiritNames": [
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟"
     ],
     "learnableSpiritIds": [
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381"
     ]
   },
@@ -61899,11 +62405,13 @@ export const generatedSkills = [
     "sourceUrl": "https://wiki.lcx.cab/lk/skill_list.php?search=%E5%90%8C%E9%A2%91",
     "learnableSpiritNames": [
       "猴麦仔",
-      "音碟吼"
+      "音碟吼",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_397",
-      "lcx_spirit_398"
+      "lcx_spirit_398",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -61991,11 +62499,13 @@ export const generatedSkills = [
     "sourceUrl": "https://wiki.lcx.cab/lk/skill_list.php?search=%E5%AF%92%E6%BD%AE",
     "learnableSpiritNames": [
       "小雪人",
-      "雪怪"
+      "雪怪",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_382",
-      "lcx_spirit_383"
+      "lcx_spirit_383",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -62072,11 +62582,13 @@ export const generatedSkills = [
     "sourceUrl": "https://wiki.lcx.cab/lk/skill_list.php?search=%E5%A4%A9%E4%BD%93%E5%90%B8%E7%A7%AF",
     "learnableSpiritNames": [
       "牵线木偶",
-      "帅帅魔偶"
+      "帅帅魔偶",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_124",
-      "lcx_spirit_125"
+      "lcx_spirit_125",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -62235,11 +62747,13 @@ export const generatedSkills = [
     "sourceUrl": "https://wiki.lcx.cab/lk/skill_list.php?search=%E5%86%B0%E5%B0%81",
     "learnableSpiritNames": [
       "小雪人",
-      "雪怪"
+      "雪怪",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_382",
-      "lcx_spirit_383"
+      "lcx_spirit_383",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -62351,14 +62865,16 @@ export const generatedSkills = [
       "小丑兔",
       "小丑公爵",
       "烟花团",
-      "烟花伯爵"
+      "烟花伯爵",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_392",
       "lcx_spirit_393",
       "lcx_spirit_394",
       "lcx_spirit_390",
-      "lcx_spirit_391"
+      "lcx_spirit_391",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -62382,14 +62898,20 @@ export const generatedSkills = [
     "notes": "由 LCX 导入；特殊效果已结构化记录，部分复杂效果按报告说明近似或暂不结算。",
     "sourceUrl": "https://wiki.lcx.cab/lk/skill_list.php?search=%E5%BE%AE%E5%9E%8B%E6%96%A5%E5%80%99",
     "learnableSpiritNames": [
+      "钨丝贝贝",
+      "辉光幕机",
       "机墓方舟",
       "猴麦仔",
-      "音碟吼"
+      "音碟吼",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
+      "lcx_spirit_379",
+      "lcx_spirit_380",
       "lcx_spirit_381",
       "lcx_spirit_397",
-      "lcx_spirit_398"
+      "lcx_spirit_398",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -62417,14 +62939,16 @@ export const generatedSkills = [
       "小雪人",
       "雪怪",
       "咕咕帽",
-      "咕德帽帽"
+      "咕德帽帽",
+      "学院呱呱"
     ],
     "learnableSpiritIds": [
       "lcx_spirit_54",
       "lcx_spirit_382",
       "lcx_spirit_383",
       "lcx_spirit_388",
-      "lcx_spirit_389"
+      "lcx_spirit_389",
+      "lcx_spirit_345"
     ]
   },
   {
@@ -62468,6 +62992,98 @@ export const generatedSkills = [
       "lcx_spirit_398",
       "lcx_spirit_386",
       "lcx_spirit_387"
+    ]
+  },
+  {
+    "id": "skill_e9_a3_9e_e7_ae_ad",
+    "name": "飞箭",
+    "element": "翼",
+    "category": "magical",
+    "power": 40,
+    "energyCost": 3,
+    "stableDamage": true,
+    "defaultHitCount": 1,
+    "defaultPowerBonus": 0,
+    "defaultPowerBuffMultiplier": 1,
+    "description": "造成​魔伤，​3连击。巧变：​翼系防御​技​能​。",
+    "rawEffectText": "造成​魔伤，​3连击。巧变：​翼系防御​技​能​。",
+    "effectEntries": [
+      "造成​魔伤，​3连击",
+      "巧变：​翼系防御​技​能​"
+    ],
+    "parsedEffects": [
+      {
+        "kind": "hitCountModifier",
+        "target": "self",
+        "rawText": "造成​魔伤，​3连击",
+        "simulated": true,
+        "amount": 2
+      },
+      {
+        "kind": "note",
+        "target": "self",
+        "rawText": "巧变：​翼系防御​技​能​",
+        "simulated": false,
+        "note": "巧变：​翼系防御​技​能​"
+      }
+    ],
+    "unparsedEffectNotes": [
+      "巧变：​翼系防御​技​能​：已记录，暂未完整进入自博弈结算。"
+    ],
+    "notes": "由 LCX 导入；特殊效果已结构化记录，部分复杂效果按报告说明近似或暂不结算。",
+    "sourceUrl": "https://wiki.lcx.cab/lk/skill_list.php?search=%E9%A3%9E%E7%AE%AD",
+    "learnableSpiritNames": [
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
+      "学院呱呱"
+    ],
+    "learnableSpiritIds": [
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
+      "lcx_spirit_345"
+    ]
+  },
+  {
+    "id": "skill_e4_bf_af_e5_86_b2",
+    "name": "俯冲",
+    "element": "翼",
+    "category": "physical",
+    "power": 170,
+    "energyCost": 7,
+    "stableDamage": true,
+    "defaultHitCount": 1,
+    "defaultPowerBonus": 0,
+    "defaultPowerBuffMultiplier": 1,
+    "description": "造成物伤，先手+1。",
+    "rawEffectText": "造成物伤，先手+1。",
+    "effectEntries": [
+      "造成物伤，先手+1"
+    ],
+    "parsedEffects": [
+      {
+        "kind": "priorityModifier",
+        "target": "self",
+        "rawText": "造成物伤，先手+1",
+        "simulated": true,
+        "amount": 1
+      }
+    ],
+    "unparsedEffectNotes": [],
+    "notes": "由 LCX 导入；特殊效果已结构化记录，部分复杂效果按报告说明近似或暂不结算。",
+    "sourceUrl": "https://wiki.lcx.cab/lk/skill_list.php?search=%E4%BF%AF%E5%86%B2",
+    "learnableSpiritNames": [
+      "凡雀",
+      "紫翎鹰",
+      "凡鹰",
+      "学院呱呱"
+    ],
+    "learnableSpiritIds": [
+      "lcx_spirit_372",
+      "lcx_spirit_377",
+      "lcx_spirit_378",
+      "lcx_spirit_345"
     ]
   }
 ] satisfies Skill[];

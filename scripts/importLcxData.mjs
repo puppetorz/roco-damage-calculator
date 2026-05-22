@@ -210,13 +210,28 @@ function completenessScore(row) {
   }, 0);
 }
 
+function isFormRow(row) {
+  return Boolean(row.is_form || row.form_id || row.form_name || row.form_display_name);
+}
+
+function shouldReplaceSpiritDuplicate(current, next) {
+  const currentIsForm = isFormRow(current);
+  const nextIsForm = isFormRow(next);
+
+  if (currentIsForm !== nextIsForm) {
+    return !nextIsForm;
+  }
+
+  return completenessScore(next) > completenessScore(current);
+}
+
 function dedupeSpiritRows(rows) {
   const byKey = new Map();
 
   for (const row of rows) {
     const key = `${row.id}|${row.t_id}|${row.name}`;
     const current = byKey.get(key);
-    if (!current || completenessScore(row) > completenessScore(current)) {
+    if (!current || shouldReplaceSpiritDuplicate(current, row)) {
       byKey.set(key, row);
     }
   }

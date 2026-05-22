@@ -2343,7 +2343,27 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
+  "lcx_spirit_379": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_380": [
+    "hp",
+    "atk",
+    "spe"
+  ],
   "lcx_spirit_381": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_372": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_377": [
     "hp",
     "atk",
     "spe"
