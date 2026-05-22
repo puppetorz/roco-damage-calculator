@@ -15,7 +15,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "贝古斯",
-        "spiritId": "spirit_5269",
+        "spiritId": "lcx_spirit_359",
         "bloodline": "草",
         "natureName": "沉默",
         "individualKeys": [
@@ -40,7 +40,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "黑羽夫人",
-        "spiritId": "spirit_3264",
+        "spiritId": "lcx_spirit_98",
         "bloodline": "地",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -66,7 +66,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "化蝶（喵喵的样子）",
-        "spiritId": "spirit_4885",
+        "spiritId": "spirit_4887",
         "bloodline": "冰",
         "natureName": "平和",
         "individualKeys": [
@@ -117,7 +117,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "雪灵",
-        "spiritId": "spirit_3322",
+        "spiritId": "lcx_spirit_156",
         "bloodline": "地",
         "natureName": "平和",
         "individualKeys": [
@@ -142,7 +142,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "月牙雪熊",
-        "spiritId": "spirit_7107",
+        "spiritId": "lcx_spirit_371",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -182,7 +182,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "寒音蛇（本来的样子）",
-        "spiritId": "spirit_4938",
+        "spiritId": "lcx_spirit_270",
         "bloodline": "萌",
         "natureName": "平和",
         "individualKeys": [
@@ -207,7 +207,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "火",
         "natureName": "沉默",
         "individualKeys": [
@@ -232,7 +232,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "萌",
         "natureName": "紧张",
         "individualKeys": [
@@ -257,7 +257,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "紧张",
         "individualKeys": [
@@ -282,7 +282,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -307,7 +307,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -346,7 +346,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "波多西",
-        "spiritId": "spirit_3428",
+        "spiritId": "lcx_spirit_262",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -372,7 +372,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "水",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -398,7 +398,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -450,7 +450,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "虫",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -476,7 +476,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "草",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -516,7 +516,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白金独角兽",
-        "spiritId": "spirit_3301",
+        "spiritId": "lcx_spirit_135",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -542,7 +542,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -568,7 +568,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -594,7 +594,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "光",
         "natureName": "平和",
         "individualKeys": [
@@ -619,7 +619,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -645,7 +645,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "翼",
         "natureName": "沉默",
         "individualKeys": [
@@ -684,7 +684,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白金独角兽",
-        "spiritId": "spirit_3301",
+        "spiritId": "lcx_spirit_135",
         "bloodline": "水",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -710,7 +710,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "蹦床松鼠",
-        "spiritId": "spirit_3205",
+        "spiritId": "lcx_spirit_39",
         "bloodline": "冰",
         "natureName": "紧张",
         "individualKeys": [
@@ -735,7 +735,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "武",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -761,7 +761,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "电",
         "natureName": "平和",
         "individualKeys": [
@@ -786,7 +786,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "利灯鱼",
-        "spiritId": "spirit_3213",
+        "spiritId": "lcx_spirit_47",
         "bloodline": "幽",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -812,7 +812,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圣剑-X",
-        "spiritId": "spirit_3405",
+        "spiritId": "lcx_spirit_239",
         "bloodline": "电",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -852,7 +852,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "彩蝶鲨",
-        "spiritId": "spirit_3267",
+        "spiritId": "lcx_spirit_101",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -878,7 +878,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "锤头鹳",
-        "spiritId": "spirit_3276",
+        "spiritId": "lcx_spirit_110",
         "bloodline": "幽",
         "natureName": "平和",
         "individualKeys": [
@@ -903,7 +903,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "叮叮恶魔",
-        "spiritId": "spirit_3272",
+        "spiritId": "lcx_spirit_106",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -929,7 +929,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "红绒十字",
-        "spiritId": "spirit_3192",
+        "spiritId": "lcx_spirit_26",
         "bloodline": "地",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -955,7 +955,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "圣剑-X",
-        "spiritId": "spirit_3405",
+        "spiritId": "lcx_spirit_239",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -980,7 +980,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "石冠王蜥（本来的样子）",
-        "spiritId": "spirit_3252",
+        "spiritId": "lcx_spirit_86",
         "bloodline": "翼",
         "natureName": "平和",
         "individualKeys": [
@@ -1019,7 +1019,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "怖哭菇",
-        "spiritId": "spirit_3313",
+        "spiritId": "lcx_spirit_147",
         "bloodline": "幻",
         "natureName": "沉默",
         "individualKeys": [
@@ -1044,7 +1044,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -1096,7 +1096,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -1122,7 +1122,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "武",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -1148,7 +1148,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "暮星辰",
-        "spiritId": "spirit_3510",
+        "spiritId": "lcx_spirit_344",
         "bloodline": "幻",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -1188,7 +1188,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "首领",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -1240,7 +1240,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -1266,7 +1266,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "圣剑-X",
-        "spiritId": "spirit_3405",
+        "spiritId": "lcx_spirit_239",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -1291,7 +1291,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "圣羽翼王",
-        "spiritId": "spirit_3493",
+        "spiritId": "lcx_spirit_327",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -1317,7 +1317,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -1357,7 +1357,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "怖哭菇",
-        "spiritId": "spirit_3313",
+        "spiritId": "lcx_spirit_147",
         "bloodline": "幻",
         "natureName": "沉默",
         "individualKeys": [
@@ -1382,7 +1382,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "幻",
         "natureName": "平和",
         "individualKeys": [
@@ -1407,7 +1407,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -1433,7 +1433,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "暮星辰",
-        "spiritId": "spirit_3510",
+        "spiritId": "lcx_spirit_344",
         "bloodline": "幻",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -1484,7 +1484,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -1523,7 +1523,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "布克棱岩",
-        "spiritId": "spirit_3282",
+        "spiritId": "lcx_spirit_116",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -1549,7 +1549,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "巨噬针鼹",
-        "spiritId": "spirit_3246",
+        "spiritId": "lcx_spirit_80",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -1575,7 +1575,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -1601,7 +1601,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "圣剑-X",
-        "spiritId": "spirit_3405",
+        "spiritId": "lcx_spirit_239",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -1626,7 +1626,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "翼",
         "natureName": "平和",
         "individualKeys": [
@@ -1651,7 +1651,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -1691,7 +1691,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "首领",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -1717,7 +1717,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "火神",
-        "spiritId": "spirit_3173",
+        "spiritId": "lcx_spirit_7",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -1743,7 +1743,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "冰",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -1769,7 +1769,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "抹茶布丁",
-        "spiritId": "spirit_3367",
+        "spiritId": "lcx_spirit_201",
         "bloodline": "草",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -1795,7 +1795,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "平和",
         "individualKeys": [
@@ -1820,7 +1820,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "伊兰亚龙",
-        "spiritId": "spirit_3395",
+        "spiritId": "lcx_spirit_229",
         "bloodline": "龙",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -1860,7 +1860,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "波多西",
-        "spiritId": "spirit_3428",
+        "spiritId": "lcx_spirit_262",
         "bloodline": "萌",
         "natureName": "平和",
         "individualKeys": [
@@ -1885,7 +1885,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -1911,7 +1911,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "獠牙猪",
-        "spiritId": "spirit_3324",
+        "spiritId": "lcx_spirit_158",
         "bloodline": "火",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -1937,7 +1937,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "武",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -1963,7 +1963,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "水泡壳（蜕皮时的样子）",
-        "spiritId": "spirit_4852",
+        "spiritId": "lcx_spirit_14",
         "bloodline": "翼",
         "natureName": "沉默",
         "individualKeys": [
@@ -1988,7 +1988,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "芋香巨角蛛",
-        "spiritId": "spirit_4098",
+        "spiritId": "lcx_spirit_20",
         "bloodline": "水",
         "natureName": "沉默",
         "individualKeys": [
@@ -2027,7 +2027,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -2053,7 +2053,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "火",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -2079,7 +2079,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -2105,7 +2105,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "普通",
         "natureName": "紧张",
         "individualKeys": [
@@ -2130,7 +2130,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "岚鸟（春天的样子）",
-        "spiritId": "spirit_4859",
+        "spiritId": "spirit_4861",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -2156,7 +2156,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圣剑-X",
-        "spiritId": "spirit_3405",
+        "spiritId": "lcx_spirit_239",
         "bloodline": "首领",
         "natureName": "悠闲",
         "natureId": "def_up_spe_down",
@@ -2196,7 +2196,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "怖哭菇",
-        "spiritId": "spirit_3313",
+        "spiritId": "lcx_spirit_147",
         "bloodline": "幻",
         "natureName": "沉默",
         "individualKeys": [
@@ -2221,7 +2221,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -2247,7 +2247,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "暮星辰",
-        "spiritId": "spirit_3510",
+        "spiritId": "lcx_spirit_344",
         "bloodline": "翼",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -2273,7 +2273,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -2324,7 +2324,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -2363,7 +2363,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "冰",
         "natureName": "平和",
         "individualKeys": [
@@ -2388,7 +2388,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "记忆石",
-        "spiritId": "spirit_3219",
+        "spiritId": "lcx_spirit_53",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -2414,7 +2414,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "爵士鹿",
-        "spiritId": "spirit_3376",
+        "spiritId": "lcx_spirit_210",
         "bloodline": "幽",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -2466,7 +2466,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "棋绮后（白子）",
-        "spiritId": "spirit_3403",
+        "spiritId": "spirit_4932",
         "bloodline": "机械",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -2531,7 +2531,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "蹦床松鼠",
-        "spiritId": "spirit_3205",
+        "spiritId": "lcx_spirit_39",
         "bloodline": "普通",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -2557,7 +2557,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "花影羚羊",
-        "spiritId": "spirit_3279",
+        "spiritId": "lcx_spirit_113",
         "bloodline": "虫",
         "natureName": "沉默",
         "individualKeys": [
@@ -2582,7 +2582,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "椰浆布丁",
-        "spiritId": "spirit_3368",
+        "spiritId": "lcx_spirit_202",
         "bloodline": "冰",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -2608,7 +2608,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "伊贝粉粉",
-        "spiritId": "spirit_3233",
+        "spiritId": "lcx_spirit_67",
         "bloodline": "草",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -2634,7 +2634,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -2659,7 +2659,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "草",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -2699,7 +2699,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "黑羽夫人",
-        "spiritId": "spirit_3264",
+        "spiritId": "lcx_spirit_98",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -2725,7 +2725,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "龙",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -2751,7 +2751,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -2777,7 +2777,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "圣剑-X",
-        "spiritId": "spirit_3405",
+        "spiritId": "lcx_spirit_239",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -2802,7 +2802,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "圣羽翼王",
-        "spiritId": "spirit_3493",
+        "spiritId": "lcx_spirit_327",
         "bloodline": "普通",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -2828,7 +2828,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -2867,7 +2867,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -2893,7 +2893,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "幻",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -2919,7 +2919,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "水灵",
-        "spiritId": "spirit_3176",
+        "spiritId": "lcx_spirit_10",
         "bloodline": "首领",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -2971,7 +2971,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -2997,7 +2997,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "草",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -3037,7 +3037,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "波多西",
-        "spiritId": "spirit_3428",
+        "spiritId": "lcx_spirit_262",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -3063,7 +3063,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "巨噬针鼹",
-        "spiritId": "spirit_3246",
+        "spiritId": "lcx_spirit_80",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -3089,7 +3089,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -3167,7 +3167,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "芋香巨角蛛",
-        "spiritId": "spirit_4098",
+        "spiritId": "lcx_spirit_20",
         "bloodline": "地",
         "natureName": "平和",
         "individualKeys": [
@@ -3206,7 +3206,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "贝古斯",
-        "spiritId": "spirit_5269",
+        "spiritId": "lcx_spirit_359",
         "bloodline": "翼",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -3232,7 +3232,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "怖哭菇",
-        "spiritId": "spirit_3313",
+        "spiritId": "lcx_spirit_147",
         "bloodline": "电",
         "natureName": "紧张",
         "individualKeys": [
@@ -3257,7 +3257,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -3283,7 +3283,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "幽",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -3309,7 +3309,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "抹茶布丁",
-        "spiritId": "spirit_3367",
+        "spiritId": "lcx_spirit_201",
         "bloodline": "草",
         "natureName": "天真",
         "natureId": "spe_up_spd_down",
@@ -3335,7 +3335,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "电",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -3375,7 +3375,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "海枝枝（碧蓝珊瑚）",
-        "spiritId": "spirit_3362",
+        "spiritId": "spirit_4986",
         "bloodline": "幽",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -3401,7 +3401,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "朔夜伊芙",
-        "spiritId": "spirit_3260",
+        "spiritId": "lcx_spirit_94",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -3427,7 +3427,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "鸭吉吉（等一等鸭）",
-        "spiritId": "spirit_7121",
+        "spiritId": "lcx_spirit_11",
         "bloodline": "普通",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -3453,7 +3453,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "鸭吉吉（紧实的样子）",
-        "spiritId": "spirit_4849",
+        "spiritId": "lcx_spirit_11",
         "bloodline": "普通",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -3479,7 +3479,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "鸭吉吉（蓬松的样子）",
-        "spiritId": "spirit_3177",
+        "spiritId": "lcx_spirit_11",
         "bloodline": "普通",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -3505,7 +3505,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "鸭吉吉（起来鸭）",
-        "spiritId": "spirit_6866",
+        "spiritId": "lcx_spirit_11",
         "bloodline": "普通",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -3545,7 +3545,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "虫",
         "natureName": "平和",
         "individualKeys": [
@@ -3570,7 +3570,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "燃薪虫",
-        "spiritId": "spirit_3434",
+        "spiritId": "lcx_spirit_268",
         "bloodline": "恶",
         "natureName": "平和",
         "individualKeys": [
@@ -3595,7 +3595,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "火",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -3621,7 +3621,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "声波缇塔",
-        "spiritId": "spirit_3371",
+        "spiritId": "lcx_spirit_205",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -3647,7 +3647,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -3672,7 +3672,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -3711,7 +3711,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "虫",
         "natureName": "平和",
         "individualKeys": [
@@ -3736,7 +3736,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "燃薪虫",
-        "spiritId": "spirit_3434",
+        "spiritId": "lcx_spirit_268",
         "bloodline": "恶",
         "natureName": "平和",
         "individualKeys": [
@@ -3761,7 +3761,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "火",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -3787,7 +3787,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "声波缇塔",
-        "spiritId": "spirit_3371",
+        "spiritId": "lcx_spirit_205",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -3813,7 +3813,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -3838,7 +3838,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -3877,7 +3877,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "水",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -3903,7 +3903,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -3929,7 +3929,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "火神",
-        "spiritId": "spirit_3173",
+        "spiritId": "lcx_spirit_7",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -3981,7 +3981,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "平和",
         "individualKeys": [
@@ -4006,7 +4006,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -4046,7 +4046,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "水",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -4072,7 +4072,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -4098,7 +4098,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "火神",
-        "spiritId": "spirit_3173",
+        "spiritId": "lcx_spirit_7",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -4150,7 +4150,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "平和",
         "individualKeys": [
@@ -4175,7 +4175,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -4215,7 +4215,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "波多西",
-        "spiritId": "spirit_3428",
+        "spiritId": "lcx_spirit_262",
         "bloodline": "机械",
         "natureName": "平和",
         "individualKeys": [
@@ -4240,7 +4240,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "武",
         "natureName": "平和",
         "individualKeys": [
@@ -4265,7 +4265,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "獠牙猪",
-        "spiritId": "spirit_3324",
+        "spiritId": "lcx_spirit_158",
         "bloodline": "冰",
         "natureName": "平和",
         "individualKeys": [
@@ -4290,7 +4290,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "棋齐垒（白子）",
-        "spiritId": "spirit_3401",
+        "spiritId": "spirit_4930",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -4315,7 +4315,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "地",
         "natureName": "平和",
         "individualKeys": [
@@ -4340,7 +4340,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "月牙雪熊",
-        "spiritId": "spirit_7107",
+        "spiritId": "lcx_spirit_371",
         "bloodline": "冰",
         "natureName": "平和",
         "individualKeys": [
@@ -4379,7 +4379,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "恶",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -4405,7 +4405,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -4457,7 +4457,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "火",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -4483,7 +4483,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "水",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -4509,7 +4509,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -4549,7 +4549,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "龙",
         "natureName": "平和",
         "individualKeys": [
@@ -4574,7 +4574,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "冰",
         "natureName": "平和",
         "individualKeys": [
@@ -4599,7 +4599,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "嗜波螺",
-        "spiritId": "spirit_3398",
+        "spiritId": "lcx_spirit_232",
         "bloodline": "地",
         "natureName": "平和",
         "individualKeys": [
@@ -4624,7 +4624,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "电",
         "natureName": "沉默",
         "individualKeys": [
@@ -4649,7 +4649,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -4674,7 +4674,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "月牙雪熊",
-        "spiritId": "spirit_7107",
+        "spiritId": "lcx_spirit_371",
         "bloodline": "冰",
         "natureName": "平和",
         "individualKeys": [
@@ -4713,7 +4713,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "波多西",
-        "spiritId": "spirit_3428",
+        "spiritId": "lcx_spirit_262",
         "bloodline": "恶",
         "natureName": "平和",
         "individualKeys": [
@@ -4738,7 +4738,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -4764,7 +4764,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "荆棘电环",
-        "spiritId": "spirit_3379",
+        "spiritId": "lcx_spirit_213",
         "bloodline": "电",
         "natureName": "平和",
         "individualKeys": [
@@ -4789,7 +4789,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "梦想三三",
-        "spiritId": "spirit_3393",
+        "spiritId": "lcx_spirit_227",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -4814,7 +4814,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "棋绮后（白子）",
-        "spiritId": "spirit_3403",
+        "spiritId": "spirit_4932",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -4840,7 +4840,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "恶",
         "natureName": "平和",
         "individualKeys": [
@@ -4879,7 +4879,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "龙",
         "natureName": "平和",
         "individualKeys": [
@@ -4904,7 +4904,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "冰",
         "natureName": "平和",
         "individualKeys": [
@@ -4929,7 +4929,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "嗜波螺",
-        "spiritId": "spirit_3398",
+        "spiritId": "lcx_spirit_232",
         "bloodline": "地",
         "natureName": "平和",
         "individualKeys": [
@@ -4954,7 +4954,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "电",
         "natureName": "沉默",
         "individualKeys": [
@@ -4979,7 +4979,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -5004,7 +5004,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "月牙雪熊",
-        "spiritId": "spirit_7107",
+        "spiritId": "lcx_spirit_371",
         "bloodline": "冰",
         "natureName": "平和",
         "individualKeys": [
@@ -5043,7 +5043,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白金独角兽",
-        "spiritId": "spirit_3301",
+        "spiritId": "lcx_spirit_135",
         "bloodline": "火",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -5069,7 +5069,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "恶魔红钻",
-        "spiritId": "spirit_6893",
+        "spiritId": "lcx_spirit_365",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -5095,7 +5095,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "花衣蝶",
-        "spiritId": "spirit_3236",
+        "spiritId": "lcx_spirit_70",
         "bloodline": "虫",
         "natureName": "平和",
         "individualKeys": [
@@ -5146,7 +5146,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "铠甲虫",
-        "spiritId": "spirit_3450",
+        "spiritId": "lcx_spirit_284",
         "bloodline": "翼",
         "natureName": "平和",
         "individualKeys": [
@@ -5171,7 +5171,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "陨星虫",
-        "spiritId": "spirit_3472",
+        "spiritId": "lcx_spirit_306",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -5211,7 +5211,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "公平鸽",
-        "spiritId": "spirit_3382",
+        "spiritId": "lcx_spirit_216",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -5237,7 +5237,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5263,7 +5263,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5289,7 +5289,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "罗隐",
-        "spiritId": "spirit_3285",
+        "spiritId": "lcx_spirit_119",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5315,7 +5315,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "火",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5341,7 +5341,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5381,7 +5381,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "公平鸽",
-        "spiritId": "spirit_3382",
+        "spiritId": "lcx_spirit_216",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -5407,7 +5407,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5433,7 +5433,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5459,7 +5459,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "罗隐",
-        "spiritId": "spirit_3285",
+        "spiritId": "lcx_spirit_119",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5485,7 +5485,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "火",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5511,7 +5511,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5551,7 +5551,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "公平鸽",
-        "spiritId": "spirit_3382",
+        "spiritId": "lcx_spirit_216",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -5577,7 +5577,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5603,7 +5603,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5629,7 +5629,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "罗隐",
-        "spiritId": "spirit_3285",
+        "spiritId": "lcx_spirit_119",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5655,7 +5655,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "火",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5681,7 +5681,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5721,7 +5721,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "迪莫",
-        "spiritId": "spirit_3167",
+        "spiritId": "lcx_spirit_1",
         "bloodline": "普通",
         "natureName": "急躁",
         "natureId": "spe_up_def_down",
@@ -5747,7 +5747,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5773,7 +5773,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "皇家狮鹫（崖间地的样子）",
-        "spiritId": "spirit_3390",
+        "spiritId": "spirit_4927",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -5799,7 +5799,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "幽",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -5825,7 +5825,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "鳗尾兽",
-        "spiritId": "spirit_3417",
+        "spiritId": "lcx_spirit_251",
         "bloodline": "普通",
         "natureName": "平和",
         "individualKeys": [
@@ -5850,7 +5850,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "椰浆布丁",
-        "spiritId": "spirit_3368",
+        "spiritId": "lcx_spirit_202",
         "bloodline": "水",
         "natureName": "沉默",
         "individualKeys": [
@@ -5889,7 +5889,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "布克棱岩",
-        "spiritId": "spirit_3282",
+        "spiritId": "lcx_spirit_116",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5915,7 +5915,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "迪莫",
-        "spiritId": "spirit_3167",
+        "spiritId": "lcx_spirit_1",
         "bloodline": "光",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -5941,7 +5941,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "火焰猿",
-        "spiritId": "spirit_5260",
+        "spiritId": "lcx_spirit_356",
         "bloodline": "火",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5967,7 +5967,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -5993,7 +5993,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "鳗尾兽",
-        "spiritId": "spirit_3417",
+        "spiritId": "lcx_spirit_251",
         "bloodline": "草",
         "natureName": "平和",
         "individualKeys": [
@@ -6018,7 +6018,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "雪巨人",
-        "spiritId": "spirit_3319",
+        "spiritId": "lcx_spirit_153",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -6058,7 +6058,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "电球咩咩",
-        "spiritId": "spirit_3229",
+        "spiritId": "lcx_spirit_63",
         "bloodline": "幽",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -6084,7 +6084,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "水",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -6110,7 +6110,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "荆棘电环",
-        "spiritId": "spirit_3379",
+        "spiritId": "lcx_spirit_213",
         "bloodline": "虫",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -6136,7 +6136,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "抹茶布丁",
-        "spiritId": "spirit_3367",
+        "spiritId": "lcx_spirit_201",
         "bloodline": "电",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -6162,7 +6162,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -6188,7 +6188,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "恶",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -6228,7 +6228,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "电球咩咩",
-        "spiritId": "spirit_3229",
+        "spiritId": "lcx_spirit_63",
         "bloodline": "水",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -6254,7 +6254,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "古卷执政官",
-        "spiritId": "spirit_3479",
+        "spiritId": "lcx_spirit_313",
         "bloodline": "普通",
         "natureName": "孤僻",
         "natureId": "atk_up_def_down",
@@ -6280,7 +6280,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "荆棘电环",
-        "spiritId": "spirit_3379",
+        "spiritId": "lcx_spirit_213",
         "bloodline": "水",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -6306,7 +6306,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "九幽菇",
-        "spiritId": "spirit_3365",
+        "spiritId": "lcx_spirit_199",
         "bloodline": "草",
         "natureName": "紧张",
         "individualKeys": [
@@ -6331,7 +6331,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "巨灵石",
-        "spiritId": "spirit_3334",
+        "spiritId": "lcx_spirit_168",
         "bloodline": "地",
         "natureName": "马虎",
         "natureId": "spa_up_spd_down",
@@ -6357,7 +6357,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "草",
         "natureName": "沉默",
         "individualKeys": [
@@ -6396,7 +6396,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -6422,7 +6422,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -6474,7 +6474,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "幽",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -6500,7 +6500,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "声波缇塔",
-        "spiritId": "spirit_3371",
+        "spiritId": "lcx_spirit_205",
         "bloodline": "机械",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -6526,7 +6526,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -6566,7 +6566,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "蹦床松鼠",
-        "spiritId": "spirit_3205",
+        "spiritId": "lcx_spirit_39",
         "bloodline": "普通",
         "natureName": "紧张",
         "individualKeys": [
@@ -6591,7 +6591,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "荆棘电环",
-        "spiritId": "spirit_3379",
+        "spiritId": "lcx_spirit_213",
         "bloodline": "电",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -6617,7 +6617,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "獠牙猪",
-        "spiritId": "spirit_3324",
+        "spiritId": "lcx_spirit_158",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -6643,7 +6643,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "鳗尾兽",
-        "spiritId": "spirit_3417",
+        "spiritId": "lcx_spirit_251",
         "bloodline": "机械",
         "natureName": "紧张",
         "individualKeys": [
@@ -6668,7 +6668,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "迷迷箱怪",
-        "spiritId": "spirit_3438",
+        "spiritId": "lcx_spirit_272",
         "bloodline": "光",
         "natureName": "紧张",
         "individualKeys": [
@@ -6693,7 +6693,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圣剑-X",
-        "spiritId": "spirit_3405",
+        "spiritId": "lcx_spirit_239",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -6733,7 +6733,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -6759,7 +6759,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -6785,7 +6785,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "恶",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -6811,7 +6811,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "幽",
         "natureName": "沉着",
         "natureId": "spd_up_atk_down",
@@ -6837,7 +6837,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "朔夜伊芙",
-        "spiritId": "spirit_3260",
+        "spiritId": "lcx_spirit_94",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -6863,7 +6863,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "乌拉塔（极昼的样子）",
-        "spiritId": "spirit_3423",
+        "spiritId": "spirit_4935",
         "bloodline": "火",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -6903,7 +6903,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "冰",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -6929,7 +6929,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -6955,7 +6955,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "机械",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -6981,7 +6981,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "石冠王蜥（球球尾巴的样子）",
-        "spiritId": "spirit_4903",
+        "spiritId": "lcx_spirit_86",
         "bloodline": "翼",
         "natureName": "平和",
         "individualKeys": [
@@ -7006,7 +7006,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -7032,7 +7032,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -7072,7 +7072,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "波多西",
-        "spiritId": "spirit_3428",
+        "spiritId": "lcx_spirit_262",
         "bloodline": "地",
         "natureName": "平和",
         "individualKeys": [
@@ -7097,7 +7097,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "水",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -7123,7 +7123,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "晶石蜗（西瓜碧玺的样子）",
-        "spiritId": "spirit_3194",
+        "spiritId": "spirit_4864",
         "bloodline": "草",
         "natureName": "淘气",
         "natureId": "def_up_spa_down",
@@ -7149,7 +7149,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "棋绮后（白子）",
-        "spiritId": "spirit_3403",
+        "spiritId": "spirit_4932",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -7175,7 +7175,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "地",
         "natureName": "淘气",
         "natureId": "def_up_spa_down",
@@ -7201,7 +7201,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -7241,7 +7241,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -7267,7 +7267,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "幽",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -7293,7 +7293,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "虫",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -7319,7 +7319,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "皇家狮鹫（崖间地的样子）",
-        "spiritId": "spirit_3390",
+        "spiritId": "spirit_4927",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -7371,7 +7371,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -7411,7 +7411,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "贝古斯",
-        "spiritId": "spirit_5269",
+        "spiritId": "lcx_spirit_359",
         "bloodline": "草",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -7437,7 +7437,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "翠顶夫人",
-        "spiritId": "spirit_3263",
+        "spiritId": "lcx_spirit_97",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -7463,7 +7463,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -7489,7 +7489,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "幽",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -7515,7 +7515,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "电",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -7541,7 +7541,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -7581,7 +7581,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "春花兔",
-        "spiritId": "spirit_3507",
+        "spiritId": "lcx_spirit_341",
         "bloodline": "草",
         "natureName": "沉默",
         "individualKeys": [
@@ -7632,7 +7632,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -7658,7 +7658,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "石冠王蜥（本来的样子）",
-        "spiritId": "spirit_3252",
+        "spiritId": "lcx_spirit_86",
         "bloodline": "翼",
         "natureName": "平和",
         "individualKeys": [
@@ -7683,7 +7683,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "朔夜伊芙",
-        "spiritId": "spirit_3260",
+        "spiritId": "lcx_spirit_94",
         "bloodline": "机械",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -7709,7 +7709,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "火",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -7749,7 +7749,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "画间法师手",
-        "spiritId": "spirit_3475",
+        "spiritId": "lcx_spirit_309",
         "bloodline": "光",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -7775,7 +7775,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "幻影灵菇",
-        "spiritId": "spirit_3189",
+        "spiritId": "lcx_spirit_23",
         "bloodline": "武",
         "natureName": "紧张",
         "individualKeys": [
@@ -7800,7 +7800,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -7852,7 +7852,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "嗜波螺",
-        "spiritId": "spirit_3398",
+        "spiritId": "lcx_spirit_232",
         "bloodline": "电",
         "natureName": "淘气",
         "natureId": "def_up_spa_down",
@@ -7878,7 +7878,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "月牙雪熊",
-        "spiritId": "spirit_7107",
+        "spiritId": "lcx_spirit_371",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -7918,7 +7918,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "斑枭",
-        "spiritId": "spirit_3384",
+        "spiritId": "lcx_spirit_218",
         "bloodline": "翼",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -7944,7 +7944,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "公平鸽",
-        "spiritId": "spirit_3382",
+        "spiritId": "lcx_spirit_216",
         "bloodline": "机械",
         "natureName": "平和",
         "individualKeys": [
@@ -7969,7 +7969,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -7995,7 +7995,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "机械",
         "natureName": "急躁",
         "natureId": "spe_up_def_down",
@@ -8021,7 +8021,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "利灯鱼",
-        "spiritId": "spirit_3213",
+        "spiritId": "lcx_spirit_47",
         "bloodline": "电",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -8047,7 +8047,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "火",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -8087,7 +8087,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -8113,7 +8113,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "龙",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -8165,7 +8165,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "火",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -8191,7 +8191,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "游蛇魔使",
-        "spiritId": "spirit_3343",
+        "spiritId": "lcx_spirit_177",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -8217,7 +8217,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -8257,7 +8257,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白发路路",
-        "spiritId": "spirit_3408",
+        "spiritId": "lcx_spirit_242",
         "bloodline": "草",
         "natureName": "沉默",
         "individualKeys": [
@@ -8282,7 +8282,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "巨噬针鼹",
-        "spiritId": "spirit_3246",
+        "spiritId": "lcx_spirit_80",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -8308,7 +8308,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "卡瓦重（沙地附近的样子）",
-        "spiritId": "spirit_4876",
+        "spiritId": "spirit_4874",
         "bloodline": "草",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -8360,7 +8360,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "地",
         "natureName": "平和",
         "individualKeys": [
@@ -8385,7 +8385,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "嗜波螺",
-        "spiritId": "spirit_3398",
+        "spiritId": "lcx_spirit_232",
         "bloodline": "地",
         "natureName": "平和",
         "individualKeys": [
@@ -8424,7 +8424,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白发路路",
-        "spiritId": "spirit_3408",
+        "spiritId": "lcx_spirit_242",
         "bloodline": "机械",
         "natureName": "平和",
         "individualKeys": [
@@ -8449,7 +8449,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "彩蝶鲨",
-        "spiritId": "spirit_3267",
+        "spiritId": "lcx_spirit_101",
         "bloodline": "首领",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -8475,7 +8475,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "公平鸽",
-        "spiritId": "spirit_3382",
+        "spiritId": "lcx_spirit_216",
         "bloodline": "地",
         "natureName": "忧郁",
         "individualKeys": [
@@ -8500,7 +8500,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "梦想三三",
-        "spiritId": "spirit_3393",
+        "spiritId": "lcx_spirit_227",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -8526,7 +8526,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "地",
         "natureName": "紧张",
         "individualKeys": [
@@ -8551,7 +8551,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -8590,7 +8590,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -8616,7 +8616,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "爵士鹿",
-        "spiritId": "spirit_3376",
+        "spiritId": "lcx_spirit_210",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -8642,7 +8642,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "魔力猫",
-        "spiritId": "spirit_3170",
+        "spiritId": "lcx_spirit_4",
         "bloodline": "草",
         "natureName": "沉默",
         "individualKeys": [
@@ -8667,7 +8667,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "千棘盔（本来的样子）",
-        "spiritId": "spirit_4884",
+        "spiritId": "lcx_spirit_45",
         "bloodline": "首领",
         "natureName": "沉默",
         "individualKeys": [
@@ -8717,7 +8717,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "恶",
         "natureName": "平和",
         "individualKeys": [
@@ -8756,7 +8756,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "斑枭",
-        "spiritId": "spirit_3384",
+        "spiritId": "lcx_spirit_218",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -8782,7 +8782,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "春花兔",
-        "spiritId": "spirit_3507",
+        "spiritId": "lcx_spirit_341",
         "bloodline": "草",
         "natureName": "平和",
         "individualKeys": [
@@ -8833,7 +8833,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -8859,7 +8859,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "朔夜伊芙",
-        "spiritId": "spirit_3260",
+        "spiritId": "lcx_spirit_94",
         "bloodline": "机械",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -8885,7 +8885,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "地",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -8925,7 +8925,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -8951,7 +8951,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "里拉鳐",
-        "spiritId": "spirit_3353",
+        "spiritId": "lcx_spirit_187",
         "bloodline": "萌",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -8977,7 +8977,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -9003,7 +9003,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "伊贝粉粉",
-        "spiritId": "spirit_3233",
+        "spiritId": "lcx_spirit_67",
         "bloodline": "火",
         "natureName": "沉默",
         "individualKeys": [
@@ -9028,7 +9028,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "幽影树",
-        "spiritId": "spirit_3220",
+        "spiritId": "lcx_spirit_54",
         "bloodline": "首领",
         "natureName": "大胆",
         "natureId": "def_up_atk_down",
@@ -9054,7 +9054,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -9094,7 +9094,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -9120,7 +9120,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "古卷执政官",
-        "spiritId": "spirit_3479",
+        "spiritId": "lcx_spirit_313",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -9146,7 +9146,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -9172,7 +9172,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -9264,7 +9264,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "怖哭菇",
-        "spiritId": "spirit_3313",
+        "spiritId": "lcx_spirit_147",
         "bloodline": "幽",
         "natureName": "紧张",
         "individualKeys": [
@@ -9289,7 +9289,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "电",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -9315,7 +9315,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "萌",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -9341,7 +9341,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -9367,7 +9367,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "圣羽翼王",
-        "spiritId": "spirit_3493",
+        "spiritId": "lcx_spirit_327",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -9393,7 +9393,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "地",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -9433,7 +9433,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白发路路",
-        "spiritId": "spirit_3408",
+        "spiritId": "lcx_spirit_242",
         "bloodline": "机械",
         "natureName": "平和",
         "individualKeys": [
@@ -9458,7 +9458,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "咔咔鸟",
-        "spiritId": "spirit_3294",
+        "spiritId": "lcx_spirit_128",
         "bloodline": "翼",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -9484,7 +9484,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "鸭吉吉（等一等鸭）",
-        "spiritId": "spirit_7121",
+        "spiritId": "lcx_spirit_11",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -9509,7 +9509,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "鸭吉吉（急急急鸭）",
-        "spiritId": "spirit_6868",
+        "spiritId": "lcx_spirit_11",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -9535,7 +9535,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "鸭吉吉（紧实的样子）",
-        "spiritId": "spirit_4849",
+        "spiritId": "lcx_spirit_11",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -9561,7 +9561,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "鸭吉吉（蓬松的样子）",
-        "spiritId": "spirit_3177",
+        "spiritId": "lcx_spirit_11",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -9601,7 +9601,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "怖哭菇",
-        "spiritId": "spirit_3313",
+        "spiritId": "lcx_spirit_147",
         "bloodline": "幻",
         "natureName": "平和",
         "individualKeys": [
@@ -9626,7 +9626,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -9652,7 +9652,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "幻",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -9704,7 +9704,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -9729,7 +9729,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "月牙雪熊",
-        "spiritId": "spirit_7107",
+        "spiritId": "lcx_spirit_371",
         "bloodline": "翼",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -9769,7 +9769,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白金独角兽",
-        "spiritId": "spirit_3301",
+        "spiritId": "lcx_spirit_135",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -9795,7 +9795,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "蹦床松鼠",
-        "spiritId": "spirit_3205",
+        "spiritId": "lcx_spirit_39",
         "bloodline": "普通",
         "natureName": "平和",
         "individualKeys": [
@@ -9820,7 +9820,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "龙",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -9846,7 +9846,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "岚鸟（夏天的样子）",
-        "spiritId": "spirit_4860",
+        "spiritId": "spirit_4861",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -9872,7 +9872,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "圣羽翼王",
-        "spiritId": "spirit_3493",
+        "spiritId": "lcx_spirit_327",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -9898,7 +9898,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "沉默",
         "individualKeys": [
@@ -9937,7 +9937,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "炽心勇狮",
-        "spiritId": "spirit_3340",
+        "spiritId": "lcx_spirit_174",
         "bloodline": "武",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -9963,7 +9963,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "恶",
         "natureName": "孤僻",
         "natureId": "atk_up_def_down",
@@ -9989,7 +9989,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -10015,7 +10015,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "罗隐",
-        "spiritId": "spirit_3285",
+        "spiritId": "lcx_spirit_119",
         "bloodline": "地",
         "natureName": "懒散",
         "individualKeys": [
@@ -10040,7 +10040,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "圣羽翼王",
-        "spiritId": "spirit_3493",
+        "spiritId": "lcx_spirit_327",
         "bloodline": "龙",
         "natureName": "认真",
         "natureId": "neutral",
@@ -10066,7 +10066,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "伊兰亚龙",
-        "spiritId": "spirit_3395",
+        "spiritId": "lcx_spirit_229",
         "bloodline": "恶",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -10106,7 +10106,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "机械",
         "natureName": "平和",
         "individualKeys": [
@@ -10131,7 +10131,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "水",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -10157,7 +10157,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "奇丽花",
-        "spiritId": "spirit_3270",
+        "spiritId": "lcx_spirit_104",
         "bloodline": "机械",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -10183,7 +10183,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "火",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -10209,7 +10209,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "闪电鳗鱼",
-        "spiritId": "spirit_3350",
+        "spiritId": "lcx_spirit_184",
         "bloodline": "武",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -10235,7 +10235,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "星光狮（星光能量的样子）",
-        "spiritId": "spirit_3249",
+        "spiritId": "spirit_4900",
         "bloodline": "冰",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -10275,7 +10275,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -10301,7 +10301,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "幽",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -10327,7 +10327,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "岚鸟（春天的样子）",
-        "spiritId": "spirit_4859",
+        "spiritId": "spirit_4861",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -10353,7 +10353,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "声波缇塔",
-        "spiritId": "spirit_3371",
+        "spiritId": "lcx_spirit_205",
         "bloodline": "水",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -10379,7 +10379,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "紧张",
         "individualKeys": [
@@ -10404,7 +10404,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "翼",
         "natureName": "平和",
         "individualKeys": [
@@ -10443,7 +10443,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "电",
         "natureName": "平和",
         "individualKeys": [
@@ -10468,7 +10468,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "电",
         "natureName": "平和",
         "individualKeys": [
@@ -10493,7 +10493,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "燃薪虫",
-        "spiritId": "spirit_3434",
+        "spiritId": "lcx_spirit_268",
         "bloodline": "电",
         "natureName": "平和",
         "individualKeys": [
@@ -10518,7 +10518,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "火",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -10544,7 +10544,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "声波缇塔",
-        "spiritId": "spirit_3371",
+        "spiritId": "lcx_spirit_205",
         "bloodline": "草",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -10570,7 +10570,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -10609,7 +10609,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白金独角兽",
-        "spiritId": "spirit_3301",
+        "spiritId": "lcx_spirit_135",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -10635,7 +10635,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "迪莫",
-        "spiritId": "spirit_3167",
+        "spiritId": "lcx_spirit_1",
         "bloodline": "光",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -10661,7 +10661,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -10687,7 +10687,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "火神",
-        "spiritId": "spirit_3173",
+        "spiritId": "lcx_spirit_7",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -10713,7 +10713,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "利灯鱼",
-        "spiritId": "spirit_3213",
+        "spiritId": "lcx_spirit_47",
         "bloodline": "水",
         "natureName": "沉默",
         "individualKeys": [
@@ -10738,7 +10738,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "水灵",
-        "spiritId": "spirit_3176",
+        "spiritId": "lcx_spirit_10",
         "bloodline": "恶",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -10778,7 +10778,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白金独角兽",
-        "spiritId": "spirit_3301",
+        "spiritId": "lcx_spirit_135",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -10804,7 +10804,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "迪莫",
-        "spiritId": "spirit_3167",
+        "spiritId": "lcx_spirit_1",
         "bloodline": "光",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -10830,7 +10830,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -10856,7 +10856,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "火神",
-        "spiritId": "spirit_3173",
+        "spiritId": "lcx_spirit_7",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -10882,7 +10882,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "利灯鱼",
-        "spiritId": "spirit_3213",
+        "spiritId": "lcx_spirit_47",
         "bloodline": "水",
         "natureName": "沉默",
         "individualKeys": [
@@ -10907,7 +10907,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "水灵",
-        "spiritId": "spirit_3176",
+        "spiritId": "lcx_spirit_10",
         "bloodline": "恶",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -10947,7 +10947,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -10973,7 +10973,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "岚鸟（春天的样子）",
-        "spiritId": "spirit_4859",
+        "spiritId": "spirit_4861",
         "bloodline": "地",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -10999,7 +10999,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "燃薪虫",
-        "spiritId": "spirit_3434",
+        "spiritId": "lcx_spirit_268",
         "bloodline": "恶",
         "natureName": "平和",
         "individualKeys": [
@@ -11024,7 +11024,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "冰",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -11050,7 +11050,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "声波缇塔",
-        "spiritId": "spirit_3371",
+        "spiritId": "lcx_spirit_205",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -11076,7 +11076,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "翼",
         "natureName": "平和",
         "individualKeys": [
@@ -11115,7 +11115,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "恶",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -11141,7 +11141,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "古卷匣魔像",
-        "spiritId": "spirit_3480",
+        "spiritId": "lcx_spirit_314",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -11167,7 +11167,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -11193,7 +11193,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "卷胡巨獭",
-        "spiritId": "spirit_3197",
+        "spiritId": "lcx_spirit_31",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -11219,7 +11219,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "恶",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -11245,7 +11245,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "魔草巫灵",
-        "spiritId": "spirit_3243",
+        "spiritId": "lcx_spirit_77",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -11285,7 +11285,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "寒音蛇（本来的样子）",
-        "spiritId": "spirit_4938",
+        "spiritId": "lcx_spirit_270",
         "bloodline": "萌",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -11311,7 +11311,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -11336,7 +11336,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "卡洛儿",
-        "spiritId": "spirit_3496",
+        "spiritId": "lcx_spirit_330",
         "bloodline": "萌",
         "natureName": "平和",
         "individualKeys": [
@@ -11361,7 +11361,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "梦想三三",
-        "spiritId": "spirit_3393",
+        "spiritId": "lcx_spirit_227",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -11387,7 +11387,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "魔眷鸟",
-        "spiritId": "spirit_3275",
+        "spiritId": "lcx_spirit_109",
         "bloodline": "萌",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -11413,7 +11413,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -11453,7 +11453,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "花魁蜂后",
-        "spiritId": "spirit_3255",
+        "spiritId": "lcx_spirit_89",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -11479,7 +11479,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "花衣蝶",
-        "spiritId": "spirit_3236",
+        "spiritId": "lcx_spirit_70",
         "bloodline": "虫",
         "natureName": "平和",
         "individualKeys": [
@@ -11504,7 +11504,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "化蝶（幽冥眼的样子）",
-        "spiritId": "spirit_4886",
+        "spiritId": "spirit_4887",
         "bloodline": "虫",
         "natureName": "浮躁",
         "natureId": "neutral",
@@ -11530,7 +11530,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -11556,7 +11556,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "绒仙子",
-        "spiritId": "spirit_3484",
+        "spiritId": "lcx_spirit_318",
         "bloodline": "虫",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -11582,7 +11582,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "陨星虫",
-        "spiritId": "spirit_3472",
+        "spiritId": "lcx_spirit_306",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -11622,7 +11622,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "火",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -11648,7 +11648,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "恶",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -11674,7 +11674,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "利灯鱼",
-        "spiritId": "spirit_3213",
+        "spiritId": "lcx_spirit_47",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -11700,7 +11700,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "罗隐",
-        "spiritId": "spirit_3285",
+        "spiritId": "lcx_spirit_119",
         "bloodline": "草",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -11726,7 +11726,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "魔力猫",
-        "spiritId": "spirit_3170",
+        "spiritId": "lcx_spirit_4",
         "bloodline": "地",
         "natureName": "紧张",
         "individualKeys": [
@@ -11751,7 +11751,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "武者鸡",
-        "spiritId": "spirit_3432",
+        "spiritId": "lcx_spirit_266",
         "bloodline": "电",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -11791,7 +11791,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白金独角兽",
-        "spiritId": "spirit_3301",
+        "spiritId": "lcx_spirit_135",
         "bloodline": "火",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -11817,7 +11817,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -11843,7 +11843,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -11869,7 +11869,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "岚鸟（春天的样子）",
-        "spiritId": "spirit_4859",
+        "spiritId": "spirit_4861",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -11895,7 +11895,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -11921,7 +11921,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圣羽翼王",
-        "spiritId": "spirit_3493",
+        "spiritId": "lcx_spirit_327",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -11961,7 +11961,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白金独角兽",
-        "spiritId": "spirit_3301",
+        "spiritId": "lcx_spirit_135",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -11987,7 +11987,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -12013,7 +12013,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -12039,7 +12039,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "龙",
         "natureName": "平和",
         "individualKeys": [
@@ -12064,7 +12064,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "声波缇塔",
-        "spiritId": "spirit_3371",
+        "spiritId": "lcx_spirit_205",
         "bloodline": "地",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -12090,7 +12090,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "翼",
         "natureName": "沉默",
         "individualKeys": [
@@ -12129,7 +12129,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "武",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -12155,7 +12155,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "幽",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -12181,7 +12181,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "岚鸟（春天的样子）",
-        "spiritId": "spirit_4859",
+        "spiritId": "spirit_4861",
         "bloodline": "冰",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -12207,7 +12207,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -12233,7 +12233,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "电",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -12259,7 +12259,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圣羽翼王",
-        "spiritId": "spirit_3493",
+        "spiritId": "lcx_spirit_327",
         "bloodline": "冰",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -12299,7 +12299,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "春花兔",
-        "spiritId": "spirit_3507",
+        "spiritId": "lcx_spirit_341",
         "bloodline": "毒",
         "natureName": "沉默",
         "individualKeys": [
@@ -12324,7 +12324,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "虫",
         "natureName": "平和",
         "individualKeys": [
@@ -12349,7 +12349,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "冰",
         "natureName": "紧张",
         "individualKeys": [
@@ -12374,7 +12374,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "卷毛鸭",
-        "spiritId": "spirit_3410",
+        "spiritId": "lcx_spirit_244",
         "bloodline": "地",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -12400,7 +12400,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "机械",
         "natureName": "平和",
         "individualKeys": [
@@ -12425,7 +12425,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "水",
         "natureName": "紧张",
         "individualKeys": [
@@ -12464,7 +12464,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白金独角兽",
-        "spiritId": "spirit_3301",
+        "spiritId": "lcx_spirit_135",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -12490,7 +12490,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "龙",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -12516,7 +12516,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "岚鸟（夏天的样子）",
-        "spiritId": "spirit_4860",
+        "spiritId": "spirit_4861",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -12542,7 +12542,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "圣羽翼王",
-        "spiritId": "spirit_3493",
+        "spiritId": "lcx_spirit_327",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -12568,7 +12568,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "紧张",
         "individualKeys": [
@@ -12593,7 +12593,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -12632,7 +12632,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -12658,7 +12658,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -12684,7 +12684,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "普通",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -12710,7 +12710,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -12736,7 +12736,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "咔咔鸟",
-        "spiritId": "spirit_3294",
+        "spiritId": "lcx_spirit_128",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -12802,7 +12802,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "花衣蝶",
-        "spiritId": "spirit_3236",
+        "spiritId": "lcx_spirit_70",
         "bloodline": "地",
         "natureName": "平和",
         "individualKeys": [
@@ -12827,7 +12827,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "巨噬针鼹",
-        "spiritId": "spirit_3246",
+        "spiritId": "lcx_spirit_80",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -12853,7 +12853,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "铠甲虫",
-        "spiritId": "spirit_3450",
+        "spiritId": "lcx_spirit_284",
         "bloodline": "地",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -12879,7 +12879,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "罗隐",
-        "spiritId": "spirit_3285",
+        "spiritId": "lcx_spirit_119",
         "bloodline": "翼",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -12905,7 +12905,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "绒仙子",
-        "spiritId": "spirit_3484",
+        "spiritId": "lcx_spirit_318",
         "bloodline": "机械",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -12931,7 +12931,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "陨星虫",
-        "spiritId": "spirit_3472",
+        "spiritId": "lcx_spirit_306",
         "bloodline": "地",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -12971,7 +12971,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "草",
         "natureName": "急躁",
         "natureId": "spe_up_def_down",
@@ -12997,7 +12997,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "萌",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -13023,7 +13023,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "龙",
         "natureName": "慎重",
         "natureId": "spd_up_spa_down",
@@ -13075,7 +13075,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -13101,7 +13101,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -13141,7 +13141,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "布克棱岩",
-        "spiritId": "spirit_3282",
+        "spiritId": "lcx_spirit_116",
         "bloodline": "冰",
         "natureName": "平和",
         "individualKeys": [
@@ -13166,7 +13166,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "恶",
         "natureName": "平和",
         "individualKeys": [
@@ -13191,7 +13191,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "罗隐",
-        "spiritId": "spirit_3285",
+        "spiritId": "lcx_spirit_119",
         "bloodline": "火",
         "natureName": "平和",
         "individualKeys": [
@@ -13216,7 +13216,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "魔力猫",
-        "spiritId": "spirit_3170",
+        "spiritId": "lcx_spirit_4",
         "bloodline": "水",
         "natureName": "沉默",
         "individualKeys": [
@@ -13241,7 +13241,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "火",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -13267,7 +13267,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圣剑-X",
-        "spiritId": "spirit_3405",
+        "spiritId": "lcx_spirit_239",
         "bloodline": "电",
         "natureName": "平和",
         "individualKeys": [
@@ -13306,7 +13306,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -13358,7 +13358,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "普通",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -13384,7 +13384,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "火",
         "natureName": "沉默",
         "individualKeys": [
@@ -13409,7 +13409,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "声波缇塔",
-        "spiritId": "spirit_3371",
+        "spiritId": "lcx_spirit_205",
         "bloodline": "地",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -13435,7 +13435,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -13475,7 +13475,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "火",
         "natureName": "马虎",
         "natureId": "spa_up_spd_down",
@@ -13501,7 +13501,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -13527,7 +13527,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -13553,7 +13553,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "闪电鳗鱼",
-        "spiritId": "spirit_3350",
+        "spiritId": "lcx_spirit_184",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -13579,7 +13579,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "星光狮（星光能量的样子）",
-        "spiritId": "spirit_3249",
+        "spiritId": "spirit_4900",
         "bloodline": "冰",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -13605,7 +13605,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "翼龙",
-        "spiritId": "spirit_3299",
+        "spiritId": "lcx_spirit_133",
         "bloodline": "龙",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -13645,7 +13645,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "蹦蹦花（短毛球形态）",
-        "spiritId": "spirit_4895",
+        "spiritId": "spirit_4896",
         "bloodline": "火",
         "natureName": "沉默",
         "individualKeys": [
@@ -13670,7 +13670,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "里拉鳐",
-        "spiritId": "spirit_3353",
+        "spiritId": "lcx_spirit_187",
         "bloodline": "火",
         "natureName": "平和",
         "individualKeys": [
@@ -13695,7 +13695,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "鳗尾兽",
-        "spiritId": "spirit_3417",
+        "spiritId": "lcx_spirit_251",
         "bloodline": "火",
         "natureName": "紧张",
         "individualKeys": [
@@ -13720,7 +13720,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "千棘盔（磨损的样子）",
-        "spiritId": "spirit_4882",
+        "spiritId": "lcx_spirit_45",
         "bloodline": "火",
         "natureName": "沉默",
         "individualKeys": [
@@ -13745,7 +13745,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -13770,7 +13770,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -13810,7 +13810,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "怖哭菇",
-        "spiritId": "spirit_3313",
+        "spiritId": "lcx_spirit_147",
         "bloodline": "虫",
         "natureName": "沉着",
         "natureId": "spd_up_atk_down",
@@ -13836,7 +13836,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "电",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -13862,7 +13862,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -13888,7 +13888,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "酷拉",
-        "spiritId": "spirit_3414",
+        "spiritId": "lcx_spirit_248",
         "bloodline": "水",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -13914,7 +13914,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "龙",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -13940,7 +13940,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "幽",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -13980,7 +13980,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "武",
         "natureName": "勇敢",
         "natureId": "atk_up_spe_down",
@@ -14006,7 +14006,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "厉毒修萝",
-        "spiritId": "spirit_3446",
+        "spiritId": "lcx_spirit_280",
         "bloodline": "武",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -14032,7 +14032,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "琉璃水母",
-        "spiritId": "spirit_3352",
+        "spiritId": "lcx_spirit_186",
         "bloodline": "毒",
         "natureName": "沉默",
         "individualKeys": [
@@ -14057,7 +14057,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "迷迷箱怪",
-        "spiritId": "spirit_3438",
+        "spiritId": "lcx_spirit_272",
         "bloodline": "幻",
         "natureName": "冷静",
         "natureId": "spa_up_spe_down",
@@ -14083,7 +14083,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "千棘盔（本来的样子）",
-        "spiritId": "spirit_4884",
+        "spiritId": "lcx_spirit_45",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -14108,7 +14108,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "裘卡",
-        "spiritId": "spirit_3444",
+        "spiritId": "lcx_spirit_278",
         "bloodline": "毒",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -14148,7 +14148,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "红绒十字",
-        "spiritId": "spirit_3192",
+        "spiritId": "lcx_spirit_26",
         "bloodline": "火",
         "natureName": "沉默",
         "individualKeys": [
@@ -14173,7 +14173,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "普通",
         "natureName": "淘气",
         "natureId": "def_up_spa_down",
@@ -14199,7 +14199,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "烈火守护",
-        "spiritId": "spirit_3517",
+        "spiritId": "lcx_spirit_351",
         "bloodline": "火",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -14225,7 +14225,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "光",
         "natureName": "狂妄",
         "natureId": "spd_up_spe_down",
@@ -14251,7 +14251,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "水泡壳（蜕皮时的样子）",
-        "spiritId": "spirit_4852",
+        "spiritId": "lcx_spirit_14",
         "bloodline": "虫",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -14277,7 +14277,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "草",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -14317,7 +14317,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白金独角兽",
-        "spiritId": "spirit_3301",
+        "spiritId": "lcx_spirit_135",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -14343,7 +14343,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "贝古斯",
-        "spiritId": "spirit_5269",
+        "spiritId": "lcx_spirit_359",
         "bloodline": "翼",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -14369,7 +14369,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -14395,7 +14395,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "幽",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -14421,7 +14421,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "光",
         "natureName": "紧张",
         "individualKeys": [
@@ -14446,7 +14446,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -14486,7 +14486,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "锤头鹳",
-        "spiritId": "spirit_3276",
+        "spiritId": "lcx_spirit_110",
         "bloodline": "冰",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -14512,7 +14512,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "画间法师手",
-        "spiritId": "spirit_3475",
+        "spiritId": "lcx_spirit_309",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -14538,7 +14538,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "冰",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -14564,7 +14564,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "雪巨人",
-        "spiritId": "spirit_3319",
+        "spiritId": "lcx_spirit_153",
         "bloodline": "虫",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -14590,7 +14590,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -14616,7 +14616,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "月牙雪熊",
-        "spiritId": "spirit_7107",
+        "spiritId": "lcx_spirit_371",
         "bloodline": "翼",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -14656,7 +14656,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -14682,7 +14682,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "普通",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -14734,7 +14734,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "鳗尾兽",
-        "spiritId": "spirit_3417",
+        "spiritId": "lcx_spirit_251",
         "bloodline": "草",
         "natureName": "平和",
         "individualKeys": [
@@ -14784,7 +14784,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "火",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -14824,7 +14824,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "红绒十字",
-        "spiritId": "spirit_3192",
+        "spiritId": "lcx_spirit_26",
         "bloodline": "普通",
         "natureName": "沉着",
         "natureId": "spd_up_atk_down",
@@ -14850,7 +14850,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "普通",
         "natureName": "平和",
         "individualKeys": [
@@ -14875,7 +14875,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "烈火守护",
-        "spiritId": "spirit_3517",
+        "spiritId": "lcx_spirit_351",
         "bloodline": "龙",
         "natureName": "淘气",
         "natureId": "def_up_spa_down",
@@ -14901,7 +14901,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "普通",
         "natureName": "狂妄",
         "natureId": "spd_up_spe_down",
@@ -14927,7 +14927,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "水泡壳（蜕皮时的样子）",
-        "spiritId": "spirit_4852",
+        "spiritId": "lcx_spirit_14",
         "bloodline": "虫",
         "natureName": "沉着",
         "natureId": "spd_up_atk_down",
@@ -14953,7 +14953,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "草",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -14993,7 +14993,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "电企鹅",
-        "spiritId": "spirit_6987",
+        "spiritId": "lcx_spirit_361",
         "bloodline": "虫",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -15019,7 +15019,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -15045,7 +15045,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "翼",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -15071,7 +15071,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "火",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -15097,7 +15097,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "紧张",
         "individualKeys": [
@@ -15122,7 +15122,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "翼",
         "natureName": "沉默",
         "individualKeys": [
@@ -15161,7 +15161,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "机械",
         "natureName": "紧张",
         "individualKeys": [
@@ -15186,7 +15186,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "混乱鱿彩",
-        "spiritId": "spirit_6901",
+        "spiritId": "lcx_spirit_367",
         "bloodline": "武",
         "natureName": "孤僻",
         "natureId": "atk_up_def_down",
@@ -15212,7 +15212,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "抹茶布丁",
-        "spiritId": "spirit_3367",
+        "spiritId": "lcx_spirit_201",
         "bloodline": "冰",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -15238,7 +15238,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -15264,7 +15264,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "地",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -15290,7 +15290,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "草",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -15330,7 +15330,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "电企鹅",
-        "spiritId": "spirit_6987",
+        "spiritId": "lcx_spirit_361",
         "bloodline": "虫",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -15356,7 +15356,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -15382,7 +15382,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "翼",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -15408,7 +15408,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "火",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -15434,7 +15434,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "紧张",
         "individualKeys": [
@@ -15459,7 +15459,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "翼",
         "natureName": "沉默",
         "individualKeys": [
@@ -15498,7 +15498,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "机械",
         "natureName": "紧张",
         "individualKeys": [
@@ -15523,7 +15523,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "混乱鱿彩",
-        "spiritId": "spirit_6901",
+        "spiritId": "lcx_spirit_367",
         "bloodline": "武",
         "natureName": "孤僻",
         "natureId": "atk_up_def_down",
@@ -15549,7 +15549,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "抹茶布丁",
-        "spiritId": "spirit_3367",
+        "spiritId": "lcx_spirit_201",
         "bloodline": "冰",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -15575,7 +15575,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -15601,7 +15601,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "地",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -15627,7 +15627,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "草",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -15667,7 +15667,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "电企鹅",
-        "spiritId": "spirit_6987",
+        "spiritId": "lcx_spirit_361",
         "bloodline": "虫",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -15693,7 +15693,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -15719,7 +15719,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "翼",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -15745,7 +15745,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "火",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -15771,7 +15771,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "紧张",
         "individualKeys": [
@@ -15796,7 +15796,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "翼",
         "natureName": "沉默",
         "individualKeys": [
@@ -15835,7 +15835,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "波多西",
-        "spiritId": "spirit_3428",
+        "spiritId": "lcx_spirit_262",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -15861,7 +15861,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "武",
         "natureName": "平和",
         "individualKeys": [
@@ -15886,7 +15886,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "龙",
         "natureName": "慎重",
         "natureId": "spd_up_spa_down",
@@ -15912,7 +15912,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "平和",
         "individualKeys": [
@@ -15937,7 +15937,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "草",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -15963,7 +15963,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -16003,7 +16003,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -16029,7 +16029,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "普通",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -16081,7 +16081,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "鳗尾兽",
-        "spiritId": "spirit_3417",
+        "spiritId": "lcx_spirit_251",
         "bloodline": "草",
         "natureName": "平和",
         "individualKeys": [
@@ -16131,7 +16131,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "火",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -16171,7 +16171,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "红绒十字",
-        "spiritId": "spirit_3192",
+        "spiritId": "lcx_spirit_26",
         "bloodline": "普通",
         "natureName": "沉着",
         "natureId": "spd_up_atk_down",
@@ -16197,7 +16197,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "普通",
         "natureName": "平和",
         "individualKeys": [
@@ -16222,7 +16222,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "烈火守护",
-        "spiritId": "spirit_3517",
+        "spiritId": "lcx_spirit_351",
         "bloodline": "龙",
         "natureName": "淘气",
         "natureId": "def_up_spa_down",
@@ -16248,7 +16248,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "普通",
         "natureName": "狂妄",
         "natureId": "spd_up_spe_down",
@@ -16274,7 +16274,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "水泡壳（蜕皮时的样子）",
-        "spiritId": "spirit_4852",
+        "spiritId": "lcx_spirit_14",
         "bloodline": "虫",
         "natureName": "沉着",
         "natureId": "spd_up_atk_down",
@@ -16300,7 +16300,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "草",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -16340,7 +16340,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白金独角兽",
-        "spiritId": "spirit_3301",
+        "spiritId": "lcx_spirit_135",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -16366,7 +16366,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "冰",
         "natureName": "孤僻",
         "natureId": "atk_up_def_down",
@@ -16392,7 +16392,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "迪莫",
-        "spiritId": "spirit_3167",
+        "spiritId": "lcx_spirit_1",
         "bloodline": "武",
         "natureName": "天真",
         "natureId": "spe_up_spd_down",
@@ -16418,7 +16418,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "鸭吉吉（等一等鸭）",
-        "spiritId": "spirit_7121",
+        "spiritId": "lcx_spirit_11",
         "bloodline": "幻",
         "natureName": "稳重",
         "natureId": "spa_up_def_down",
@@ -16444,7 +16444,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "鸭吉吉（紧实的样子）",
-        "spiritId": "spirit_4849",
+        "spiritId": "lcx_spirit_11",
         "bloodline": "幻",
         "natureName": "懒散",
         "individualKeys": [
@@ -16469,7 +16469,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "鸭吉吉（蓬松的样子）",
-        "spiritId": "spirit_3177",
+        "spiritId": "lcx_spirit_11",
         "bloodline": "萌",
         "natureName": "淘气",
         "natureId": "def_up_spa_down",
@@ -16509,7 +16509,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "寒音蛇（本来的样子）",
-        "spiritId": "spirit_4938",
+        "spiritId": "lcx_spirit_270",
         "bloodline": "毒",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -16535,7 +16535,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "花影羚羊",
-        "spiritId": "spirit_3279",
+        "spiritId": "lcx_spirit_113",
         "bloodline": "恶",
         "natureName": "平和",
         "individualKeys": [
@@ -16560,7 +16560,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "立方人",
-        "spiritId": "spirit_3223",
+        "spiritId": "lcx_spirit_57",
         "bloodline": "水",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -16586,7 +16586,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "朔夜伊芙",
-        "spiritId": "spirit_3260",
+        "spiritId": "lcx_spirit_94",
         "bloodline": "幽",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -16612,7 +16612,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "幽影树",
-        "spiritId": "spirit_3220",
+        "spiritId": "lcx_spirit_54",
         "bloodline": "首领",
         "natureName": "紧张",
         "individualKeys": [
@@ -16637,7 +16637,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "水",
         "natureName": "沉默",
         "individualKeys": [
@@ -16676,7 +16676,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "寒音蛇（本来的样子）",
-        "spiritId": "spirit_4938",
+        "spiritId": "lcx_spirit_270",
         "bloodline": "毒",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -16702,7 +16702,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "花影羚羊",
-        "spiritId": "spirit_3279",
+        "spiritId": "lcx_spirit_113",
         "bloodline": "恶",
         "natureName": "平和",
         "individualKeys": [
@@ -16727,7 +16727,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "立方人",
-        "spiritId": "spirit_3223",
+        "spiritId": "lcx_spirit_57",
         "bloodline": "水",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -16753,7 +16753,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "朔夜伊芙",
-        "spiritId": "spirit_3260",
+        "spiritId": "lcx_spirit_94",
         "bloodline": "幽",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -16779,7 +16779,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "幽影树",
-        "spiritId": "spirit_3220",
+        "spiritId": "lcx_spirit_54",
         "bloodline": "首领",
         "natureName": "紧张",
         "individualKeys": [
@@ -16804,7 +16804,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "水",
         "natureName": "沉默",
         "individualKeys": [
@@ -16843,7 +16843,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "白金独角兽",
-        "spiritId": "spirit_3301",
+        "spiritId": "lcx_spirit_135",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -16869,7 +16869,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "贝古斯",
-        "spiritId": "spirit_5269",
+        "spiritId": "lcx_spirit_359",
         "bloodline": "电",
         "natureName": "沉默",
         "individualKeys": [
@@ -16894,7 +16894,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "火",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -16920,7 +16920,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -16946,7 +16946,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -16972,7 +16972,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -17012,7 +17012,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "蹦床松鼠",
-        "spiritId": "spirit_3205",
+        "spiritId": "lcx_spirit_39",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -17037,7 +17037,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "獠牙猪",
-        "spiritId": "spirit_3324",
+        "spiritId": "lcx_spirit_158",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17063,7 +17063,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "奇丽花",
-        "spiritId": "spirit_3270",
+        "spiritId": "lcx_spirit_104",
         "bloodline": "首领",
         "natureName": "沉默",
         "individualKeys": [
@@ -17088,7 +17088,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -17140,7 +17140,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -17179,7 +17179,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "蹦床松鼠",
-        "spiritId": "spirit_3205",
+        "spiritId": "lcx_spirit_39",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -17204,7 +17204,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "獠牙猪",
-        "spiritId": "spirit_3324",
+        "spiritId": "lcx_spirit_158",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17230,7 +17230,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "奇丽花",
-        "spiritId": "spirit_3270",
+        "spiritId": "lcx_spirit_104",
         "bloodline": "首领",
         "natureName": "沉默",
         "individualKeys": [
@@ -17255,7 +17255,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "音速犬",
-        "spiritId": "spirit_3199",
+        "spiritId": "lcx_spirit_33",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -17307,7 +17307,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -17346,7 +17346,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "波多西",
-        "spiritId": "spirit_3428",
+        "spiritId": "lcx_spirit_262",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17372,7 +17372,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17398,7 +17398,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17424,7 +17424,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "棋绮后（白子）",
-        "spiritId": "spirit_3403",
+        "spiritId": "spirit_4932",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -17450,7 +17450,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "地",
         "natureName": "平和",
         "individualKeys": [
@@ -17475,7 +17475,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "草",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17515,7 +17515,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "冰",
         "natureName": "勇敢",
         "natureId": "atk_up_spe_down",
@@ -17541,7 +17541,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17567,7 +17567,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "雪巨人",
-        "spiritId": "spirit_3319",
+        "spiritId": "lcx_spirit_153",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17593,7 +17593,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17619,7 +17619,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "月牙雪熊",
-        "spiritId": "spirit_7107",
+        "spiritId": "lcx_spirit_371",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17645,7 +17645,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -17685,7 +17685,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "冰",
         "natureName": "勇敢",
         "natureId": "atk_up_spe_down",
@@ -17711,7 +17711,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17737,7 +17737,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "雪巨人",
-        "spiritId": "spirit_3319",
+        "spiritId": "lcx_spirit_153",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17763,7 +17763,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17789,7 +17789,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "月牙雪熊",
-        "spiritId": "spirit_7107",
+        "spiritId": "lcx_spirit_371",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17815,7 +17815,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -17855,7 +17855,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17881,7 +17881,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "怖哭菇",
-        "spiritId": "spirit_3313",
+        "spiritId": "lcx_spirit_147",
         "bloodline": "地",
         "natureName": "沉默",
         "individualKeys": [
@@ -17906,7 +17906,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "火",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -17932,7 +17932,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -17958,7 +17958,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "武",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -17984,7 +17984,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -18024,7 +18024,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -18050,7 +18050,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "怖哭菇",
-        "spiritId": "spirit_3313",
+        "spiritId": "lcx_spirit_147",
         "bloodline": "地",
         "natureName": "沉默",
         "individualKeys": [
@@ -18075,7 +18075,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "火",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -18101,7 +18101,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -18127,7 +18127,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "武",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -18153,7 +18153,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -18193,7 +18193,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -18219,7 +18219,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "怖哭菇",
-        "spiritId": "spirit_3313",
+        "spiritId": "lcx_spirit_147",
         "bloodline": "地",
         "natureName": "沉默",
         "individualKeys": [
@@ -18244,7 +18244,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "火",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -18270,7 +18270,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -18296,7 +18296,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "武",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -18322,7 +18322,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -18362,7 +18362,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "冰",
         "natureName": "忧郁",
         "individualKeys": [
@@ -18387,7 +18387,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "春花兔",
-        "spiritId": "spirit_3507",
+        "spiritId": "lcx_spirit_341",
         "bloodline": "草",
         "natureName": "沉默",
         "individualKeys": [
@@ -18412,7 +18412,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "火",
         "natureName": "忧郁",
         "individualKeys": [
@@ -18437,7 +18437,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "圣代甜甜（蓝莓巧克力口味）",
-        "spiritId": "spirit_4916",
+        "spiritId": "lcx_spirit_195",
         "bloodline": "冰",
         "natureName": "沉默",
         "individualKeys": [
@@ -18462,7 +18462,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "水灵",
-        "spiritId": "spirit_3176",
+        "spiritId": "lcx_spirit_10",
         "bloodline": "水",
         "natureName": "冷静",
         "natureId": "spa_up_spe_down",
@@ -18488,7 +18488,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "忧郁",
         "individualKeys": [
@@ -18527,7 +18527,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "锤头鹳",
-        "spiritId": "spirit_3276",
+        "spiritId": "lcx_spirit_110",
         "bloodline": "冰",
         "natureName": "沉默",
         "individualKeys": [
@@ -18578,7 +18578,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "帕帕斯卡",
-        "spiritId": "spirit_3425",
+        "spiritId": "lcx_spirit_259",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -18604,7 +18604,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "雪巨人",
-        "spiritId": "spirit_3319",
+        "spiritId": "lcx_spirit_153",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -18630,7 +18630,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -18655,7 +18655,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "月牙雪熊",
-        "spiritId": "spirit_7107",
+        "spiritId": "lcx_spirit_371",
         "bloodline": "幻",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -18695,7 +18695,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "迪莫",
-        "spiritId": "spirit_3167",
+        "spiritId": "lcx_spirit_1",
         "bloodline": "机械",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -18721,7 +18721,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -18747,7 +18747,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "梦想三三",
-        "spiritId": "spirit_3393",
+        "spiritId": "lcx_spirit_227",
         "bloodline": "萌",
         "natureName": "平和",
         "individualKeys": [
@@ -18772,7 +18772,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "魔力猫",
-        "spiritId": "spirit_3170",
+        "spiritId": "lcx_spirit_4",
         "bloodline": "草",
         "natureName": "沉默",
         "individualKeys": [
@@ -18797,7 +18797,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "怒目怂猫",
-        "spiritId": "spirit_5217",
+        "spiritId": "lcx_spirit_353",
         "bloodline": "武",
         "natureName": "平和",
         "individualKeys": [
@@ -18822,7 +18822,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "朔夜伊芙",
-        "spiritId": "spirit_3260",
+        "spiritId": "lcx_spirit_94",
         "bloodline": "机械",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -18862,7 +18862,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "冰",
         "natureName": "淘气",
         "natureId": "def_up_spa_down",
@@ -18888,7 +18888,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "獠牙猪",
-        "spiritId": "spirit_3324",
+        "spiritId": "lcx_spirit_158",
         "bloodline": "冰",
         "natureName": "慎重",
         "natureId": "spd_up_spa_down",
@@ -18914,7 +18914,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "武",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -18940,7 +18940,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "冰",
         "natureName": "沉默",
         "individualKeys": [
@@ -18965,7 +18965,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "椰浆布丁",
-        "spiritId": "spirit_3368",
+        "spiritId": "lcx_spirit_202",
         "bloodline": "水",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -18991,7 +18991,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "月牙雪熊",
-        "spiritId": "spirit_7107",
+        "spiritId": "lcx_spirit_371",
         "bloodline": "翼",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -19031,7 +19031,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "冰",
         "natureName": "淘气",
         "natureId": "def_up_spa_down",
@@ -19057,7 +19057,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "獠牙猪",
-        "spiritId": "spirit_3324",
+        "spiritId": "lcx_spirit_158",
         "bloodline": "冰",
         "natureName": "慎重",
         "natureId": "spd_up_spa_down",
@@ -19083,7 +19083,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "武",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -19109,7 +19109,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "冰",
         "natureName": "沉默",
         "individualKeys": [
@@ -19134,7 +19134,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "椰浆布丁",
-        "spiritId": "spirit_3368",
+        "spiritId": "lcx_spirit_202",
         "bloodline": "水",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -19160,7 +19160,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "月牙雪熊",
-        "spiritId": "spirit_7107",
+        "spiritId": "lcx_spirit_371",
         "bloodline": "翼",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -19200,7 +19200,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "布克棱岩",
-        "spiritId": "spirit_3282",
+        "spiritId": "lcx_spirit_116",
         "bloodline": "地",
         "natureName": "平和",
         "individualKeys": [
@@ -19225,7 +19225,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "巨噬针鼹",
-        "spiritId": "spirit_3246",
+        "spiritId": "lcx_spirit_80",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -19277,7 +19277,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "地",
         "natureName": "平和",
         "individualKeys": [
@@ -19302,7 +19302,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "芋香巨角蛛",
-        "spiritId": "spirit_4098",
+        "spiritId": "lcx_spirit_20",
         "bloodline": "地",
         "natureName": "沉默",
         "individualKeys": [
@@ -19327,7 +19327,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "针叶巡林",
-        "spiritId": "spirit_3337",
+        "spiritId": "lcx_spirit_171",
         "bloodline": "草",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -19367,7 +19367,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -19393,7 +19393,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -19419,7 +19419,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -19471,7 +19471,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "岚鸟（春天的样子）",
-        "spiritId": "spirit_4859",
+        "spiritId": "spirit_4861",
         "bloodline": "普通",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -19497,7 +19497,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圣羽翼王",
-        "spiritId": "spirit_3493",
+        "spiritId": "lcx_spirit_327",
         "bloodline": "普通",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -19537,7 +19537,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔红钻",
-        "spiritId": "spirit_6893",
+        "spiritId": "lcx_spirit_365",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -19563,7 +19563,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "海枝枝（碧蓝珊瑚）",
-        "spiritId": "spirit_3362",
+        "spiritId": "spirit_4986",
         "bloodline": "电",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -19589,7 +19589,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "花衣蝶",
-        "spiritId": "spirit_3236",
+        "spiritId": "lcx_spirit_70",
         "bloodline": "普通",
         "natureName": "平和",
         "individualKeys": [
@@ -19614,7 +19614,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "巨噬针鼹",
-        "spiritId": "spirit_3246",
+        "spiritId": "lcx_spirit_80",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -19640,7 +19640,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "翼",
         "natureName": "平和",
         "individualKeys": [
@@ -19665,7 +19665,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "陨星虫",
-        "spiritId": "spirit_3472",
+        "spiritId": "lcx_spirit_306",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -19705,7 +19705,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔红钻",
-        "spiritId": "spirit_6893",
+        "spiritId": "lcx_spirit_365",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -19731,7 +19731,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "花衣蝶",
-        "spiritId": "spirit_3236",
+        "spiritId": "lcx_spirit_70",
         "bloodline": "普通",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -19757,7 +19757,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "巨噬针鼹",
-        "spiritId": "spirit_3246",
+        "spiritId": "lcx_spirit_80",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -19783,7 +19783,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "翼",
         "natureName": "勇敢",
         "natureId": "atk_up_spe_down",
@@ -19809,7 +19809,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "游蛇魔使",
-        "spiritId": "spirit_3343",
+        "spiritId": "lcx_spirit_177",
         "bloodline": "虫",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -19835,7 +19835,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "陨星虫",
-        "spiritId": "spirit_3472",
+        "spiritId": "lcx_spirit_306",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -19875,7 +19875,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -19900,7 +19900,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "火神",
-        "spiritId": "spirit_3173",
+        "spiritId": "lcx_spirit_7",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -19926,7 +19926,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -19952,7 +19952,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "利灯鱼",
-        "spiritId": "spirit_3213",
+        "spiritId": "lcx_spirit_47",
         "bloodline": "武",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -19978,7 +19978,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "迷迷箱怪",
-        "spiritId": "spirit_3438",
+        "spiritId": "lcx_spirit_272",
         "bloodline": "翼",
         "natureName": "勇敢",
         "natureId": "atk_up_spe_down",
@@ -20004,7 +20004,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "光",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -20044,7 +20044,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "电球咩咩",
-        "spiritId": "spirit_3229",
+        "spiritId": "lcx_spirit_63",
         "bloodline": "电",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -20070,7 +20070,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "古卷匣魔像",
-        "spiritId": "spirit_3480",
+        "spiritId": "lcx_spirit_314",
         "bloodline": "武",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -20096,7 +20096,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -20122,7 +20122,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "晶石蜗（莲花刚玉的样子）",
-        "spiritId": "spirit_4867",
+        "spiritId": "spirit_4864",
         "bloodline": "首领",
         "natureName": "紧张",
         "individualKeys": [
@@ -20147,7 +20147,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "利灯鱼",
-        "spiritId": "spirit_3213",
+        "spiritId": "lcx_spirit_47",
         "bloodline": "电",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -20173,7 +20173,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "魔眷鸟",
-        "spiritId": "spirit_3275",
+        "spiritId": "lcx_spirit_109",
         "bloodline": "萌",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -20213,7 +20213,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -20238,7 +20238,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "火神",
-        "spiritId": "spirit_3173",
+        "spiritId": "lcx_spirit_7",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -20264,7 +20264,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -20290,7 +20290,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "利灯鱼",
-        "spiritId": "spirit_3213",
+        "spiritId": "lcx_spirit_47",
         "bloodline": "武",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -20316,7 +20316,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "迷迷箱怪",
-        "spiritId": "spirit_3438",
+        "spiritId": "lcx_spirit_272",
         "bloodline": "翼",
         "natureName": "勇敢",
         "natureId": "atk_up_spe_down",
@@ -20342,7 +20342,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "光",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -20382,7 +20382,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "火神",
-        "spiritId": "spirit_3173",
+        "spiritId": "lcx_spirit_7",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -20408,7 +20408,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "电",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -20434,7 +20434,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "巨噬针鼹",
-        "spiritId": "spirit_3246",
+        "spiritId": "lcx_spirit_80",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -20460,7 +20460,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "奇丽花",
-        "spiritId": "spirit_3270",
+        "spiritId": "lcx_spirit_104",
         "bloodline": "首领",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -20486,7 +20486,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -20512,7 +20512,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "紧张",
         "individualKeys": [
@@ -20551,7 +20551,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "电",
         "natureName": "平和",
         "individualKeys": [
@@ -20576,7 +20576,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "游蛇魔使",
-        "spiritId": "spirit_3343",
+        "spiritId": "lcx_spirit_177",
         "bloodline": "水",
         "natureName": "平和",
         "individualKeys": [
@@ -20601,7 +20601,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "紧张",
         "individualKeys": [
@@ -20626,7 +20626,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "噼啪鸟",
-        "spiritId": "spirit_3415",
+        "spiritId": "lcx_spirit_249",
         "bloodline": "机械",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -20652,7 +20652,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "火",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -20678,7 +20678,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "贝古斯",
-        "spiritId": "spirit_5269",
+        "spiritId": "lcx_spirit_359",
         "bloodline": "翼",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -20718,7 +20718,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -20744,7 +20744,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -20770,7 +20770,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "海枝枝（碧蓝珊瑚）",
-        "spiritId": "spirit_3362",
+        "spiritId": "spirit_4986",
         "bloodline": "武",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -20796,7 +20796,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "黑猫巫师",
-        "spiritId": "spirit_3464",
+        "spiritId": "lcx_spirit_298",
         "bloodline": "普通",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -20848,7 +20848,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "草",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -20888,7 +20888,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -20914,7 +20914,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "岚鸟（本来的样子）",
-        "spiritId": "spirit_3183",
+        "spiritId": "spirit_4861",
         "bloodline": "地",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -20940,7 +20940,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "武",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -20966,7 +20966,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "圣羽翼王",
-        "spiritId": "spirit_3493",
+        "spiritId": "lcx_spirit_327",
         "bloodline": "武",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -20992,7 +20992,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "紧张",
         "individualKeys": [
@@ -21017,7 +21017,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -21057,7 +21057,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "恶魔红钻",
-        "spiritId": "spirit_6893",
+        "spiritId": "lcx_spirit_365",
         "bloodline": "电",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21083,7 +21083,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "风滚暮虫（金黄的样子）",
-        "spiritId": "spirit_3304",
+        "spiritId": "spirit_4909",
         "bloodline": "电",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -21109,7 +21109,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21135,7 +21135,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "幻",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21161,7 +21161,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "巨噬针鼹",
-        "spiritId": "spirit_3246",
+        "spiritId": "lcx_spirit_80",
         "bloodline": "幻",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21187,7 +21187,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "芋香巨角蛛",
-        "spiritId": "spirit_4098",
+        "spiritId": "lcx_spirit_20",
         "bloodline": "电",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -21227,7 +21227,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "电",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21253,7 +21253,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "化蝶（幽冥眼的样子）",
-        "spiritId": "spirit_4886",
+        "spiritId": "spirit_4887",
         "bloodline": "幽",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -21279,7 +21279,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "幻影灵菇",
-        "spiritId": "spirit_3189",
+        "spiritId": "lcx_spirit_23",
         "bloodline": "翼",
         "natureName": "紧张",
         "individualKeys": [
@@ -21304,7 +21304,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "夜枭",
-        "spiritId": "spirit_3420",
+        "spiritId": "lcx_spirit_254",
         "bloodline": "光",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -21330,7 +21330,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "幽冥眼（睁眼的样子）",
-        "spiritId": "spirit_3208",
+        "spiritId": "spirit_4878",
         "bloodline": "水",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -21356,7 +21356,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -21396,7 +21396,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21422,7 +21422,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21448,7 +21448,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "迷迷箱怪",
-        "spiritId": "spirit_3438",
+        "spiritId": "lcx_spirit_272",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21474,7 +21474,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "棋骑士（白子）",
-        "spiritId": "spirit_3400",
+        "spiritId": "spirit_4929",
         "bloodline": "地",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21500,7 +21500,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "幽影树",
-        "spiritId": "spirit_3220",
+        "spiritId": "lcx_spirit_54",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -21525,7 +21525,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "秩序鱿墨",
-        "spiritId": "spirit_6902",
+        "spiritId": "lcx_spirit_368",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -21565,7 +21565,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "贝古斯",
-        "spiritId": "spirit_5269",
+        "spiritId": "lcx_spirit_359",
         "bloodline": "翼",
         "natureName": "沉默",
         "individualKeys": [
@@ -21590,7 +21590,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21616,7 +21616,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21642,7 +21642,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "利灯鱼",
-        "spiritId": "spirit_3213",
+        "spiritId": "lcx_spirit_47",
         "bloodline": "火",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -21668,7 +21668,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "萌",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -21694,7 +21694,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "电",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -21734,7 +21734,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "贝古斯",
-        "spiritId": "spirit_5269",
+        "spiritId": "lcx_spirit_359",
         "bloodline": "翼",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -21760,7 +21760,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "电球咩咩",
-        "spiritId": "spirit_3229",
+        "spiritId": "lcx_spirit_63",
         "bloodline": "翼",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -21786,7 +21786,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "龙",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21812,7 +21812,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "梦想三三",
-        "spiritId": "spirit_3393",
+        "spiritId": "lcx_spirit_227",
         "bloodline": "首领",
         "natureName": "紧张",
         "individualKeys": [
@@ -21837,7 +21837,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "地",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -21863,7 +21863,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "紧张",
         "individualKeys": [
@@ -21902,7 +21902,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21928,7 +21928,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21954,7 +21954,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "水",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -21980,7 +21980,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -22032,7 +22032,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "忧郁",
         "individualKeys": [
@@ -22071,7 +22071,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "贝古斯",
-        "spiritId": "spirit_5269",
+        "spiritId": "lcx_spirit_359",
         "bloodline": "翼",
         "natureName": "沉默",
         "individualKeys": [
@@ -22096,7 +22096,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "武",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -22122,7 +22122,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "瞌睡王",
-        "spiritId": "spirit_3239",
+        "spiritId": "lcx_spirit_73",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -22148,7 +22148,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "利灯鱼",
-        "spiritId": "spirit_3213",
+        "spiritId": "lcx_spirit_47",
         "bloodline": "火",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -22174,7 +22174,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "萌",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -22200,7 +22200,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "电",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -22240,7 +22240,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "电球咩咩",
-        "spiritId": "spirit_3229",
+        "spiritId": "lcx_spirit_63",
         "bloodline": "电",
         "natureName": "急躁",
         "natureId": "spe_up_def_down",
@@ -22266,7 +22266,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "火",
         "natureName": "马虎",
         "natureId": "spa_up_spd_down",
@@ -22292,7 +22292,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "恶",
         "natureName": "悠闲",
         "natureId": "def_up_spe_down",
@@ -22318,7 +22318,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "冰",
         "natureName": "懒散",
         "individualKeys": [
@@ -22343,7 +22343,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "光",
         "natureName": "浮躁",
         "natureId": "neutral",
@@ -22369,7 +22369,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "大胆",
         "natureId": "def_up_atk_down",
@@ -22409,7 +22409,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -22435,7 +22435,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -22461,7 +22461,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "水",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -22487,7 +22487,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -22539,7 +22539,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "忧郁",
         "individualKeys": [
@@ -22578,7 +22578,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "迪莫",
-        "spiritId": "spirit_3167",
+        "spiritId": "lcx_spirit_1",
         "bloodline": "光",
         "natureName": "马虎",
         "natureId": "spa_up_spd_down",
@@ -22604,7 +22604,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "机械",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -22630,7 +22630,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "火神",
-        "spiritId": "spirit_3173",
+        "spiritId": "lcx_spirit_7",
         "bloodline": "首领",
         "natureName": "马虎",
         "natureId": "spa_up_spd_down",
@@ -22656,7 +22656,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "岚鸟（夏天的样子）",
-        "spiritId": "spirit_4860",
+        "spiritId": "spirit_4861",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -22682,7 +22682,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "恶",
         "natureName": "马虎",
         "natureId": "spa_up_spd_down",
@@ -22708,7 +22708,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "水泡壳（蜕皮时的样子）",
-        "spiritId": "spirit_4852",
+        "spiritId": "lcx_spirit_14",
         "bloodline": "水",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -22748,7 +22748,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "电球咩咩",
-        "spiritId": "spirit_3229",
+        "spiritId": "lcx_spirit_63",
         "bloodline": "电",
         "natureName": "急躁",
         "natureId": "spe_up_def_down",
@@ -22774,7 +22774,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "火",
         "natureName": "马虎",
         "natureId": "spa_up_spd_down",
@@ -22800,7 +22800,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "寂灭骨龙",
-        "spiritId": "spirit_3459",
+        "spiritId": "lcx_spirit_293",
         "bloodline": "恶",
         "natureName": "悠闲",
         "natureId": "def_up_spe_down",
@@ -22826,7 +22826,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "冰",
         "natureName": "懒散",
         "individualKeys": [
@@ -22851,7 +22851,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "绒光优优",
-        "spiritId": "spirit_6896",
+        "spiritId": "lcx_spirit_370",
         "bloodline": "光",
         "natureName": "浮躁",
         "natureId": "neutral",
@@ -22877,7 +22877,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "圆号鱼",
-        "spiritId": "spirit_3386",
+        "spiritId": "lcx_spirit_220",
         "bloodline": "萌",
         "natureName": "大胆",
         "natureId": "def_up_atk_down",
@@ -22917,7 +22917,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -22943,7 +22943,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "恶魔狼",
-        "spiritId": "spirit_3286",
+        "spiritId": "lcx_spirit_120",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -22969,7 +22969,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "水",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -22995,7 +22995,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "画间沉铁兽",
-        "spiritId": "spirit_3476",
+        "spiritId": "lcx_spirit_310",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -23047,7 +23047,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "兽花蕾",
-        "spiritId": "spirit_3247",
+        "spiritId": "lcx_spirit_81",
         "bloodline": "萌",
         "natureName": "忧郁",
         "individualKeys": [
@@ -23086,7 +23086,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "迪莫",
-        "spiritId": "spirit_3167",
+        "spiritId": "lcx_spirit_1",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -23111,7 +23111,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "火神",
-        "spiritId": "spirit_3173",
+        "spiritId": "lcx_spirit_7",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -23136,7 +23136,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "岚鸟（本来的样子）",
-        "spiritId": "spirit_3183",
+        "spiritId": "spirit_4861",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -23161,7 +23161,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "魔力猫",
-        "spiritId": "spirit_3170",
+        "spiritId": "lcx_spirit_4",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -23186,7 +23186,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "水灵",
-        "spiritId": "spirit_3176",
+        "spiritId": "lcx_spirit_10",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -23211,7 +23211,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "鸭吉吉（蓬松的样子）",
-        "spiritId": "spirit_3177",
+        "spiritId": "lcx_spirit_11",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -23250,7 +23250,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "冰钻布鲁斯",
-        "spiritId": "spirit_3499",
+        "spiritId": "lcx_spirit_333",
         "bloodline": "水",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -23276,7 +23276,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "布克棱岩",
-        "spiritId": "spirit_3282",
+        "spiritId": "lcx_spirit_116",
         "bloodline": "地",
         "natureName": "淘气",
         "natureId": "def_up_spa_down",
@@ -23302,7 +23302,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "巨噬针鼹",
-        "spiritId": "spirit_3246",
+        "spiritId": "lcx_spirit_80",
         "bloodline": "普通",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -23328,7 +23328,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "迷迷箱怪",
-        "spiritId": "spirit_3438",
+        "spiritId": "lcx_spirit_272",
         "bloodline": "翼",
         "natureName": "淘气",
         "natureId": "def_up_spa_down",
@@ -23354,7 +23354,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "棋绮后（白子）",
-        "spiritId": "spirit_3403",
+        "spiritId": "spirit_4932",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -23380,7 +23380,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "地",
         "natureName": "淘气",
         "natureId": "def_up_spa_down",
@@ -23420,7 +23420,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "迪莫",
-        "spiritId": "spirit_3167",
+        "spiritId": "lcx_spirit_1",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -23445,7 +23445,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "火神",
-        "spiritId": "spirit_3173",
+        "spiritId": "lcx_spirit_7",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -23470,7 +23470,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "岚鸟（本来的样子）",
-        "spiritId": "spirit_3183",
+        "spiritId": "spirit_4861",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -23495,7 +23495,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "魔力猫",
-        "spiritId": "spirit_3170",
+        "spiritId": "lcx_spirit_4",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -23520,7 +23520,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "水灵",
-        "spiritId": "spirit_3176",
+        "spiritId": "lcx_spirit_10",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -23545,7 +23545,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "鸭吉吉（蓬松的样子）",
-        "spiritId": "spirit_3177",
+        "spiritId": "lcx_spirit_11",
         "bloodline": "普通",
         "natureName": "沉默",
         "individualKeys": [
@@ -23584,7 +23584,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "怖哭菇",
-        "spiritId": "spirit_3313",
+        "spiritId": "lcx_spirit_147",
         "bloodline": "幻",
         "natureName": "沉默",
         "individualKeys": [
@@ -23609,7 +23609,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "幻",
         "natureName": "沉默",
         "individualKeys": [
@@ -23634,7 +23634,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "龙息帕尔",
-        "spiritId": "spirit_3490",
+        "spiritId": "lcx_spirit_324",
         "bloodline": "恶",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -23660,7 +23660,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "幻",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -23686,7 +23686,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "魔草巫灵",
-        "spiritId": "spirit_3243",
+        "spiritId": "lcx_spirit_77",
         "bloodline": "幽",
         "natureName": "沉默",
         "individualKeys": [
@@ -23711,7 +23711,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "仪式巨像",
-        "spiritId": "spirit_3289",
+        "spiritId": "lcx_spirit_123",
         "bloodline": "翼",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -23751,7 +23751,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "幻影灵菇",
-        "spiritId": "spirit_3189",
+        "spiritId": "lcx_spirit_23",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -23777,7 +23777,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "罗隐",
-        "spiritId": "spirit_3285",
+        "spiritId": "lcx_spirit_119",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -23828,7 +23828,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -23879,7 +23879,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "幽影树",
-        "spiritId": "spirit_3220",
+        "spiritId": "lcx_spirit_54",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [
@@ -23918,7 +23918,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "水",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -23944,7 +23944,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "菊花梨",
-        "spiritId": "spirit_3305",
+        "spiritId": "lcx_spirit_139",
         "bloodline": "水",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -23970,7 +23970,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "立方人",
-        "spiritId": "spirit_3223",
+        "spiritId": "lcx_spirit_57",
         "bloodline": "水",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -23996,7 +23996,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "龙鱼",
-        "spiritId": "spirit_3348",
+        "spiritId": "lcx_spirit_182",
         "bloodline": "水",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -24023,7 +24023,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "圣代甜甜",
-        "spiritId": "spirit_3361",
+        "spiritId": "lcx_spirit_195",
         "bloodline": "水",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -24049,7 +24049,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "朔夜伊芙",
-        "spiritId": "spirit_3260",
+        "spiritId": "lcx_spirit_94",
         "bloodline": "水",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -24113,7 +24113,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "火",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -24139,7 +24139,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "怒目怂猫",
-        "spiritId": "spirit_5217",
+        "spiritId": "lcx_spirit_353",
         "bloodline": "普通",
         "natureName": "平和",
         "individualKeys": [
@@ -24164,7 +24164,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "棋绮后（白子）",
-        "spiritId": "spirit_3403",
+        "spiritId": "spirit_4932",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -24190,7 +24190,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "绅士鸡",
-        "spiritId": "spirit_3431",
+        "spiritId": "lcx_spirit_265",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -24216,7 +24216,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "普通",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -24258,7 +24258,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "彩蝶鲨",
-        "spiritId": "spirit_3267",
+        "spiritId": "lcx_spirit_101",
         "bloodline": "首领",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -24285,7 +24285,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "火",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -24337,7 +24337,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "晶石蜗（西瓜碧玺的样子）",
-        "spiritId": "spirit_3194",
+        "spiritId": "spirit_4864",
         "bloodline": "草",
         "natureName": "紧张",
         "individualKeys": [
@@ -24362,7 +24362,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "卷毛鸭",
-        "spiritId": "spirit_3410",
+        "spiritId": "lcx_spirit_244",
         "bloodline": "冰",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -24388,7 +24388,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "熔岩布丁",
-        "spiritId": "spirit_3369",
+        "spiritId": "lcx_spirit_203",
         "bloodline": "火",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -24453,7 +24453,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "火",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -24479,7 +24479,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "琉璃水母",
-        "spiritId": "spirit_3352",
+        "spiritId": "lcx_spirit_186",
         "bloodline": "草",
         "natureName": "沉默",
         "individualKeys": [
@@ -24504,7 +24504,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "石冠王蜥（球球尾巴的样子）",
-        "spiritId": "spirit_4903",
+        "spiritId": "lcx_spirit_86",
         "bloodline": "翼",
         "natureName": "平和",
         "individualKeys": [
@@ -24529,7 +24529,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "火",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -24555,7 +24555,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "月亮砣（上弦的样子）",
-        "spiritId": "spirit_4911",
+        "spiritId": "spirit_3345",
         "bloodline": "草",
         "natureName": "沉默",
         "individualKeys": [
@@ -24594,7 +24594,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "泥吼牙",
-        "spiritId": "spirit_3452",
+        "spiritId": "lcx_spirit_286",
         "bloodline": "地",
         "natureName": "害羞",
         "natureId": "neutral",
@@ -24645,7 +24645,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "落陨星兔",
-        "spiritId": "spirit_3462",
+        "spiritId": "lcx_spirit_296",
         "bloodline": "冰",
         "natureName": "沉着",
         "natureId": "spd_up_atk_down",
@@ -24671,7 +24671,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "卡瓦重（沙地附近的样子）",
-        "spiritId": "spirit_4876",
+        "spiritId": "spirit_4874",
         "bloodline": "翼",
         "natureName": "坦率",
         "natureId": "neutral",
@@ -24697,7 +24697,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "鳗尾兽",
-        "spiritId": "spirit_3417",
+        "spiritId": "lcx_spirit_251",
         "bloodline": "草",
         "natureName": "紧张",
         "individualKeys": [
@@ -24722,7 +24722,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "恶",
         "natureName": "淘气",
         "natureId": "def_up_spa_down",
@@ -24763,7 +24763,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "海豹船长",
-        "spiritId": "spirit_3355",
+        "spiritId": "lcx_spirit_189",
         "bloodline": "武",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -24838,7 +24838,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "噼啪鸟",
-        "spiritId": "spirit_3415",
+        "spiritId": "lcx_spirit_249",
         "bloodline": "翼",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -24864,7 +24864,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "棋绮后（白子）",
-        "spiritId": "spirit_3403",
+        "spiritId": "spirit_4932",
         "bloodline": "首领",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -24890,7 +24890,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "游蛇魔使",
-        "spiritId": "spirit_3343",
+        "spiritId": "lcx_spirit_177",
         "bloodline": "武",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -24958,7 +24958,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "酷拉",
-        "spiritId": "spirit_3414",
+        "spiritId": "lcx_spirit_248",
         "bloodline": "火",
         "natureName": "急躁",
         "natureId": "spe_up_def_down",
@@ -24984,7 +24984,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "鳗尾兽",
-        "spiritId": "spirit_3417",
+        "spiritId": "lcx_spirit_251",
         "bloodline": "火",
         "natureName": "平和",
         "individualKeys": [
@@ -25009,7 +25009,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "闪电鳗鱼",
-        "spiritId": "spirit_3350",
+        "spiritId": "lcx_spirit_184",
         "bloodline": "火",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -25035,7 +25035,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "火",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -25061,7 +25061,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "星光狮（星光能量的样子）",
-        "spiritId": "spirit_3249",
+        "spiritId": "spirit_4900",
         "bloodline": "火",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -25103,7 +25103,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "遁地鼠（枯水期的样子）",
-        "spiritId": "spirit_3297",
+        "spiritId": "spirit_4906",
         "bloodline": "水",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -25130,7 +25130,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "化蝶（平常的样子）",
-        "spiritId": "spirit_3218",
+        "spiritId": "spirit_4887",
         "bloodline": "水",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -25156,7 +25156,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "卡洛儿",
-        "spiritId": "spirit_3496",
+        "spiritId": "lcx_spirit_330",
         "bloodline": "水",
         "natureName": "保守",
         "natureId": "spa_up_atk_down",
@@ -25182,7 +25182,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "梦想三三",
-        "spiritId": "spirit_3393",
+        "spiritId": "lcx_spirit_227",
         "bloodline": "水",
         "natureName": "平和",
         "individualKeys": [
@@ -25207,7 +25207,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "魔眷鸟",
-        "spiritId": "spirit_3275",
+        "spiritId": "lcx_spirit_109",
         "bloodline": "水",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -25233,7 +25233,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "朔夜伊芙",
-        "spiritId": "spirit_3260",
+        "spiritId": "lcx_spirit_94",
         "bloodline": "水",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -25273,7 +25273,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "布克棱岩",
-        "spiritId": "spirit_3282",
+        "spiritId": "lcx_spirit_116",
         "bloodline": "武",
         "natureName": "平和",
         "individualKeys": [
@@ -25298,7 +25298,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "巨噬针鼹",
-        "spiritId": "spirit_3246",
+        "spiritId": "lcx_spirit_80",
         "bloodline": "武",
         "natureName": "平和",
         "individualKeys": [
@@ -25323,7 +25323,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "怒目怂猫",
-        "spiritId": "spirit_5217",
+        "spiritId": "lcx_spirit_353",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -25349,7 +25349,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "棋绮后（白子）",
-        "spiritId": "spirit_3403",
+        "spiritId": "spirit_4932",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -25375,7 +25375,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "水",
         "natureName": "平和",
         "individualKeys": [
@@ -25400,7 +25400,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "芋香巨角蛛",
-        "spiritId": "spirit_4098",
+        "spiritId": "lcx_spirit_20",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -25439,7 +25439,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "布克棱岩",
-        "spiritId": "spirit_3282",
+        "spiritId": "lcx_spirit_116",
         "bloodline": "武",
         "natureName": "平和",
         "individualKeys": [
@@ -25464,7 +25464,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "巨噬针鼹",
-        "spiritId": "spirit_3246",
+        "spiritId": "lcx_spirit_80",
         "bloodline": "武",
         "natureName": "平和",
         "individualKeys": [
@@ -25489,7 +25489,7 @@ export const generatedPvpLineups = [
       {
         "slot": 3,
         "spiritName": "怒目怂猫",
-        "spiritId": "spirit_5217",
+        "spiritId": "lcx_spirit_353",
         "bloodline": "冰",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -25515,7 +25515,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "棋绮后（白子）",
-        "spiritId": "spirit_3403",
+        "spiritId": "spirit_4932",
         "bloodline": "首领",
         "natureName": "固执",
         "natureId": "atk_up_spa_down",
@@ -25541,7 +25541,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "食尘短绒",
-        "spiritId": "spirit_3467",
+        "spiritId": "lcx_spirit_301",
         "bloodline": "水",
         "natureName": "平和",
         "individualKeys": [
@@ -25566,7 +25566,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "芋香巨角蛛",
-        "spiritId": "spirit_4098",
+        "spiritId": "lcx_spirit_20",
         "bloodline": "萌",
         "natureName": "沉默",
         "individualKeys": [
@@ -25605,7 +25605,7 @@ export const generatedPvpLineups = [
       {
         "slot": 1,
         "spiritName": "海枝枝（碧蓝珊瑚）",
-        "spiritId": "spirit_3362",
+        "spiritId": "spirit_4986",
         "bloodline": "幽",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -25631,7 +25631,7 @@ export const generatedPvpLineups = [
       {
         "slot": 2,
         "spiritName": "尖嘴狐仙",
-        "spiritId": "spirit_3329",
+        "spiritId": "lcx_spirit_163",
         "bloodline": "冰",
         "natureName": "沉默",
         "individualKeys": [
@@ -25682,7 +25682,7 @@ export const generatedPvpLineups = [
       {
         "slot": 4,
         "spiritName": "獠牙猪",
-        "spiritId": "spirit_3324",
+        "spiritId": "lcx_spirit_158",
         "bloodline": "翼",
         "natureName": "开朗",
         "natureId": "spe_up_spa_down",
@@ -25708,7 +25708,7 @@ export const generatedPvpLineups = [
       {
         "slot": 5,
         "spiritName": "小皮球",
-        "spiritId": "spirit_3469",
+        "spiritId": "lcx_spirit_303",
         "bloodline": "电",
         "natureName": "胆小",
         "natureId": "spe_up_atk_down",
@@ -25734,7 +25734,7 @@ export const generatedPvpLineups = [
       {
         "slot": 6,
         "spiritName": "雪影娃娃",
-        "spiritId": "spirit_3332",
+        "spiritId": "lcx_spirit_166",
         "bloodline": "首领",
         "natureName": "平和",
         "individualKeys": [

@@ -3,22 +3,22 @@ import type { CommonBuild, StatKey } from "../../types/battle";
 export const generatedBuilds = [] satisfies CommonBuild[];
 
 export const generatedRecommendedIndividualKeys = {
-  "spirit_3167": [
+  "lcx_spirit_1": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3168": [
+  "lcx_spirit_2": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3169": [
+  "lcx_spirit_3": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3170": [
+  "lcx_spirit_4": [
     "hp",
     "atk",
     "spe"
@@ -28,17 +28,17 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3171": [
+  "lcx_spirit_5": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3172": [
+  "lcx_spirit_6": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3173": [
+  "lcx_spirit_7": [
     "hp",
     "atk",
     "spe"
@@ -48,12 +48,12 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3174": [
+  "lcx_spirit_8": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3175": [
+  "lcx_spirit_9": [
     "hp",
     "spa",
     "spe"
@@ -63,37 +63,12 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
-  "spirit_3176": [
+  "lcx_spirit_10": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3177": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_4849": [
-    "hp",
-    "spa",
-    "spe"
-  ],
-  "spirit_6868": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_7121": [
-    "hp",
-    "spa",
-    "spe"
-  ],
-  "spirit_6866": [
-    "hp",
-    "spa",
-    "spe"
-  ],
-  "spirit_6867": [
+  "lcx_spirit_11": [
     "hp",
     "atk",
     "spe"
@@ -103,47 +78,32 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3178": [
+  "lcx_spirit_12": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_4850": [
+  "lcx_spirit_13": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3179": [
+  "lcx_spirit_14": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_4851": [
-    "hp",
-    "spa",
-    "spe"
-  ],
-  "spirit_3180": [
-    "hp",
-    "spa",
-    "spe"
-  ],
-  "spirit_4852": [
-    "hp",
-    "spa",
-    "spe"
-  ],
-  "spirit_3277": [
+  "lcx_spirit_111": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3278": [
+  "lcx_spirit_112": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3279": [
+  "lcx_spirit_113": [
     "hp",
     "atk",
     "spe"
@@ -168,6 +128,11 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
+  "lcx_spirit_15": [
+    "hp",
+    "atk",
+    "spe"
+  ],
   "spirit_3182": [
     "hp",
     "atk",
@@ -184,6 +149,11 @@ export const generatedRecommendedIndividualKeys = {
     "spe"
   ],
   "spirit_4858": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_16": [
     "hp",
     "atk",
     "spe"
@@ -208,67 +178,57 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
+  "lcx_spirit_17": [
+    "hp",
+    "atk",
+    "spe"
+  ],
   "spirit_5191": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3187": [
+  "lcx_spirit_21": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3188": [
+  "lcx_spirit_22": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3189": [
+  "lcx_spirit_23": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3250": [
+  "lcx_spirit_84": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_4901": [
+  "lcx_spirit_85": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3251": [
+  "lcx_spirit_86": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_4902": [
+  "lcx_spirit_114": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3252": [
+  "lcx_spirit_115": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_4903": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3280": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3281": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3282": [
+  "lcx_spirit_116": [
     "hp",
     "atk",
     "spe"
@@ -278,22 +238,22 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3271": [
+  "lcx_spirit_105": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3272": [
+  "lcx_spirit_106": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3216": [
+  "lcx_spirit_50": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3217": [
+  "lcx_spirit_51": [
     "hp",
     "atk",
     "spe"
@@ -318,32 +278,37 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
+  "lcx_spirit_52": [
+    "hp",
+    "atk",
+    "spe"
+  ],
   "spirit_5720": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3220": [
+  "lcx_spirit_54": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3195": [
+  "lcx_spirit_29": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3196": [
+  "lcx_spirit_30": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3197": [
+  "lcx_spirit_31": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3193": [
+  "lcx_spirit_27": [
     "hp",
     "spa",
     "spe"
@@ -378,17 +343,22 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
+  "lcx_spirit_28": [
+    "hp",
+    "spa",
+    "spe"
+  ],
   "spirit_5192": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3268": [
+  "lcx_spirit_102": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3269": [
+  "lcx_spirit_103": [
     "hp",
     "atk",
     "spe"
@@ -398,7 +368,7 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3270": [
+  "lcx_spirit_104": [
     "hp",
     "atk",
     "spe"
@@ -418,6 +388,11 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
+  "lcx_spirit_34": [
+    "hp",
+    "atk",
+    "spe"
+  ],
   "spirit_3201": [
     "hp",
     "atk",
@@ -429,6 +404,11 @@ export const generatedRecommendedIndividualKeys = {
     "spe"
   ],
   "spirit_4871": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_35": [
     "hp",
     "atk",
     "spe"
@@ -448,7 +428,12 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3198": [
+  "lcx_spirit_36": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_32": [
     "hp",
     "atk",
     "spe"
@@ -458,37 +443,37 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3199": [
+  "lcx_spirit_33": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3203": [
+  "lcx_spirit_37": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3204": [
+  "lcx_spirit_38": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3205": [
+  "lcx_spirit_39": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3214": [
+  "lcx_spirit_48": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3215": [
+  "lcx_spirit_49": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3206": [
+  "lcx_spirit_40": [
     "hp",
     "spa",
     "spe"
@@ -503,6 +488,11 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
+  "lcx_spirit_41": [
+    "hp",
+    "spa",
+    "spe"
+  ],
   "spirit_3208": [
     "hp",
     "spa",
@@ -513,7 +503,17 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
+  "lcx_spirit_42": [
+    "hp",
+    "spa",
+    "spe"
+  ],
   "spirit_3240": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_74": [
     "hp",
     "spa",
     "spe"
@@ -523,22 +523,27 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
-  "spirit_3247": [
+  "lcx_spirit_75": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3244": [
+  "lcx_spirit_81": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_78": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3245": [
+  "lcx_spirit_79": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3246": [
+  "lcx_spirit_80": [
     "hp",
     "atk",
     "spe"
@@ -563,6 +568,11 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
+  "lcx_spirit_58": [
+    "hp",
+    "spa",
+    "spe"
+  ],
   "spirit_3225": [
     "hp",
     "spa",
@@ -579,6 +589,11 @@ export const generatedRecommendedIndividualKeys = {
     "spe"
   ],
   "spirit_4893": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_59": [
     "hp",
     "spa",
     "spe"
@@ -608,72 +623,67 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
-  "spirit_3227": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3228": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3229": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3230": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3231": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3232": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3233": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3237": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3238": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3239": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_4881": [
+  "lcx_spirit_60": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_4879": [
+  "lcx_spirit_61": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_62": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_63": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_64": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_65": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_66": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_67": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_71": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_72": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_73": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_43": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_4883": [
-    "hp",
-    "spa",
-    "spe"
-  ],
-  "spirit_4880": [
+  "lcx_spirit_44": [
     "hp",
     "spa",
     "spe"
@@ -683,17 +693,12 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
-  "spirit_4884": [
+  "lcx_spirit_45": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_4882": [
-    "hp",
-    "spa",
-    "spe"
-  ],
-  "spirit_3305": [
+  "lcx_spirit_139": [
     "hp",
     "spa",
     "spe"
@@ -708,6 +713,11 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
+  "lcx_spirit_82": [
+    "hp",
+    "spa",
+    "spe"
+  ],
   "spirit_3249": [
     "hp",
     "spa",
@@ -718,17 +728,22 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
-  "spirit_3253": [
+  "lcx_spirit_83": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_87": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3254": [
+  "lcx_spirit_88": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3255": [
+  "lcx_spirit_89": [
     "hp",
     "atk",
     "spe"
@@ -738,132 +753,132 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3258": [
+  "lcx_spirit_92": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3259": [
+  "lcx_spirit_93": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3260": [
+  "lcx_spirit_94": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3261": [
+  "lcx_spirit_95": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3262": [
+  "lcx_spirit_96": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3263": [
+  "lcx_spirit_97": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3264": [
+  "lcx_spirit_98": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3276": [
+  "lcx_spirit_110": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3242": [
+  "lcx_spirit_76": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3243": [
+  "lcx_spirit_77": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3219": [
+  "lcx_spirit_53": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3292": [
+  "lcx_spirit_126": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3293": [
+  "lcx_spirit_127": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3294": [
+  "lcx_spirit_128": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3234": [
+  "lcx_spirit_68": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3235": [
+  "lcx_spirit_69": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3236": [
+  "lcx_spirit_70": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3273": [
+  "lcx_spirit_107": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3274": [
+  "lcx_spirit_108": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3275": [
+  "lcx_spirit_109": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3283": [
+  "lcx_spirit_117": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3284": [
+  "lcx_spirit_118": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3285": [
+  "lcx_spirit_119": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3265": [
+  "lcx_spirit_99": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3266": [
+  "lcx_spirit_100": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3267": [
+  "lcx_spirit_101": [
     "hp",
     "atk",
     "spe"
@@ -873,22 +888,22 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3333": [
+  "lcx_spirit_167": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3334": [
+  "lcx_spirit_168": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3287": [
+  "lcx_spirit_121": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3288": [
+  "lcx_spirit_122": [
     "hp",
     "spa",
     "spe"
@@ -898,17 +913,17 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
-  "spirit_3289": [
+  "lcx_spirit_123": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3300": [
+  "lcx_spirit_134": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3301": [
+  "lcx_spirit_135": [
     "hp",
     "spa",
     "spe"
@@ -928,12 +943,22 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
+  "lcx_spirit_136": [
+    "hp",
+    "spa",
+    "spe"
+  ],
   "spirit_3303": [
     "hp",
     "spa",
     "spe"
   ],
   "spirit_4908": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_137": [
     "hp",
     "spa",
     "spe"
@@ -948,7 +973,12 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
-  "spirit_3463": [
+  "lcx_spirit_138": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_297": [
     "hp",
     "spa",
     "spe"
@@ -958,52 +988,52 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
-  "spirit_3464": [
+  "lcx_spirit_298": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3306": [
+  "lcx_spirit_140": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3307": [
+  "lcx_spirit_141": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3308": [
+  "lcx_spirit_142": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3309": [
+  "lcx_spirit_143": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3310": [
+  "lcx_spirit_144": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3311": [
+  "lcx_spirit_145": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3312": [
+  "lcx_spirit_146": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3313": [
+  "lcx_spirit_147": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3286": [
+  "lcx_spirit_120": [
     "hp",
     "atk",
     "spe"
@@ -1013,62 +1043,62 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_6986": [
+  "lcx_spirit_360": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_6987": [
+  "lcx_spirit_361": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3317": [
+  "lcx_spirit_151": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3318": [
+  "lcx_spirit_152": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3319": [
+  "lcx_spirit_153": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3323": [
+  "lcx_spirit_157": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3324": [
+  "lcx_spirit_158": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3320": [
+  "lcx_spirit_154": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3321": [
+  "lcx_spirit_155": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3322": [
+  "lcx_spirit_156": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3330": [
+  "lcx_spirit_164": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3331": [
+  "lcx_spirit_165": [
     "hp",
     "atk",
     "spe"
@@ -1078,7 +1108,12 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3332": [
+  "lcx_spirit_166": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_159": [
     "hp",
     "atk",
     "spe"
@@ -1088,97 +1123,102 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
+  "lcx_spirit_160": [
+    "hp",
+    "atk",
+    "spe"
+  ],
   "spirit_4989": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3327": [
+  "lcx_spirit_161": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3328": [
+  "lcx_spirit_162": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3329": [
+  "lcx_spirit_163": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3491": [
+  "lcx_spirit_325": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3492": [
+  "lcx_spirit_326": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3493": [
+  "lcx_spirit_327": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3335": [
+  "lcx_spirit_169": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3336": [
+  "lcx_spirit_170": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3337": [
+  "lcx_spirit_171": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3338": [
+  "lcx_spirit_172": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3339": [
+  "lcx_spirit_173": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3340": [
+  "lcx_spirit_174": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3341": [
+  "lcx_spirit_175": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3342": [
+  "lcx_spirit_176": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3343": [
+  "lcx_spirit_177": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3382": [
+  "lcx_spirit_216": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_5216": [
+  "lcx_spirit_352": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_5217": [
+  "lcx_spirit_353": [
     "hp",
     "atk",
     "spe"
@@ -1193,12 +1233,22 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
+  "lcx_spirit_222": [
+    "hp",
+    "atk",
+    "spe"
+  ],
   "spirit_3389": [
     "hp",
     "atk",
     "spe"
   ],
   "spirit_4926": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_223": [
     "hp",
     "atk",
     "spe"
@@ -1213,117 +1263,107 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3184": [
+  "lcx_spirit_224": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3185": [
+  "lcx_spirit_18": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_4098": [
+  "lcx_spirit_19": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3396": [
+  "lcx_spirit_20": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_6882": [
+  "lcx_spirit_230": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3397": [
+  "lcx_spirit_231": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_6883": [
+  "lcx_spirit_232": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3398": [
+  "lcx_spirit_197": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_6884": [
+  "lcx_spirit_198": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3363": [
+  "lcx_spirit_199": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3364": [
+  "lcx_spirit_217": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3365": [
+  "lcx_spirit_218": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3383": [
+  "lcx_spirit_243": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3384": [
+  "lcx_spirit_244": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3409": [
+  "lcx_spirit_188": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3410": [
+  "lcx_spirit_189": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3354": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3355": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3385": [
+  "lcx_spirit_219": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3386": [
+  "lcx_spirit_220": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3494": [
+  "lcx_spirit_328": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3495": [
+  "lcx_spirit_329": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3496": [
+  "lcx_spirit_330": [
     "hp",
     "spa",
     "spe"
@@ -1338,12 +1378,22 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
+  "lcx_spirit_233": [
+    "hp",
+    "atk",
+    "spe"
+  ],
   "spirit_3400": [
     "hp",
     "atk",
     "spe"
   ],
   "spirit_4929": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_234": [
     "hp",
     "atk",
     "spe"
@@ -1358,12 +1408,22 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
+  "lcx_spirit_235": [
+    "hp",
+    "atk",
+    "spe"
+  ],
   "spirit_3402": [
     "hp",
     "atk",
     "spe"
   ],
   "spirit_4931": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_236": [
     "hp",
     "atk",
     "spe"
@@ -1378,47 +1438,52 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
+  "lcx_spirit_237": [
+    "hp",
+    "atk",
+    "spe"
+  ],
   "spirit_5207": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_6889": [
+  "lcx_spirit_362": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_6890": [
+  "lcx_spirit_363": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3406": [
+  "lcx_spirit_240": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3407": [
+  "lcx_spirit_241": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3408": [
+  "lcx_spirit_242": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3391": [
+  "lcx_spirit_225": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3392": [
+  "lcx_spirit_226": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3393": [
+  "lcx_spirit_227": [
     "hp",
     "atk",
     "spe"
@@ -1428,17 +1493,17 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3416": [
+  "lcx_spirit_250": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3417": [
+  "lcx_spirit_251": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3394": [
+  "lcx_spirit_228": [
     "hp",
     "spa",
     "spe"
@@ -1448,82 +1513,82 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
-  "spirit_3395": [
+  "lcx_spirit_229": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3413": [
+  "lcx_spirit_247": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3414": [
+  "lcx_spirit_248": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3377": [
+  "lcx_spirit_211": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3378": [
+  "lcx_spirit_212": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3379": [
+  "lcx_spirit_213": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3437": [
+  "lcx_spirit_271": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3438": [
+  "lcx_spirit_272": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_4936": [
+  "lcx_spirit_269": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_4938": [
+  "lcx_spirit_270": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_7108": [
+  "lcx_spirit_364": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_6893": [
+  "lcx_spirit_365": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3515": [
+  "lcx_spirit_349": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3516": [
+  "lcx_spirit_350": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3517": [
+  "lcx_spirit_351": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3353": [
+  "lcx_spirit_187": [
     "hp",
     "spa",
     "spe"
@@ -1548,37 +1613,42 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
-  "spirit_3426": [
+  "lcx_spirit_196": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_260": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3427": [
+  "lcx_spirit_261": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3428": [
+  "lcx_spirit_262": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3298": [
+  "lcx_spirit_132": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3299": [
+  "lcx_spirit_133": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3374": [
+  "lcx_spirit_208": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3375": [
+  "lcx_spirit_209": [
     "hp",
     "atk",
     "spe"
@@ -1588,97 +1658,47 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3376": [
+  "lcx_spirit_210": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3370": [
+  "lcx_spirit_204": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3371": [
+  "lcx_spirit_205": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3356": [
+  "lcx_spirit_190": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3357": [
+  "lcx_spirit_191": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3358": [
+  "lcx_spirit_192": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3359": [
+  "lcx_spirit_193": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3360": [
+  "lcx_spirit_194": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_4912": [
-    "hp",
-    "spa",
-    "spe"
-  ],
-  "spirit_4913": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_3361": [
-    "hp",
-    "spa",
-    "spe"
-  ],
-  "spirit_4914": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_4915": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_4916": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_4917": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_4918": [
-    "hp",
-    "spa",
-    "spe"
-  ],
-  "spirit_4919": [
-    "hp",
-    "spa",
-    "spe"
-  ],
-  "spirit_4920": [
-    "hp",
-    "atk",
-    "spe"
-  ],
-  "spirit_4921": [
+  "lcx_spirit_195": [
     "hp",
     "spa",
     "spe"
@@ -1693,6 +1713,11 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
+  "lcx_spirit_178": [
+    "hp",
+    "atk",
+    "spe"
+  ],
   "spirit_4911": [
     "hp",
     "atk",
@@ -1703,97 +1728,102 @@ export const generatedRecommendedIndividualKeys = {
     "spa",
     "spe"
   ],
-  "spirit_3346": [
+  "lcx_spirit_179": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_180": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3347": [
+  "lcx_spirit_181": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3348": [
+  "lcx_spirit_182": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3349": [
+  "lcx_spirit_183": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3350": [
+  "lcx_spirit_184": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3351": [
+  "lcx_spirit_185": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3352": [
+  "lcx_spirit_186": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3442": [
+  "lcx_spirit_276": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3443": [
+  "lcx_spirit_277": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3444": [
+  "lcx_spirit_278": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_5259": [
+  "lcx_spirit_354": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_5258": [
+  "lcx_spirit_355": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_5260": [
+  "lcx_spirit_356": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3497": [
+  "lcx_spirit_331": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3498": [
+  "lcx_spirit_332": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3499": [
+  "lcx_spirit_333": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3190": [
+  "lcx_spirit_24": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3191": [
+  "lcx_spirit_25": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3192": [
+  "lcx_spirit_26": [
     "hp",
     "spa",
     "spe"
@@ -1808,12 +1838,22 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
+  "lcx_spirit_255": [
+    "hp",
+    "atk",
+    "spe"
+  ],
   "spirit_3422": [
     "hp",
     "atk",
     "spe"
   ],
   "spirit_4934": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_256": [
     "hp",
     "atk",
     "spe"
@@ -1828,82 +1868,87 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3424": [
+  "lcx_spirit_257": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3425": [
+  "lcx_spirit_258": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3221": [
+  "lcx_spirit_259": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3222": [
+  "lcx_spirit_55": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3223": [
+  "lcx_spirit_56": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3429": [
+  "lcx_spirit_57": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3430": [
+  "lcx_spirit_263": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3431": [
+  "lcx_spirit_264": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3432": [
+  "lcx_spirit_265": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_6895": [
+  "lcx_spirit_266": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_369": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_6896": [
+  "lcx_spirit_370": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3415": [
+  "lcx_spirit_249": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3387": [
+  "lcx_spirit_221": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3439": [
+  "lcx_spirit_273": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3440": [
+  "lcx_spirit_274": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3441": [
+  "lcx_spirit_275": [
     "hp",
     "spa",
     "spe"
@@ -1918,12 +1963,22 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
+  "lcx_spirit_129": [
+    "hp",
+    "atk",
+    "spe"
+  ],
   "spirit_3296": [
     "hp",
     "atk",
     "spe"
   ],
   "spirit_4905": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_130": [
     "hp",
     "atk",
     "spe"
@@ -1938,37 +1993,42 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_6900": [
+  "lcx_spirit_131": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_6901": [
+  "lcx_spirit_366": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_6902": [
+  "lcx_spirit_367": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3449": [
+  "lcx_spirit_368": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3450": [
+  "lcx_spirit_283": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3404": [
+  "lcx_spirit_284": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3405": [
+  "lcx_spirit_238": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_239": [
     "hp",
     "atk",
     "spe"
@@ -1978,309 +2038,429 @@ export const generatedRecommendedIndividualKeys = {
     "atk",
     "spe"
   ],
-  "spirit_3451": [
+  "lcx_spirit_285": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3452": [
+  "lcx_spirit_286": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3458": [
+  "lcx_spirit_292": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3459": [
+  "lcx_spirit_293": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3445": [
+  "lcx_spirit_279": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3446": [
+  "lcx_spirit_280": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3488": [
+  "lcx_spirit_322": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3489": [
+  "lcx_spirit_323": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3490": [
+  "lcx_spirit_324": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3465": [
+  "lcx_spirit_299": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3466": [
+  "lcx_spirit_300": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3467": [
+  "lcx_spirit_301": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3473": [
+  "lcx_spirit_307": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3474": [
+  "lcx_spirit_308": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3475": [
+  "lcx_spirit_309": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3476": [
+  "lcx_spirit_310": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3477": [
+  "lcx_spirit_311": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3478": [
+  "lcx_spirit_312": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3479": [
+  "lcx_spirit_313": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3480": [
+  "lcx_spirit_314": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3482": [
+  "lcx_spirit_316": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3483": [
+  "lcx_spirit_317": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3484": [
+  "lcx_spirit_318": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3485": [
+  "lcx_spirit_319": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3486": [
+  "lcx_spirit_320": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3487": [
+  "lcx_spirit_321": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3366": [
+  "lcx_spirit_200": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3367": [
+  "lcx_spirit_201": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3368": [
+  "lcx_spirit_202": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3369": [
+  "lcx_spirit_203": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3470": [
+  "lcx_spirit_304": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3471": [
+  "lcx_spirit_305": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3472": [
+  "lcx_spirit_306": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3212": [
+  "lcx_spirit_46": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3213": [
+  "lcx_spirit_47": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_7107": [
+  "lcx_spirit_371": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3380": [
+  "lcx_spirit_214": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3381": [
+  "lcx_spirit_215": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3433": [
+  "lcx_spirit_267": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3434": [
+  "lcx_spirit_268": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_3418": [
+  "lcx_spirit_252": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3419": [
+  "lcx_spirit_253": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3420": [
+  "lcx_spirit_254": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3468": [
+  "lcx_spirit_302": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3469": [
+  "lcx_spirit_303": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_5267": [
+  "lcx_spirit_357": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_5268": [
+  "lcx_spirit_358": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_5269": [
+  "lcx_spirit_359": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3460": [
+  "lcx_spirit_294": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3461": [
+  "lcx_spirit_295": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3462": [
+  "lcx_spirit_296": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_7131": [
+  "lcx_spirit_373": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_7130": [
+  "lcx_spirit_374": [
     "hp",
     "atk",
     "spe"
   ],
-  "spirit_7133": [
+  "lcx_spirit_375": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_7132": [
+  "lcx_spirit_376": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3505": [
+  "lcx_spirit_339": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3506": [
+  "lcx_spirit_340": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3507": [
+  "lcx_spirit_341": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3508": [
+  "lcx_spirit_342": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3509": [
+  "lcx_spirit_343": [
     "hp",
     "spa",
     "spe"
   ],
-  "spirit_3510": [
+  "lcx_spirit_344": [
     "hp",
     "spa",
+    "spe"
+  ],
+  "lcx_spirit_381": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_378": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_382": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_383": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_384": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_385": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_397": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_398": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_395": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_396": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_392": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_393": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_394": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_390": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_391": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_388": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_389": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_399": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_400": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_386": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_387": [
+    "hp",
+    "atk",
+    "spe"
+  ],
+  "lcx_spirit_124": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_125": [
+    "hp",
+    "spa",
+    "spe"
+  ],
+  "lcx_spirit_345": [
+    "hp",
+    "atk",
     "spe"
   ]
 } satisfies Record<string, StatKey[]>;
